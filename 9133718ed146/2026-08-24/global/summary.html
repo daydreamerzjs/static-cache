@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VK 游戏网络故障监控汇报</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    body { margin: 0; font-family: "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(135deg, #0f766e, #0ea5a4); color: #fff; border-radius: 14px; padding: 20px; }
+    .meta { margin-top: 8px; color: #d1fae5; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+    .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .kpi .v { font-size: 24px; font-weight: 700; }
+    .kpi .k { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    h2 { margin: 4px 0 10px; font-size: 18px; }
+    h3 { margin: 16px 0 10px; font-size: 16px; }
+    pre { white-space: pre-wrap; font-size: 12px; color: #334155; }
+    .alert { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 10px; padding: 14px 16px; margin: 12px 0; color: #7f1d1d; }
+    .alert-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .alert-desc { font-size: 13px; color: #991b1b; margin-bottom: 6px; }
+    .alert ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    .alert a { color: #b91c1c; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>VK 游戏网络故障监控汇报</h1>
+      <div class="meta">生成时间：2026-08-24 03:38:08 BST</div>
+      <div class="meta">报告输出时间：2026-08-24 03:51:30 BST</div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="kpi"><div class="v">38</div><div class="k">总命中数</div></div>
+      <div class="kpi"><div class="v">12</div><div class="k">命中游戏数</div></div>
+      <div class="kpi"><div class="v">36</div><div class="k">服务器连接失败</div></div>
+      <div class="kpi"><div class="v">1</div><div class="k">匹配失败</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>游戏维度汇总</h2>
+      <table>
+        <thead><tr><th>游戏</th><th>总命中</th><th>登录失败</th><th>匹配失败</th><th>服务器连接失败</th></tr></thead>
+        <tbody><tr><td>Escape from Tarkov</td><td>9</td><td>1</td><td>0</td><td>8</td></tr><tr><td>Dota 2</td><td>7</td><td>1</td><td>1</td><td>7</td></tr><tr><td>Call of Duty: Warzone</td><td>6</td><td>0</td><td>0</td><td>6</td></tr><tr><td>Dead by Daylight</td><td>4</td><td>0</td><td>0</td><td>4</td></tr><tr><td>Call of Duty</td><td>3</td><td>0</td><td>0</td><td>3</td></tr><tr><td>Escape from Tarkov: Arena</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>Throne and Liberty</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>ARC Raiders</td><td>1</td><td>1</td><td>0</td><td>0</td></tr><tr><td>Apex Legends</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Battlefield 6 | RedSec</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>PUBG: BATTLEGROUNDS</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>STALZONE</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>按游戏的故障明细（原文+中文）</h2>
+      <h3>Escape from Tarkov（10）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1700680' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Ребят у всех переходы не работают?с ошибкой весь день вылетает в частности при переходе на резерв с тамоги</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1700371?reply=1700689' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Дмитрий, дак ты по моему фигню пишешь, зачем мне оплачивать дискорд только что бы транслировать тарков , если есть нашлемная камера, у меня iq же не 32. А нагрузка на процессор, на видеокарту, оперативку, ну типо ради...</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1700371?reply=1700591' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.58</td><td>Дмитрий, не ко мне вопрос, я только нашел решение , но и то , пока в убежище лазил, вылезла ошибка 228 и все , смэрть</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1700371?reply=1700616' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Михаил, там для таких как ты не понимающих есть БЕСПЛАТНЫЙ пробный период. качаешь смотришь тестишь помогает или нет. тут тебе вон 1 сказал не работает 2 говорит работает🤣</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1700371?reply=1700623' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Стас, стасик студентик а ты шоль, вспомнил вспомнил тебя. 😂😂😂 чс не так работает челик ты опять чо то не догоняешь. чс работает если писать чо то в личных сообщениях. ты находишься в общественном месте в группе. тут т...</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1700667' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Мне в схроне игра переложить шмотки не дает. Ошибки вечные с бекендом. Чинить будут? СЮР! Пока писал комент просто так ошибка вылетела</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1700706' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.36</td><td>Сервера легли, я не могу донатить! Почините сервер я не могу задонатить)</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1700576' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>Как блин не выходной, так ошибки и лаги.Невозможно по играть!</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1700371?reply=1700603' target='_blank'>link</a></td><td>login_failure</td><td>0.3</td><td>Не могу зайти в игру,кто знает что за поеб*нь?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1700371?reply=1700594' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Максим, ты решил эту тему? У меня так же не заходит</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Call of Duty: Warzone（7）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-194535641_197091?reply=197539' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>Впн на телефоне не помог finevpn</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-194535641_197091?reply=197534' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Сергей, Гирап , год на нем сижу , батла и калды</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-194535641_197091?reply=197535' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Сан, Гирап , год на нем сижу</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-194535641_197000?reply=197484' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Павел, с впн скачай, и отключи его потом и всё</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-194535641_197091?reply=197490' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Алексей, а этот прокси на любой роутер можно поставить?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-194535641_197091?reply=197522' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Oleg, привет, можешь в личку расписать как прокси настроить на пс5?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-194535641_197237?reply=197463' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Во прикол ,зашел без каких либо днс и впн,просто включил на дурака ,и все )</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Dota 2（7）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-15413538_2929461?reply=2929487' target='_blank'>link</a></td><td>server_connection_failure, login_failure, matchmaking_failure</td><td>0.99</td><td>Гг</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-15413538_2929498?reply=2929606' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Положили доту, ничего не работает😞</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-15413538_2929498?reply=2929647' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>ваще похуй на этой иент , когда сервера поднимут, не работает нехуАААААААААА</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-15413538_2929498?reply=2929695' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Дота щас у всех не работает?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-15413538_2929498?reply=2929782' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Артём, у меня пока не работает</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-15413538_2929345?reply=2929387' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Ну и где все которые ржали с такого предикта?? Говорили что яндексы и спирит не пройдут далеко, нигмы вылетят в самом начале говорили, ну и где вы?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-15413538_2929498?reply=2929743' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Коля, ну имеет, пройти по более слабым командам, а смысл в том что не должно быть 2 шанса, проиграл вылетел, для примера вот какие то топы могут спокойно отлететь не тратя силы и заготовки зная что у них есть шанс все...</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Dead by Daylight（6）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404075' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>Не играла в DBD с начала июля, как сервера упали. Сейчас попыталась зайти с винипухом - 2 минуты катка, вылет, 30 минут бана. Кайфы. Без него катка даже не запускается. Подскажите, если поставить ExitLag или гирап, по...</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404088' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>Кирилл, у меня платный, пробовала разные страны с адекватным пингом, но ничего не помогает, всё равно вылет. У тебя работает от впн?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404077' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Екатерина, Гирап точно поможет.</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404068' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Алексей, так будет всегда пока ты живёшь в РФ и игра тут не прИчём, скажи спасибо такой крутой организации РКН</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404087' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Екатерина, платный впн в помощь</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404089' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Екатерина, да. Впн &quot;happ&quot;</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Call of Duty（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-1171627_8396819?reply=8396853' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Данил, это та самая система которая никогда не работала и не работает, начиная душить игроков, подбирая не по уровню, а в разы выше, заставляя тебя просто страдать, не имея возможности противостоять.</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-1171627_8396841?reply=8396858' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Подскажите как проверку обновлений победить. На хбоксе вчера помогло включение впн, на пк впн не помогает. Есть простые способы?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-1171627_8396255?reply=8396806' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Евгений, хз без впна работает норм</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Escape from Tarkov: Arena（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-218983927_51382?reply=51411' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.54</td><td>Дисконнектов стало меньше, чем было, теперь не вся команда отлетает, а 1-2 игрока. Зато пропала регистрация, стреляешь в воздух около врага - убиваешь, стреляешь точно - пули сквозь него пролетают.</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-218983927_51382?reply=51412' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Артур, бывает пропадаешься на какой-то кривой сервер, что постоянно люди вылетают и без того плохая рега вообще отсутствует</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-218983927_51375?reply=51424' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>Не работает сборка оружия, по сохраненным сборкам отсутствует список. Не работает бартер у торговцев, для обмена все есть, а у торговцев нужное по нулям.</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Throne and Liberty（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-234512887_79747?reply=80117' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.84</td><td>Сегодня на гильдийском вылетела табличка НЕДОСТУПНЫЙ КОНТЕНТ! Потом дисконекты у половины клана.</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-234512887_80100?reply=80112' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.46</td><td>Илья, та не провайдер это. Что бы там у аструмов не сочиняли) у меня жу другие онлайн игры норм играют. У меня на ЗБТ в ТЛ все ок было. Потом Аструмы и впн заблочили, пришлось шаманить, чтоб зайти. И вот на день релиз...</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr><tr><td><a href='https://vk.com/wall-234512887_79944?reply=80106' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Антон, картинка у меня чет через вк.ком открывается,а не вк.ру и выдает ошибку. Не могу увеличить, прочитать..</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>ARC Raiders（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-23051891_46481?reply=46486' target='_blank'>link</a></td><td>login_failure</td><td>0.52</td><td>Распад, ну вайпы нужны чтобы оживлять экономику игры, сам знаю типов которые бросили играть в арк потому что полный схрон фиол/голд оружия и они с чувством что дальше расти некуда не заходят в игру, при этом вайпы не ...</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Apex Legends（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-72990395_1297781' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.97</td><td>⚡ Старый Хемлок возвращается Валькирию пофиксят Сиару переработают скан 🔻Шквальный Хемлок (оригинальный) может вернуться уже во 2 сплите — удалят запредельный заряд и вернут стрельбу очередями 🔻Скан сквозь стены с пер...</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>Battlefield 6 | RedSec（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-13666684_3979381?reply=3979391' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.64</td><td>Игорь, в среднем пинг 50-60 успеваю часто из меню сесть в Верт, а вообще самый рабочий вариант это стоять у вертолетного респа зажав кнопк Е</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>PUBG: BATTLEGROUNDS（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-148211806_898766?reply=898767' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Игра без конца вылетает с такой ошибкой, что за фигня?</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table><h3>STALZONE（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-2677092_1132845?reply=1132912' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Владислав, на i3 и 1660 стабильные 100 фпс без лагов все высокое</td><td>Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</td></tr></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>运行日志摘要</h2>
+      <pre># VK 全局游戏网络故障监控日报
+
+- 执行时间: 2026-08-24 03:38:08 BST
+- 报告输出时间: 2026-08-24 03:51:30 BST
+- 查询词数量: 185
+- 必查社群数量(配置): 21
+- 必查社群抓取帖子: 43
+- 必查社群抓取评论: 1015
+- 全局查询词数量: 185
+- 全局抓取帖子数: 0
+- 合并帖子数: 43
+- 故障命中帖子: 1
+- 全局下钻评论数: 0
+- 合并评论数: 1005
+- 故障命中评论: 43
+- 评论采集告警数(显示&gt;0但抓取=0): 0
+
+## 故障命中帖子
+- [https://vk.com/wall-72990395_1297781](https://vk.com/wall-72990395_1297781) | type=server_connection_failure | conf=0.97
+  - 摘要: ⚡ Старый Хемлок возвращается Валькирию пофиксят Сиару переработают скан 🔻Шквальный Хемлок (оригинальный) может вернуться уже во 2 сплите — удалят запредельный заряд и вернут стрельбу очередями 🔻Скан сквозь стены с пер...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+
+## 故障命中评论
+- [https://vk.com/wall-122458500_1403882?reply=1404075](https://vk.com/wall-122458500_1403882?reply=1404075) | type=server_connection_failure | conf=0.99
+  - 摘要: Не играла в DBD с начала июля, как сервера упали. Сейчас попыталась зайти с винипухом - 2 минуты катка, вылет, 30 минут бана. Кайфы. Без него катка даже не запускается. Подскажите, если поставить ExitLag или гирап, по...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-15413538_2929461?reply=2929487](https://vk.com/wall-15413538_2929461?reply=2929487) | type=server_connection_failure,login_failure,matchmaking_failure | conf=0.99
+  - 摘要: Гг
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-234512887_79747?reply=80117](https://vk.com/wall-234512887_79747?reply=80117) | type=server_connection_failure | conf=0.84
+  - 摘要: Сегодня на гильдийском вылетела табличка НЕДОСТУПНЫЙ КОНТЕНТ! Потом дисконекты у половины клана.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-122458500_1403882?reply=1404088](https://vk.com/wall-122458500_1403882?reply=1404088) | type=server_connection_failure | conf=0.68
+  - 摘要: Кирилл, у меня платный, пробовала разные страны с адекватным пингом, но ничего не помогает, всё равно вылет. У тебя работает от впн?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-194535641_197091?reply=197539](https://vk.com/wall-194535641_197091?reply=197539) | type=server_connection_failure | conf=0.68
+  - 摘要: Впн на телефоне не помог finevpn
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-13666684_3979381?reply=3979391](https://vk.com/wall-13666684_3979381?reply=3979391) | type=server_connection_failure | conf=0.64
+  - 摘要: Игорь, в среднем пинг 50-60 успеваю часто из меню сесть в Верт, а вообще самый рабочий вариант это стоять у вертолетного респа зажав кнопк Е
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-148211806_898766?reply=898767](https://vk.com/wall-148211806_898766?reply=898767) | type=server_connection_failure | conf=0.6
+  - 摘要: Игра без конца вылетает с такой ошибкой, что за фигня?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1696772?reply=1700680](https://vk.com/wall-89771130_1696772?reply=1700680) | type=server_connection_failure | conf=0.6
+  - 摘要: Ребят у всех переходы не работают?с ошибкой весь день вылетает в частности при переходе на резерв с тамоги
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1700371?reply=1700689](https://vk.com/wall-89771130_1700371?reply=1700689) | type=server_connection_failure | conf=0.6
+  - 摘要: Дмитрий, дак ты по моему фигню пишешь, зачем мне оплачивать дискорд только что бы транслировать тарков , если есть нашлемная камера, у меня iq же не 32. А нагрузка на процессор, на видеокарту, оперативку, ну типо ради...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1700371?reply=1700591](https://vk.com/wall-89771130_1700371?reply=1700591) | type=server_connection_failure | conf=0.58
+  - 摘要: Дмитрий, не ко мне вопрос, я только нашел решение , но и то , пока в убежище лазил, вылезла ошибка 228 и все , смэрть
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-218983927_51382?reply=51411](https://vk.com/wall-218983927_51382?reply=51411) | type=server_connection_failure | conf=0.54
+  - 摘要: Дисконнектов стало меньше, чем было, теперь не вся команда отлетает, а 1-2 игрока. Зато пропала регистрация, стреляешь в воздух около врага - убиваешь, стреляешь точно - пули сквозь него пролетают.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-23051891_46481?reply=46486](https://vk.com/wall-23051891_46481?reply=46486) | type=login_failure | conf=0.52
+  - 摘要: Распад, ну вайпы нужны чтобы оживлять экономику игры, сам знаю типов которые бросили играть в арк потому что полный схрон фиол/голд оружия и они с чувством что дальше расти некуда не заходят в игру, при этом вайпы не ...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-122458500_1403882?reply=1404077](https://vk.com/wall-122458500_1403882?reply=1404077) | type=server_connection_failure | conf=0.5
+  - 摘要: Екатерина, Гирап точно поможет.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-194535641_197091?reply=197534](https://vk.com/wall-194535641_197091?reply=197534) | type=server_connection_failure | conf=0.5
+  - 摘要: Сергей, Гирап , год на нем сижу , батла и калды
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-194535641_197091?reply=197535](https://vk.com/wall-194535641_197091?reply=197535) | type=server_connection_failure | conf=0.5
+  - 摘要: Сан, Гирап , год на нем сижу
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-234512887_80100?reply=80112](https://vk.com/wall-234512887_80100?reply=80112) | type=server_connection_failure | conf=0.46
+  - 摘要: Илья, та не провайдер это. Что бы там у аструмов не сочиняли) у меня жу другие онлайн игры норм играют. У меня на ЗБТ в ТЛ все ок было. Потом Аструмы и впн заблочили, пришлось шаманить, чтоб зайти. И вот на день релиз...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-1171627_8396819?reply=8396853](https://vk.com/wall-1171627_8396819?reply=8396853) | type=server_connection_failure | conf=0.42
+  - 摘要: Данил, это та самая система которая никогда не работала и не работает, начиная душить игроков, подбирая не по уровню, а в разы выше, заставляя тебя просто страдать, не имея возможности противостоять.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-15413538_2929498?reply=2929606](https://vk.com/wall-15413538_2929498?reply=2929606) | type=server_connection_failure | conf=0.42
+  - 摘要: Положили доту, ничего не работает😞
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-15413538_2929498?reply=2929647](https://vk.com/wall-15413538_2929498?reply=2929647) | type=server_connection_failure | conf=0.42
+  - 摘要: ваще похуй на этой иент , когда сервера поднимут, не работает нехуАААААААААА
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-15413538_2929498?reply=2929695](https://vk.com/wall-15413538_2929498?reply=2929695) | type=server_connection_failure | conf=0.42
+  - 摘要: Дота щас у всех не работает?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-15413538_2929498?reply=2929782](https://vk.com/wall-15413538_2929498?reply=2929782) | type=server_connection_failure | conf=0.42
+  - 摘要: Артём, у меня пока не работает
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1700371?reply=1700616](https://vk.com/wall-89771130_1700371?reply=1700616) | type=server_connection_failure | conf=0.42
+  - 摘要: Михаил, там для таких как ты не понимающих есть БЕСПЛАТНЫЙ пробный период. качаешь смотришь тестишь помогает или нет. тут тебе вон 1 сказал не работает 2 говорит работает🤣
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1700371?reply=1700623](https://vk.com/wall-89771130_1700371?reply=1700623) | type=server_connection_failure | conf=0.42
+  - 摘要: Стас, стасик студентик а ты шоль, вспомнил вспомнил тебя. 😂😂😂 чс не так работает челик ты опять чо то не догоняешь. чс работает если писать чо то в личных сообщениях. ты находишься в общественном месте в группе. тут т...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-1171627_8396841?reply=8396858](https://vk.com/wall-1171627_8396841?reply=8396858) | type=server_connection_failure | conf=0.38
+  - 摘要: Подскажите как проверку обновлений победить. На хбоксе вчера помогло включение впн, на пк впн не помогает. Есть простые способы?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-122458500_1403882?reply=1404068](https://vk.com/wall-122458500_1403882?reply=1404068) | type=server_connection_failure | conf=0.38
+  - 摘要: Алексей, так будет всегда пока ты живёшь в РФ и игра тут не прИчём, скажи спасибо такой крутой организации РКН
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-122458500_1403882?reply=1404087](https://vk.com/wall-122458500_1403882?reply=1404087) | type=server_connection_failure | conf=0.38
+  - 摘要: Екатерина, платный впн в помощь
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-122458500_1403882?reply=1404089](https://vk.com/wall-122458500_1403882?reply=1404089) | type=server_connection_failure | conf=0.38
+  - 摘要: Екатерина, да. Впн "happ"
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-194535641_197000?reply=197484](https://vk.com/wall-194535641_197000?reply=197484) | type=server_connection_failure | conf=0.38
+  - 摘要: Павел, с впн скачай, и отключи его потом и всё
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-194535641_197091?reply=197490](https://vk.com/wall-194535641_197091?reply=197490) | type=server_connection_failure | conf=0.38
+  - 摘要: Алексей, а этот прокси на любой роутер можно поставить?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-194535641_197091?reply=197522](https://vk.com/wall-194535641_197091?reply=197522) | type=server_connection_failure | conf=0.38
+  - 摘要: Oleg, привет, можешь в личку расписать как прокси настроить на пс5?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-194535641_197237?reply=197463](https://vk.com/wall-194535641_197237?reply=197463) | type=server_connection_failure | conf=0.38
+  - 摘要: Во прикол ,зашел без каких либо днс и впн,просто включил на дурака ,и все )
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-218983927_51382?reply=51412](https://vk.com/wall-218983927_51382?reply=51412) | type=server_connection_failure | conf=0.38
+  - 摘要: Артур, бывает пропадаешься на какой-то кривой сервер, что постоянно люди вылетают и без того плохая рега вообще отсутствует
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1696772?reply=1700667](https://vk.com/wall-89771130_1696772?reply=1700667) | type=server_connection_failure | conf=0.38
+  - 摘要: Мне в схроне игра переложить шмотки не дает. Ошибки вечные с бекендом. Чинить будут? СЮР! Пока писал комент просто так ошибка вылетела
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1696772?reply=1700706](https://vk.com/wall-89771130_1696772?reply=1700706) | type=server_connection_failure | conf=0.36
+  - 摘要: Сервера легли, я не могу донатить! Почините сервер я не могу задонатить)
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-218983927_51375?reply=51424](https://vk.com/wall-218983927_51375?reply=51424) | type=server_connection_failure | conf=0.34
+  - 摘要: Не работает сборка оружия, по сохраненным сборкам отсутствует список. Не работает бартер у торговцев, для обмена все есть, а у торговцев нужное по нулям.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1696772?reply=1700576](https://vk.com/wall-89771130_1696772?reply=1700576) | type=server_connection_failure | conf=0.34
+  - 摘要: Как блин не выходной, так ошибки и лаги.Невозможно по играть!
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-1171627_8396255?reply=8396806](https://vk.com/wall-1171627_8396255?reply=8396806) | type=server_connection_failure | conf=0.3
+  - 摘要: Евгений, хз без впна работает норм
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-15413538_2929345?reply=2929387](https://vk.com/wall-15413538_2929345?reply=2929387) | type=server_connection_failure | conf=0.3
+  - 摘要: Ну и где все которые ржали с такого предикта?? Говорили что яндексы и спирит не пройдут далеко, нигмы вылетят в самом начале говорили, ну и где вы?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-15413538_2929498?reply=2929743](https://vk.com/wall-15413538_2929498?reply=2929743) | type=server_connection_failure | conf=0.3
+  - 摘要: Коля, ну имеет, пройти по более слабым командам, а смысл в том что не должно быть 2 шанса, проиграл вылетел, для примера вот какие то топы могут спокойно отлететь не тратя силы и заготовки зная что у них есть шанс все...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-234512887_79944?reply=80106](https://vk.com/wall-234512887_79944?reply=80106) | type=server_connection_failure | conf=0.3
+  - 摘要: Антон, картинка у меня чет через вк.ком открывается,а не вк.ру и выдает ошибку. Не могу увеличить, прочитать..
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1700371?reply=1700603](https://vk.com/wall-89771130_1700371?reply=1700603) | type=login_failure | conf=0.3
+  - 摘要: Не могу зайти в игру,кто знает что за поеб*нь?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-2677092_1132845?reply=1132912](https://vk.com/wall-2677092_1132845?reply=1132912) | type=server_connection_failure | conf=0.26
+  - 摘要: Владислав, на i3 и 1660 стабильные 100 фпс без лагов все высокое
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [https://vk.com/wall-89771130_1700371?reply=1700594](https://vk.com/wall-89771130_1700371?reply=1700594) | type=server_connection_failure | conf=0.26
+  - 摘要: Максим, ты решил эту тему? У меня так же не заходит
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+
+## 抓取样本（原文+中文）
+- [Post](https://vk.com/wall-111837455_1340155)
+  - 原文: Желание роумить 💥 #Memes@r6club
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-111837455_1340156)
+  - 原文: Момент, когда G2 высвободили монстра VP 🗣 «Встречайте единственного PRO-игрока, который не использует оружие, это Nayqo, капитан №1 российской Rainbow 6 команды Virtus.pro, и он мейн щитов. Мейнинг щитов не так редок ...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-111837455_1340159)
+  - 原文: Здравствуйте 💥 #Memes@r6club
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-111837455_1340161)
+  - 原文: Вида со стороны белых нет 😔 💥 #Memes@r6club
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-111837455_1340171)
+  - 原文: Я и мой пердюк 😁 🎩 #Cosplay@r6club
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-111837455_1340175)
+  - 原文: Как менялась таблица лидеров по убийствам за всю историю про-лиги 🏆 #Esports@r6club
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-111837455_1340177)
+  - 原文: Прекрасная диорама Caveira 💕 👾 #Other@r6club
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396819)
+  - 原文: АТТРАКЦИОН НЕВИДАННОЙ ЩЕДРОСТИ — Коды на бету MW4 раздали вообще ВСЕМ! Проверяйте вашу почту, которая привязана к Activision-аккаунту — БЕСПЛАТНО дают боевой пропуск пятого сезона Black Ops 7 всем, кто сыграет в бету,...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396823)
+  - 原文: В порт бо1 тоже плашку добавили Предлагаем портануть до октября все старые колды, чтобы добавить туда тоже впихнуть рекламу MW4
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396880)
+  - 原文: В файлах нашли вот такой логотип DMZ Можно было подумать, что режим также появится в бете, но нет — на релизе он тоже будет в бете, как и в MWII 🤷🤔 Патч третьего дня беты MW4
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396881)
+  - 原文: Пройдите полигон на рейтинг S в бете, чтобы получить эксклюзивный брелочек на оружие
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396882)
+  - 原文: Разблокируйте БЕСПЛАТНЫЙ чертёж «ППШ» в бете 💥 Запостите свою статистику беты MW4 на X с тегом @CallofDuty и получите награды с картинки
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396893)
+  - 原文: Деду плохо
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396896)
+  - 原文: WTF???
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-1171627_8396900)
+  - 原文: Список всех режимов на релизе
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-148211806_898766)
+  - 原文: 🏅😱 Всё решится сегодня. Финальный день PGS 9 определит нового чемпиона! Не пропустите главные матчи турнира — подключайтесь трансляции. 🍿 #PUBG #BATTLEGROUNDS #КиберспортPUBG #PGS #PGS9
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929391)
+  - 原文: 🔥 TEAM SPIRIT ВЫШЛИ В ГРАНД-ФИНАЛ TI2026 «Драконы» обыграли Team Yandex и забрали путёвку в решающую серию турнира Yandex завершают выступление на 3-м месте
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929415)
+  - 原文: 🤯 YATORO ОФОРМИЛ РАМПАГУ И ЗАБРАЛ ПЕРВУЮ КАРТУ Team Spirit выходят вперёд в гранд-финале The International 2026 — первая карта остаётся за «Драконами»
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929428)
+  - 原文: 🔥 3:0 НЕ БУДЕТ После проигранной первой карты PARIVISION ответили своей победой и сравняли счёт в гранд-финале — 1:1 Команда показала характер и вернулась в борьбу за Аегис 🏆
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929436)
+  - 原文: 🐉 TEAM SPIRIT ВЫХОДЯТ ВПЕРЁД — 2:1 «Драконы» забрали третью карту гранд-финала и снова повели в серии До Аегиса остаётся всего одна победа 🏆
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929461)
+  - 原文: 🏆 БУДЕТ ПЯТАЯ КАРТА! Team Vision выдали мощнейшую игру и сравняли счёт в гранд-финале — 2:2 Теперь победитель пятой карты заберёт главный трофей The International 2026
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929498)
+  - 原文: 🏆 Spirit стали чемпионом TI15 Spirit победила PARIVISION со счетом 3:2 и стала чемпионом мира по Доте Это третья победа для Spirit на ЧМ по Доте – ранее были чемпионства в 2021 и 2023 году. Илья «Yatoro» Мулярчук и Ма...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929734)
+  - 原文: 😏 ПАПИЧ СТАЛ ЕЩЕ ПОПУЛЯРНЕЕ Перед гранд-финалом организаторы TI15 показали короткий фильм про победителей конкурса короткометражек прошлых годов. В котором показали короткую реакцию Папича на фильм бронзового призера ...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929809)
+  - 原文: 😏 Косплей‑шоу на TI2026 выдалось мощным — и вот кто забрал главные награды Первое место завоевал косплей на Omniknight от Chinbalus. Специального признания судей удостоился образ Sven в исполнении Abuduorui Naigai В н...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-15413538_2929835)
+  - 原文: 🙈 Nix заработал более ₽926 тыс. на донатах во время TI15 Александр Левин показал, сколько денег ему задонатили фанаты во время The International. Момент попал на трансляцию контент-мейкера Во время эфира Nix открыл са...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-169653940_640354)
+  - 原文: Магазин предметов и алерты в PVE от 23.08.2026 (ВБ НЕТ) 💜 Буду всем безмерно благодарен за покупку с тегом: FARTN1TE
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-169653940_640368)
+  - 原文: Помимо дробовиков Ребекки, в сотрудничестве с Cyberpunk Edgerunners также будет использован монопровод в качестве оружия. У него есть комбо из трёх ударов и навык, который притягивает игрока к цели.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-192350539_1196782)
+  - 原文: Clove в исполнении kdaaaa добавит красок этому вечеру. #ФанАрт@valorant Агенты, присылайте свое творчество в наш специальный альбом: vk.cc/cmaA7I. Не забудьте указать ссылку на вашу группу.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-194535641_197458)
+  - 原文: Через 24 часа после начала бета-тестирования Call of Duty: Modern Warfare 4 в Steam число игроков сократилось на 50 %
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Post](https://vk.com/wall-218983927_51419)
+  - 原文: Универсальность и точность против высокой скорострельности и малой отдачи. HK416 и NL 5.45 предлагают разные подходы к ведению боя в #TarkovArena. А что ближе вам: HK416 или NL 5.45 (GP)? 🫡
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1339956?reply=1340153)
+  - 原文: Чет не припоминаю там никого похожего на старого ебнутого волшебника
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340003?reply=1340173)
+  - 原文: Ну Нюрса крайне сильная в дбд, вот ток не знаю передестся ли неуязвимость от сущности, если да то она вполне может аннигилировать всю команду
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340094?reply=1340163)
+  - 原文: и попрежнему после сверления нет отверстия, как после сверления матрешки фьюза. вот это я не понял как это
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340109?reply=1340158)
+  - 原文: Они показывают отдачу с разными надульниками
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340147?reply=1340169)
+  - 原文: Плакали мои денюжки. 4 элитки хочу..
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340148?reply=1340152)
+  - 原文: А потом занёрфят и это оружие.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340148?reply=1340154)
+  - 原文: Тупые бараны убивают оружие вместо того чтобы его просто заменить на уже имеющиеся в игре.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340148?reply=1340157)
+  - 原文: Зачем выбирать на аруни что-то кроме дмр, ведь её пикали как раз из-за дмр, а не способности
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340148?reply=1340162)
+  - 原文: За вруни обидно,зотя бы бафнули рони
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340155?reply=1340160)
+  - 原文: Испанский стыд
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-111837455_1340175?reply=1340176)
+  - 原文: Бразильцы захватили топы 😯
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396246?reply=8396869)
+  - 原文: Надеюсь её роль в мв 4 будет побольше, а не как камео на 1 миссию с фарой в мв 2
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396255?reply=8396806)
+  - 原文: Евгений, хз без впна работает норм
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396278?reply=8396890)
+  - 原文: Ща блекопсеры наноют и сделают свое гавно тут
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396376?reply=8396870)
+  - 原文: Дма карта полключена банов нет, тоже влетаю сегодня🤘🤘
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396376?reply=8396895)
+  - 原文: Готовься, уже 3 дня играем 😄
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396413?reply=8396901)
+  - 原文: Заебали нытики не вывозящие, идите в кс, валорант или другие помойки
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396489?reply=8396801)
+  - 原文: Александр, у меня и так всё обновлено и выкручено на максималках, умник! А ты лучше попроси родителей очки тебе купить, если ты хорошую графику от 💩 отличить не можешь! Я говорю о сюжетке, если что...
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396686?reply=8396804)
+  - 原文: Артем
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396686?reply=8396829)
+  - 原文: Алексей, интересно будет проверить на нинтендо свитч во время опен беты. Сохранил днс твой, заюзаю, проверю
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396686?reply=8396872)
+  - 原文: Hyita polnaya
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396785?reply=8396861)
+  - 原文: Зумерская кринжанина 🤡
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396785?reply=8396862)
+  - 原文: Комментарии не оставляются
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396785?reply=8396868)
+  - 原文: Это. Тип с battlefield 4?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396790?reply=8396800)
+  - 原文: Войцех, да наоборот играл в этот режим денежный и самой контролируемой картой показалась
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396790?reply=8396803)
+  - 原文: в твиттере дают чертеж на ппш за стату
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396790?reply=8396808)
+  - 原文: Арсений, да я в общем о бете
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396790?reply=8396809)
+  - 原文: Войцех, вроде как уже лет 10 такой мап дизайн, только очнулся?
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396790?reply=8396810)
+  - 原文: Арсений, обычно всё приземленней. А тут тпхнуться можно где угодно, естественно и враг так же.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+- [Comment](https://vk.com/wall-1171627_8396790?reply=8396812)
+  - 原文: Арсений, да, эта карта пожалуй лучшая пока что.
+  - 中文: Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</pre>
+    </div>
+  </div>
+</body>
+</html>
