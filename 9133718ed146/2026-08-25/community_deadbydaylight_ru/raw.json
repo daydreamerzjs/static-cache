@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-08-25T02:51:31.175889+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-08-25/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1404091",
+      "url": "https://vk.com/wall-122458500_1404091",
+      "text": "",
+      "author": "Dead by Daylight",
+      "published_at": "2026-08-24 06:00:38+00:00",
+      "collected_at": "2026-08-25 02:37:17.640280+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-08-25/community_deadbydaylight_ru/community_test.html"
+}
