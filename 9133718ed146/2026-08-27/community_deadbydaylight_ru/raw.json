@@ -1,0 +1,51 @@
+{
+  "run_at": "2026-08-27T02:51:35.567773+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-08-27/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1404234",
+      "url": "https://vk.com/wall-122458500_1404234",
+      "text": "#news@deadbydaylight_ru \n \nКоллекция \"Греховный хор\" уже доступна! \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-08-26 19:09:54+00:00",
+      "collected_at": "2026-08-27 02:37:16.173869+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1404215",
+      "url": "https://vk.com/wall-122458500_1404215",
+      "text": "#video@deadbydaylight_ru \n \nГотовы ли вы бросить вызов Изгнанию? \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-08-26 15:50:32+00:00",
+      "collected_at": "2026-08-27 02:37:16.173869+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1404205",
+      "url": "https://vk.com/wall-122458500_1404205",
+      "text": "#news@deadbydaylight_ru \n \nМы рады поделиться подробностями о наших предстоящих испытаниях систем защиты от читерства, включая важное испытание, которое начнётся 2 сентября в Steam. Читайте наш новый пост, чтобы узнать больше о наших усилиях по борьбе с читерством.\n\n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-08-26 14:57:02+00:00",
+      "collected_at": "2026-08-27 02:37:16.173869+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1404198",
+      "url": "https://vk.com/wall-122458500_1404198",
+      "text": "#news@deadbydaylight_ru \n\nТуман приглашает вас! 🌫 Получите скидку до 60% на базовую игру и до 50% на некоторые наборы и DLC в Steam, Epic Games, Switch и PlayStation! Подробности в магазине вашей платформы.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-08-26 13:26:56+00:00",
+      "collected_at": "2026-08-27 02:37:16.173869+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-08-27/community_deadbydaylight_ru/community_test.html"
+}
