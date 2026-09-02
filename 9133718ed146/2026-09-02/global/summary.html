@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VK 游戏网络故障监控汇报</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    body { margin: 0; font-family: "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(135deg, #0f766e, #0ea5a4); color: #fff; border-radius: 14px; padding: 20px; }
+    .meta { margin-top: 8px; color: #d1fae5; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+    .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .kpi .v { font-size: 24px; font-weight: 700; }
+    .kpi .k { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    h2 { margin: 4px 0 10px; font-size: 18px; }
+    h3 { margin: 16px 0 10px; font-size: 16px; }
+    pre { white-space: pre-wrap; font-size: 12px; color: #334155; }
+    .alert { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 10px; padding: 14px 16px; margin: 12px 0; color: #7f1d1d; }
+    .alert-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .alert-desc { font-size: 13px; color: #991b1b; margin-bottom: 6px; }
+    .alert ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    .alert a { color: #b91c1c; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>VK 游戏网络故障监控汇报</h1>
+      <div class="meta">生成时间：2026-09-02 03:37:26 BST</div>
+      <div class="meta">报告输出时间：2026-09-02 03:50:25 BST</div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="kpi"><div class="v">38</div><div class="k">总命中数</div></div>
+      <div class="kpi"><div class="v">13</div><div class="k">命中游戏数</div></div>
+      <div class="kpi"><div class="v">37</div><div class="k">服务器连接失败</div></div>
+      <div class="kpi"><div class="v">1</div><div class="k">匹配失败</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>游戏维度汇总</h2>
+      <table>
+        <thead><tr><th>游戏</th><th>总命中</th><th>登录失败</th><th>匹配失败</th><th>服务器连接失败</th></tr></thead>
+        <tbody><tr><td>Escape from Tarkov</td><td>11</td><td>0</td><td>0</td><td>11</td></tr><tr><td>Dead by Daylight</td><td>10</td><td>0</td><td>0</td><td>10</td></tr><tr><td>STALZONE</td><td>3</td><td>0</td><td>0</td><td>3</td></tr><tr><td>Throne and Liberty</td><td>3</td><td>0</td><td>0</td><td>3</td></tr><tr><td>FACEIT</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>FARTNITE | Сливы Fortnite | Новости Фортнайт</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>Call of Duty</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Call of Duty: Warzone</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Dota 2</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td>Escape from Tarkov: Arena</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>PUBG: BATTLEGROUNDS</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>VALORANT</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>社区: r6club</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>按游戏的故障明细（原文+中文）</h2>
+      <h3>Dead by Daylight（12）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-122458500_1404460?reply=1404476' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.9</td><td>Александр, чел написал что вылетает во время катки, а вылеты щас на всех платформах</td><td>亚历山大，有人写道它在溜冰场时崩溃了，但现在所有平台都发生崩溃</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404496' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.76</td><td>Катерина, а что с пингом? Играю через впн, пинг 200-300 играть не возможно (</td><td>Katerina，ping 值怎么样？我通过VPN玩，ping 200-300 无法玩（</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404460?reply=1404466' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Просто игра года, как какое-нибудь обновление выходит, игра начинает ломаться. Я думала, что это только у меня какие-то лаги проблемы, но нет, у моих знакомых тоже все так же по списочку лагает, вылетает во время игры...</td><td>刚刚是年度最佳游戏，一旦有更新，游戏就开始崩溃。我以为只有我有某种延迟问题，但不，我的朋友也有同样的延迟列表，在游戏过程中崩溃......</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404507' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Кристина, у меня пинг такой же, как и без гирапа, 70-80 мс</td><td>Christina，我的 ping 与没有 GearUP 时相同，70-80 毫秒</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404480' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Не подключает к матчам? Если у вас возникают проблемы с подключением, высоким пингом или медленным интернетом в играх — есть удобное решение! ⚡️ GearUP — инструмент для оптимизации соединения в играх: ✔ Снижает задерж...</td><td>无法连接到比赛？如果您在游戏中遇到连接问题、ping值高或网速慢，这里有一个方便的解决方案！ ⚡️ GearUP 是一款优化游戏连接的工具： ✔ 减少延迟...</td></tr><tr><td><a href='https://vk.com/wall-122458500_1403882?reply=1404474' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Ребята кто подскажет что делать я захожу в игру и мне пишет нет подключения хотя интернет есть и vpn включен</td><td>各位，谁能告诉我该怎么办？我进入游戏后显示没有连接，尽管有互联网并且 VPN 已打开。</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404460?reply=1404468' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Александр, ну а кто тогда здесь виноват в этом, пока обновления не было, у меня работало все адекватно, и я заметила, что у многих игроков так, потому что маньяк не может подключиться к катке, когда мы загружаемся и п...</td><td>亚历山大，那么，谁应该为此负责呢？在有更新之前，一切都对我来说足够有效，我注意到许多玩家都是这种情况，因为当我们加载时，疯子无法连接到溜冰场......</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404480?reply=1404485' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>и с обходами уже не работает, даже не запускается</td><td>它不再适用于旁路，甚至无法启动</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404480?reply=1404484' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>Cloudflare One Client в помощь</td><td>Cloudflare 一个客户端提供帮助</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404460?reply=1404478' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Тупо, у меня нет никаких вылетов , может не будешь чушь писать</td><td>笨蛋，我没有崩溃，也许你就不会写废话了</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404460?reply=1404487' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Александр, какая чушь, если разрабы сами написали что видят проблему с вылетом из катки на платформах? 😂😂</td><td>亚历山大，如果开发人员自己写道，他们发现在平台上飞出溜冰场存在问题，那还有什么废话呢？ 😂😂</td></tr><tr><td><a href='https://vk.com/wall-122458500_1404480?reply=1404483' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Походу игра без обходов теперь никогда не оживёт. Эт печально!</td><td>看起来没有旁路的游戏现在永远无法实现。很伤心！</td></tr></tbody></table><h3>Escape from Tarkov（11）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1702096' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>потеряно соединение с античитом?))</td><td>与反作弊失去连接？））</td></tr><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1702120' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.62</td><td>Сервера то поправят? Дисконект на дисконекте</td><td>他们在修服务器吗？断开连接 断开连接</td></tr><tr><td><a href='https://vk.com/wall-89771130_1701978?reply=1702057' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Я так понял все силы ушли на новую игру как и деньги пве ошибки у торговцев на сезоне вылетает при запуске катки арена не запускает в бой может уже стоит купить больше 1 сервака а?🤔</td><td>据我了解，所有的精力都投入到了新游戏中，还有交易员在赛季期间的金钱PVE错误，启动滑冰场时崩溃了，竞技场没有投入战斗，也许值得购买超过1个服务器，嗯？🤔</td></tr><tr><td><a href='https://vk.com/wall-89771130_1701978?reply=1702071' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Николай, гирап в последние дни чет отрыгнул совсем. Играем теперь на ру серваках без буста гирапа.</td><td>Nikolay，GearUP这几天居然彻底打嗝了。我们现在在没有 GearUP boost 的 RU 服务器上玩。</td></tr><tr><td><a href='https://vk.com/wall-89771130_1701978?reply=1702099' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.36</td><td>У вас там сервера упали</td><td>你的服务器就在那里</td></tr><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1702039' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>Ёрик, ну не работает кнопка, что я сделаю?</td><td>Yorik，按钮不起作用，我该怎么办？</td></tr><tr><td><a href='https://vk.com/wall-89771130_1696772?reply=1702091' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Какие сериалы!!! Сервера почените сервера вылет завылетом</td><td>什么系列！！！服务器，修复服务器，它们崩溃了</td></tr><tr><td><a href='https://vk.com/wall-89771130_1701978?reply=1702066' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Mikhail, обычно они агрятся если близко подошёл, для них это провокация считается, если обходишь на расстоянии, то не трогают</td><td>米哈伊尔，如果你靠近，他们通常会生气，对他们来说，这被认为是挑衅，如果你绕得很远，他们就不会碰</td></tr><tr><td><a href='https://vk.com/wall-89771130_1701978?reply=1702089' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Да круто если раньше утёсы и АГС херачили только в Северной части карты и их можно было обходить, легко пушить их базу, то теперь я так понимаю они будут простреливать центральную часть дороги 🤷‍♂️😂 Тобишь по маяку не...</td><td>是的，很酷，如果以前悬崖和AGS只在地图北部受到破坏并且可以绕过它们，那么很容易推动他们的基地，但现在，据我了解，他们会射穿道路的中心部分🤷‍♂️😂不要撞到灯塔......</td></tr><tr><td><a href='https://vk.com/wall-89771130_1701978?reply=1702110' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Александр, с другом пошли на маяк,меня невозможно фризит и откидывает,после вылетаю из рейда и заново захожу,после перезахода снова через 1-2 минуты вылет и так по кд,щас пойду на выход с локи</td><td>Alexander,一个朋友去了灯塔, 我不可能放荡,把我扔了, 然后我从突袭中飞出并重新进入, 在1 -2分钟的出发后,</td></tr><tr><td><a href='https://vk.com/wall-89771130_1701978?reply=1702115' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Сервера умерли, бесконечные потери пакетов...</td><td>服务器死机，无休无止的丢包……</td></tr></tbody></table><h3>社区: r6club（4）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-111837455_1340569' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>■ ИСПРАВЛЕННЫЕ ОШИБКИ ПОСЛЕ ЗАВЕРШЕНИЯ TTS ■ ⚙ ИГРОВОЙ ПРОЦЕСС ИИ-боты теперь разрушают барьеры Azami, а не обходят их ИИ-боты больше не перемещаются по канату слишком медленно Исправлено несколько невыполнимых обучаю...</td><td>■ 完成 TTS 后修复的错误 ■ ⚙ 游戏玩法 AI 机器人现在会摧毁 Azami 障碍，而不是绕过它们 AI 机器人不再在走钢丝上移动太慢 修复了几个不可能的教程...</td></tr><tr><td><a href='https://vk.com/wall-111837455_1340565' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Стартовал масштабный розыгрыш в честь выхода Split Fire 🖤 ⭐ МЕСТО #1 — Светильник «Заряд» RED ⭐ МЕСТО #2 — Светильник «Заряд» BLUE ⭐ МЕСТО #3 — Лайтбокс Mira ⭐ МЕСТО #4 — Лайтбокс Bandit ⭐ МЕСТО #5 — Battle Pass Y11S3...</td><td>为了纪念《Split Fire》的发布，一场大型抽奖活动已经开始🖤⭐地点#1 - 充电灯红色⭐地点#2 - 充电灯蓝色⭐地点#3 - Mira灯箱⭐地点#4 - Bandit灯箱⭐地点#5 - 战斗通行证Y11S3...</td></tr><tr><td><a href='https://vk.com/wall-111837455_1340567' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>■ В ЧЕСТЬ ВЫХОДА СЕЗОНА ДОСТУПЕН НОВЫЙ TWITCH DROPS ■ С 1 сентября 16:00 МСК по 15 сентября 16:00 МСК зрители смогут получить брелок операции Split Fire Для получения награды необходимо смотреть трансляции Rainbow Six...</td><td>■ 为了纪念本季的发布，推出了新的 TWITCH DROPS ■ 从莫斯科时间 9 月 1 日 16:00 到莫斯科时间 9 月 15 日 16:00，观众将能够收到“分火行动”钥匙扣 要获得奖励，您必须观看《彩虹六号》广播...</td></tr><tr><td><a href='https://vk.com/wall-111837455_1340588' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>■ ПОРА ВКЛЮЧАТЬ R6 SHIELD GUARD SECURE PLATFORM ■ Это дополнительный уровень защиты, который введут для доступа к Legend Division с выходом межсезонного патча. Проверить выполнение этих требований можно в игре: открой...</td><td>■ 是时候启用 R6 SHIELD GUARD 安全平台了 ■ 这是一个额外的保护级别，随着季中补丁的发布，将为进入传奇部门而引入。您可以在游戏中检查是否满足这些要求：打开...</td></tr></tbody></table><h3>STALZONE（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-2677092_1134874?reply=1134995' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.64</td><td>Den, ну когда я играл в 2022 примерно - все было гуд, пинг 40 и фпс под 200 на ноуте 2015 года 🤷</td><td>Den，好吧，当我大约在 2022 年玩游戏时，一切都在嗡嗡作响，在 2015 年笔记本电脑上 ping 为 40，fps 低于 200 🤷</td></tr><tr><td><a href='https://vk.com/wall-2677092_1135036?reply=1135110' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Илья, ответ рупора Fogas на форуме насчёт стса . Пишет игрок - &quot;&quot;по какому принципу выбирается то, какой ган выбывает из способа получения из сезонных кейсов? Первым вылетела ХМка, не БП ган. Вторым вылетел QBZ, БП га...</td><td>Ilya，福加斯喉舌在 STS 论坛上的回应。玩家写道-“”根据什么原则选择从季节性案件的获取方法中淘汰哪把枪？最先飞出去的是HMka，不是BP炮。第二个飞出去的是QBZ，BP哈...</td></tr><tr><td><a href='https://vk.com/wall-2677092_1135120?reply=1135269' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>Фрост, анти ЛАГ функции и тд выключи так же дрова обнови и посмотри оперативы хватает или нет тк как если забиваешь оперативку под фул при прогрузе ломаются текстуры</td><td>霜冻、防LAG功能等等，也关柴更新一下看看RAM够不够，好像你把RAM开满了，加载的时候纹理就破了</td></tr></tbody></table><h3>Throne and Liberty（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-234512887_81864?reply=81931' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.52</td><td>Значит коннект плохой, просто разрыв соединения. Тоже в техпод если по несколько раз подряд или вообще не пускает.</td><td>这意味着连接不良，连接已损坏。如果这种情况连续发生几次或者根本不让你进去，那么在技术部门也是如此。</td></tr><tr><td><a href='https://vk.com/wall-234512887_81864?reply=81890' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Всем привет,скачал игру подключиться не получается сразу пишет что сервер недоступен, после чего бесконечно играет музыка и можно только в настройках лазить.</td><td>大家好，我下载了游戏，连接不上，立刻就说服务器不可用，然后音乐就一直响个不停，只能在设置里爬。</td></tr><tr><td><a href='https://vk.com/wall-234512887_81864?reply=81996' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Пожалуйста сделайте дроп т2 шмота хоть как-то более-менее адекватным. Вы отталкиваете аудиторию своей жадностью. Мало того что вы класс лучника сделали полностью неиграбельным, так теперь и маги просто вычеркнуты из и...</td><td>请让T2装备的掉落至少在某种程度上或多或少足够。 You alienate your audience with your greed.你不仅让弓箭手职业完全无法玩，而且现在魔法师也被简单地从……中删除了。</td></tr></tbody></table><h3>FACEIT（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-70665401_195216?reply=196536' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>Максим, какой впн использовал?</td><td>马克西姆，你用的是什么VPN？</td></tr><tr><td><a href='https://vk.com/wall-70665401_196564' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Вчера мы заблокировали аккаунтов за нарушения правил платформы 🏆 В эту волну попали аккаунты, которые готовили к продаже — мы заблокировали их до того, как их успели использовать для смурфинга или обхода банов 😎 Все з...</td><td>昨天我们因违反平台规则而屏蔽了账户 🏆 这波包括正准备出售的账户 - 我们在它们被用于小偷或绕过禁令之前屏蔽了它们 😎 所有...</td></tr></tbody></table><h3>FARTNITE | Сливы Fortnite | Новости Фортнайт（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-169653940_640556?reply=640559' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>у меня у одного лаунчер теперь без впн вообще не запускается?</td><td>我有没有启动的发射器吗?</td></tr><tr><td><a href='https://vk.com/wall-169653940_640556?reply=640560' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Serguei, official_vpnbot ( поиск в тг) работает быстрее других.</td><td>Serguei，official_vpnbot（在 tg 中搜索）比其他人工作得更快。</td></tr></tbody></table><h3>Call of Duty（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-1171627_8397413?reply=8397435' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Народ, как обходите блокировку у кого провайдер мегафон?</td><td>大家，如何绕过扩音器提供商的封锁？</td></tr></tbody></table><h3>Call of Duty: Warzone（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-194535641_197781?reply=197811' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Нет</td><td>不</td></tr></tbody></table><h3>Dota 2（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-15413538_2931852' target='_blank'>link</a></td><td>matchmaking_failure</td><td>0.3</td><td>📊 Инфографика: Dota 2 в августе Наглядный итог статистики героев в матчмейкинге Dota 2 за месяц. В выпуске заметны изменения, которые вызваны не патчами, а The International 2026. Игроки на всех рангах подсматривали з...</td><td>📊 信息图：8 月 Dota 2 本月 Dota 2 对接会英雄统计数据的直观摘要。该版本中有一些明显的变化，这些变化不是由补丁引起的，而是由国际邀请赛 2026 引起的。各个级别的玩家都在监视......</td></tr></tbody></table><h3>Escape from Tarkov: Arena（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-218983927_51382?reply=51853' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>После обновы начало матча долго грузится, после выбора пресета персонажа. По таймеру, через секунд 25-30 проходит с начала матча, и только после прогружаюсь я, когда все уже разбежались, и ещё секунд 10-15 подвисает. ...</td><td>更新后，选择角色预设后，比赛开始需要很长时间才能加载。根据计时器显示，从比赛开始算起，已经过去了 25-30 秒，只有在那之后，当所有人都已经逃跑时，我才加载，并且又冻结了 10-15 秒。 ...</td></tr></tbody></table><h3>PUBG: BATTLEGROUNDS（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-148211806_896428?reply=898981' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Играть невозможно, вылетает каждую катку из-за античита☹</td><td>没法玩了，各个滑冰场都因反作弊而崩溃☹</td></tr></tbody></table><h3>VALORANT（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-192350539_1196790?reply=1196810' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.66</td><td>Ошибка 54, Сибирь!</td><td>错误54，西伯利亚！</td></tr></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>运行日志摘要</h2>
+      <pre># VK 全局游戏网络故障监控日报
+
+- 执行时间: 2026-09-02 03:37:26 BST
+- 报告输出时间: 2026-09-02 03:50:25 BST
+- 查询词数量: 185
+- 必查社群数量(配置): 21
+- 必查社群抓取帖子: 70
+- 必查社群抓取评论: 879
+- 全局查询词数量: 185
+- 全局抓取帖子数: 0
+- 合并帖子数: 70
+- 故障命中帖子: 7
+- 全局下钻评论数: 0
+- 合并评论数: 876
+- 故障命中评论: 36
+- 评论采集告警数(显示&gt;0但抓取=0): 0
+
+## 故障命中帖子
+- [https://vk.com/wall-111837455_1340569](https://vk.com/wall-111837455_1340569) | type=server_connection_failure | conf=0.68
+  - 摘要: ■ ИСПРАВЛЕННЫЕ ОШИБКИ ПОСЛЕ ЗАВЕРШЕНИЯ TTS ■ ⚙ ИГРОВОЙ ПРОЦЕСС ИИ-боты теперь разрушают барьеры Azami, а не обходят их ИИ-боты больше не перемещаются по канату слишком медленно Исправлено несколько невыполнимых обучаю...
+  - 中文: ■ 完成 TTS 后修复的错误 ■ ⚙ 游戏玩法 AI 机器人现在会摧毁 Azami 障碍，而不是绕过它们 AI 机器人不再在走钢丝上移动太慢 修复了几个不可能的教程...
+- [https://vk.com/wall-111837455_1340565](https://vk.com/wall-111837455_1340565) | type=server_connection_failure | conf=0.5
+  - 摘要: Стартовал масштабный розыгрыш в честь выхода Split Fire 🖤 ⭐ МЕСТО #1 — Светильник «Заряд» RED ⭐ МЕСТО #2 — Светильник «Заряд» BLUE ⭐ МЕСТО #3 — Лайтбокс Mira ⭐ МЕСТО #4 — Лайтбокс Bandit ⭐ МЕСТО #5 — Battle Pass Y11S3...
+  - 中文: 为了纪念《Split Fire》的发布，一场大型抽奖活动已经开始🖤⭐地点#1 - 充电灯红色⭐地点#2 - 充电灯蓝色⭐地点#3 - Mira灯箱⭐地点#4 - Bandit灯箱⭐地点#5 - 战斗通行证Y11S3...
+- [https://vk.com/wall-122458500_1404480](https://vk.com/wall-122458500_1404480) | type=server_connection_failure | conf=0.5
+  - 摘要: Не подключает к матчам? Если у вас возникают проблемы с подключением, высоким пингом или медленным интернетом в играх — есть удобное решение! ⚡️ GearUP — инструмент для оптимизации соединения в играх: ✔ Снижает задерж...
+  - 中文: 无法连接到比赛？如果您在游戏中遇到连接问题、ping值高或网速慢，这里有一个方便的解决方案！ ⚡️ GearUP 是一款优化游戏连接的工具： ✔ 减少延迟...
+- [https://vk.com/wall-111837455_1340567](https://vk.com/wall-111837455_1340567) | type=server_connection_failure | conf=0.3
+  - 摘要: ■ В ЧЕСТЬ ВЫХОДА СЕЗОНА ДОСТУПЕН НОВЫЙ TWITCH DROPS ■ С 1 сентября 16:00 МСК по 15 сентября 16:00 МСК зрители смогут получить брелок операции Split Fire Для получения награды необходимо смотреть трансляции Rainbow Six...
+  - 中文: ■ 为了纪念本季的发布，推出了新的 TWITCH DROPS ■ 从莫斯科时间 9 月 1 日 16:00 到莫斯科时间 9 月 15 日 16:00，观众将能够收到“分火行动”钥匙扣 要获得奖励，您必须观看《彩虹六号》广播...
+- [https://vk.com/wall-111837455_1340588](https://vk.com/wall-111837455_1340588) | type=server_connection_failure | conf=0.3
+  - 摘要: ■ ПОРА ВКЛЮЧАТЬ R6 SHIELD GUARD SECURE PLATFORM ■ Это дополнительный уровень защиты, который введут для доступа к Legend Division с выходом межсезонного патча. Проверить выполнение этих требований можно в игре: открой...
+  - 中文: ■ 是时候启用 R6 SHIELD GUARD 安全平台了 ■ 这是一个额外的保护级别，随着季中补丁的发布，将为进入传奇部门而引入。您可以在游戏中检查是否满足这些要求：打开...
+- [https://vk.com/wall-15413538_2931852](https://vk.com/wall-15413538_2931852) | type=matchmaking_failure | conf=0.3
+  - 摘要: 📊 Инфографика: Dota 2 в августе Наглядный итог статистики героев в матчмейкинге Dota 2 за месяц. В выпуске заметны изменения, которые вызваны не патчами, а The International 2026. Игроки на всех рангах подсматривали з...
+  - 中文: 📊 信息图：8 月 Dota 2 本月 Dota 2 对接会英雄统计数据的直观摘要。该版本中有一些明显的变化，这些变化不是由补丁引起的，而是由国际邀请赛 2026 引起的。各个级别的玩家都在监视......
+- [https://vk.com/wall-70665401_196564](https://vk.com/wall-70665401_196564) | type=server_connection_failure | conf=0.3
+  - 摘要: Вчера мы заблокировали аккаунтов за нарушения правил платформы 🏆 В эту волну попали аккаунты, которые готовили к продаже — мы заблокировали их до того, как их успели использовать для смурфинга или обхода банов 😎 Все з...
+  - 中文: 昨天我们因违反平台规则而屏蔽了账户 🏆 这波包括正准备出售的账户 - 我们在它们被用于小偷或绕过禁令之前屏蔽了它们 😎 所有...
+
+## 故障命中评论
+- [https://vk.com/wall-89771130_1696772?reply=1702096](https://vk.com/wall-89771130_1696772?reply=1702096) | type=server_connection_failure | conf=0.99
+  - 摘要: потеряно соединение с античитом?))
+  - 中文: 与反作弊失去连接？））
+- [https://vk.com/wall-122458500_1404460?reply=1404476](https://vk.com/wall-122458500_1404460?reply=1404476) | type=server_connection_failure | conf=0.9
+  - 摘要: Александр, чел написал что вылетает во время катки, а вылеты щас на всех платформах
+  - 中文: 亚历山大，有人写道它在溜冰场时崩溃了，但现在所有平台都发生崩溃
+- [https://vk.com/wall-122458500_1403882?reply=1404496](https://vk.com/wall-122458500_1403882?reply=1404496) | type=server_connection_failure | conf=0.76
+  - 摘要: Катерина, а что с пингом? Играю через впн, пинг 200-300 играть не возможно (
+  - 中文: Katerina，ping 值怎么样？我通过VPN玩，ping 200-300 无法玩（
+- [https://vk.com/wall-70665401_195216?reply=196536](https://vk.com/wall-70665401_195216?reply=196536) | type=server_connection_failure | conf=0.68
+  - 摘要: Максим, какой впн использовал?
+  - 中文: 马克西姆，你用的是什么VPN？
+- [https://vk.com/wall-192350539_1196790?reply=1196810](https://vk.com/wall-192350539_1196790?reply=1196810) | type=server_connection_failure | conf=0.66
+  - 摘要: Ошибка 54, Сибирь!
+  - 中文: 错误54，西伯利亚！
+- [https://vk.com/wall-2677092_1134874?reply=1134995](https://vk.com/wall-2677092_1134874?reply=1134995) | type=server_connection_failure | conf=0.64
+  - 摘要: Den, ну когда я играл в 2022 примерно - все было гуд, пинг 40 и фпс под 200 на ноуте 2015 года 🤷
+  - 中文: Den，好吧，当我大约在 2022 年玩游戏时，一切都在嗡嗡作响，在 2015 年笔记本电脑上 ping 为 40，fps 低于 200 🤷
+- [https://vk.com/wall-89771130_1696772?reply=1702120](https://vk.com/wall-89771130_1696772?reply=1702120) | type=server_connection_failure | conf=0.62
+  - 摘要: Сервера то поправят? Дисконект на дисконекте
+  - 中文: 他们在修服务器吗？断开连接 断开连接
+- [https://vk.com/wall-122458500_1404460?reply=1404466](https://vk.com/wall-122458500_1404460?reply=1404466) | type=server_connection_failure | conf=0.6
+  - 摘要: Просто игра года, как какое-нибудь обновление выходит, игра начинает ломаться. Я думала, что это только у меня какие-то лаги проблемы, но нет, у моих знакомых тоже все так же по списочку лагает, вылетает во время игры...
+  - 中文: 刚刚是年度最佳游戏，一旦有更新，游戏就开始崩溃。我以为只有我有某种延迟问题，但不，我的朋友也有同样的延迟列表，在游戏过程中崩溃......
+- [https://vk.com/wall-148211806_896428?reply=898981](https://vk.com/wall-148211806_896428?reply=898981) | type=server_connection_failure | conf=0.6
+  - 摘要: Играть невозможно, вылетает каждую катку из-за античита☹
+  - 中文: 没法玩了，各个滑冰场都因反作弊而崩溃☹
+- [https://vk.com/wall-2677092_1135036?reply=1135110](https://vk.com/wall-2677092_1135036?reply=1135110) | type=server_connection_failure | conf=0.6
+  - 摘要: Илья, ответ рупора Fogas на форуме насчёт стса . Пишет игрок - ""по какому принципу выбирается то, какой ган выбывает из способа получения из сезонных кейсов? Первым вылетела ХМка, не БП ган. Вторым вылетел QBZ, БП га...
+  - 中文: Ilya，福加斯喉舌在 STS 论坛上的回应。玩家写道-“”根据什么原则选择从季节性案件的获取方法中淘汰哪把枪？最先飞出去的是HMka，不是BP炮。第二个飞出去的是QBZ，BP哈...
+- [https://vk.com/wall-89771130_1701978?reply=1702057](https://vk.com/wall-89771130_1701978?reply=1702057) | type=server_connection_failure | conf=0.6
+  - 摘要: Я так понял все силы ушли на новую игру как и деньги пве ошибки у торговцев на сезоне вылетает при запуске катки арена не запускает в бой может уже стоит купить больше 1 сервака а?🤔
+  - 中文: 据我了解，所有的精力都投入到了新游戏中，还有交易员在赛季期间的金钱PVE错误，启动滑冰场时崩溃了，竞技场没有投入战斗，也许值得购买超过1个服务器，嗯？🤔
+- [https://vk.com/wall-234512887_81864?reply=81931](https://vk.com/wall-234512887_81864?reply=81931) | type=server_connection_failure | conf=0.52
+  - 摘要: Значит коннект плохой, просто разрыв соединения. Тоже в техпод если по несколько раз подряд или вообще не пускает.
+  - 中文: 这意味着连接不良，连接已损坏。如果这种情况连续发生几次或者根本不让你进去，那么在技术部门也是如此。
+- [https://vk.com/wall-122458500_1403882?reply=1404507](https://vk.com/wall-122458500_1403882?reply=1404507) | type=server_connection_failure | conf=0.5
+  - 摘要: Кристина, у меня пинг такой же, как и без гирапа, 70-80 мс
+  - 中文: Christina，我的 ping 与没有 GearUP 时相同，70-80 毫秒
+- [https://vk.com/wall-89771130_1701978?reply=1702071](https://vk.com/wall-89771130_1701978?reply=1702071) | type=server_connection_failure | conf=0.5
+  - 摘要: Николай, гирап в последние дни чет отрыгнул совсем. Играем теперь на ру серваках без буста гирапа.
+  - 中文: Nikolay，GearUP这几天居然彻底打嗝了。我们现在在没有 GearUP boost 的 RU 服务器上玩。
+- [https://vk.com/wall-1171627_8397413?reply=8397435](https://vk.com/wall-1171627_8397413?reply=8397435) | type=server_connection_failure | conf=0.38
+  - 摘要: Народ, как обходите блокировку у кого провайдер мегафон?
+  - 中文: 大家，如何绕过扩音器提供商的封锁？
+- [https://vk.com/wall-122458500_1403882?reply=1404474](https://vk.com/wall-122458500_1403882?reply=1404474) | type=server_connection_failure | conf=0.38
+  - 摘要: Ребята кто подскажет что делать я захожу в игру и мне пишет нет подключения хотя интернет есть и vpn включен
+  - 中文: 各位，谁能告诉我该怎么办？我进入游戏后显示没有连接，尽管有互联网并且 VPN 已打开。
+- [https://vk.com/wall-122458500_1404460?reply=1404468](https://vk.com/wall-122458500_1404460?reply=1404468) | type=server_connection_failure | conf=0.38
+  - 摘要: Александр, ну а кто тогда здесь виноват в этом, пока обновления не было, у меня работало все адекватно, и я заметила, что у многих игроков так, потому что маньяк не может подключиться к катке, когда мы загружаемся и п...
+  - 中文: 亚历山大，那么，谁应该为此负责呢？在有更新之前，一切都对我来说足够有效，我注意到许多玩家都是这种情况，因为当我们加载时，疯子无法连接到溜冰场......
+- [https://vk.com/wall-122458500_1404480?reply=1404485](https://vk.com/wall-122458500_1404480?reply=1404485) | type=server_connection_failure | conf=0.38
+  - 摘要: и с обходами уже не работает, даже не запускается
+  - 中文: 它不再适用于旁路，甚至无法启动
+- [https://vk.com/wall-169653940_640556?reply=640559](https://vk.com/wall-169653940_640556?reply=640559) | type=server_connection_failure | conf=0.38
+  - 摘要: у меня у одного лаунчер теперь без впн вообще не запускается?
+  - 中文: 我有没有启动的发射器吗?
+- [https://vk.com/wall-234512887_81864?reply=81890](https://vk.com/wall-234512887_81864?reply=81890) | type=server_connection_failure | conf=0.38
+  - 摘要: Всем привет,скачал игру подключиться не получается сразу пишет что сервер недоступен, после чего бесконечно играет музыка и можно только в настройках лазить.
+  - 中文: 大家好，我下载了游戏，连接不上，立刻就说服务器不可用，然后音乐就一直响个不停，只能在设置里爬。
+- [https://vk.com/wall-89771130_1701978?reply=1702099](https://vk.com/wall-89771130_1701978?reply=1702099) | type=server_connection_failure | conf=0.36
+  - 摘要: У вас там сервера упали
+  - 中文: 你的服务器就在那里
+- [https://vk.com/wall-122458500_1404480?reply=1404484](https://vk.com/wall-122458500_1404480?reply=1404484) | type=server_connection_failure | conf=0.34
+  - 摘要: Cloudflare One Client в помощь
+  - 中文: Cloudflare 一个客户端提供帮助
+- [https://vk.com/wall-2677092_1135120?reply=1135269](https://vk.com/wall-2677092_1135120?reply=1135269) | type=server_connection_failure | conf=0.34
+  - 摘要: Фрост, анти ЛАГ функции и тд выключи так же дрова обнови и посмотри оперативы хватает или нет тк как если забиваешь оперативку под фул при прогрузе ломаются текстуры
+  - 中文: 霜冻、防LAG功能等等，也关柴更新一下看看RAM够不够，好像你把RAM开满了，加载的时候纹理就破了
+- [https://vk.com/wall-89771130_1696772?reply=1702039](https://vk.com/wall-89771130_1696772?reply=1702039) | type=server_connection_failure | conf=0.34
+  - 摘要: Ёрик, ну не работает кнопка, что я сделаю?
+  - 中文: Yorik，按钮不起作用，我该怎么办？
+- [https://vk.com/wall-122458500_1404460?reply=1404478](https://vk.com/wall-122458500_1404460?reply=1404478) | type=server_connection_failure | conf=0.3
+  - 摘要: Тупо, у меня нет никаких вылетов , может не будешь чушь писать
+  - 中文: 笨蛋，我没有崩溃，也许你就不会写废话了
+- [https://vk.com/wall-122458500_1404460?reply=1404487](https://vk.com/wall-122458500_1404460?reply=1404487) | type=server_connection_failure | conf=0.3
+  - 摘要: Александр, какая чушь, если разрабы сами написали что видят проблему с вылетом из катки на платформах? 😂😂
+  - 中文: 亚历山大，如果开发人员自己写道，他们发现在平台上飞出溜冰场存在问题，那还有什么废话呢？ 😂😂
+- [https://vk.com/wall-122458500_1404480?reply=1404483](https://vk.com/wall-122458500_1404480?reply=1404483) | type=server_connection_failure | conf=0.3
+  - 摘要: Походу игра без обходов теперь никогда не оживёт. Эт печально!
+  - 中文: 看起来没有旁路的游戏现在永远无法实现。很伤心！
+- [https://vk.com/wall-169653940_640556?reply=640560](https://vk.com/wall-169653940_640556?reply=640560) | type=server_connection_failure | conf=0.3
+  - 摘要: Serguei, official_vpnbot ( поиск в тг) работает быстрее других.
+  - 中文: Serguei，official_vpnbot（在 tg 中搜索）比其他人工作得更快。
+- [https://vk.com/wall-218983927_51382?reply=51853](https://vk.com/wall-218983927_51382?reply=51853) | type=server_connection_failure | conf=0.3
+  - 摘要: После обновы начало матча долго грузится, после выбора пресета персонажа. По таймеру, через секунд 25-30 проходит с начала матча, и только после прогружаюсь я, когда все уже разбежались, и ещё секунд 10-15 подвисает. ...
+  - 中文: 更新后，选择角色预设后，比赛开始需要很长时间才能加载。根据计时器显示，从比赛开始算起，已经过去了 25-30 秒，只有在那之后，当所有人都已经逃跑时，我才加载，并且又冻结了 10-15 秒。 ...
+- [https://vk.com/wall-234512887_81864?reply=81996](https://vk.com/wall-234512887_81864?reply=81996) | type=server_connection_failure | conf=0.3
+  - 摘要: Пожалуйста сделайте дроп т2 шмота хоть как-то более-менее адекватным. Вы отталкиваете аудиторию своей жадностью. Мало того что вы класс лучника сделали полностью неиграбельным, так теперь и маги просто вычеркнуты из и...
+  - 中文: 请让T2装备的掉落至少在某种程度上或多或少足够。 You alienate your audience with your greed.你不仅让弓箭手职业完全无法玩，而且现在魔法师也被简单地从……中删除了。
+- [https://vk.com/wall-89771130_1696772?reply=1702091](https://vk.com/wall-89771130_1696772?reply=1702091) | type=server_connection_failure | conf=0.3
+  - 摘要: Какие сериалы!!! Сервера почените сервера вылет завылетом
+  - 中文: 什么系列！！！服务器，修复服务器，它们崩溃了
+- [https://vk.com/wall-89771130_1701978?reply=1702066](https://vk.com/wall-89771130_1701978?reply=1702066) | type=server_connection_failure | conf=0.3
+  - 摘要: Mikhail, обычно они агрятся если близко подошёл, для них это провокация считается, если обходишь на расстоянии, то не трогают
+  - 中文: 米哈伊尔，如果你靠近，他们通常会生气，对他们来说，这被认为是挑衅，如果你绕得很远，他们就不会碰
+- [https://vk.com/wall-89771130_1701978?reply=1702089](https://vk.com/wall-89771130_1701978?reply=1702089) | type=server_connection_failure | conf=0.3
+  - 摘要: Да круто если раньше утёсы и АГС херачили только в Северной части карты и их можно было обходить, легко пушить их базу, то теперь я так понимаю они будут простреливать центральную часть дороги 🤷‍♂️😂 Тобишь по маяку не...
+  - 中文: 是的，很酷，如果以前悬崖和AGS只在地图北部受到破坏并且可以绕过它们，那么很容易推动他们的基地，但现在，据我了解，他们会射穿道路的中心部分🤷‍♂️😂不要撞到灯塔......
+- [https://vk.com/wall-89771130_1701978?reply=1702110](https://vk.com/wall-89771130_1701978?reply=1702110) | type=server_connection_failure | conf=0.3
+  - 摘要: Александр, с другом пошли на маяк,меня невозможно фризит и откидывает,после вылетаю из рейда и заново захожу,после перезахода снова через 1-2 минуты вылет и так по кд,щас пойду на выход с локи
+  - 中文: Alexander,一个朋友去了灯塔, 我不可能放荡,把我扔了, 然后我从突袭中飞出并重新进入, 在1 -2分钟的出发后,
+- [https://vk.com/wall-89771130_1701978?reply=1702115](https://vk.com/wall-89771130_1701978?reply=1702115) | type=server_connection_failure | conf=0.3
+  - 摘要: Сервера умерли, бесконечные потери пакетов...
+  - 中文: 服务器死机，无休无止的丢包……
+- [https://vk.com/wall-194535641_197781?reply=197811](https://vk.com/wall-194535641_197781?reply=197811) | type=server_connection_failure | conf=0.26
+  - 摘要: Нет
+  - 中文: 不
+
+## 抓取样本（原文+中文）
+- [Post](https://vk.com/wall-111837455_1340558)
+  - 原文: Через нас можно официально купить кредиты R6, подписку R6 Membership, Discord Nitro, Telegram Stars, Telegram Premium, отвязать забаненный аккаунт Xbox или приобрести другие цифровые наборы в Siege и не только 🖤 Подхо...
+  - 中文: 通过我们，您可以正式购买 R6 积分、R6 会员订阅、Discord Nitro、Telegram Stars、Telegram Premium、取消链接被禁止的 Xbox 帐户或购买《Siege》中的其他数字套装等等 🖤 适合...
+- [Post](https://vk.com/wall-111837455_1340560)
+  - 原文: Pengu собрал превосходную коллекцию бейджей за 10 лет своей карьеры в Rainbow Six Siege 🏆 #Esports@r6club
+  - 中文: Pengu 在《彩虹六号：围攻》的 10 年职业生涯中积累了一系列出色的徽章🏆 #Esports@r6club
+- [Post](https://vk.com/wall-111837455_1340565)
+  - 原文: Стартовал масштабный розыгрыш в честь выхода Split Fire 🖤 ⭐ МЕСТО #1 — Светильник «Заряд» RED ⭐ МЕСТО #2 — Светильник «Заряд» BLUE ⭐ МЕСТО #3 — Лайтбокс Mira ⭐ МЕСТО #4 — Лайтбокс Bandit ⭐ МЕСТО #5 — Battle Pass Y11S3...
+  - 中文: 为了纪念《Split Fire》的发布，一场大型抽奖活动已经开始🖤⭐地点#1 - 充电灯红色⭐地点#2 - 充电灯蓝色⭐地点#3 - Mira灯箱⭐地点#4 - Bandit灯箱⭐地点#5 - 战斗通行证Y11S3...
+- [Post](https://vk.com/wall-111837455_1340566)
+  - 原文: ■ НАЧАЛИСЬ ТЕХНИЧЕСКИЕ РАБОТЫ ПЕРЕД СТАРТОМ SPLIT FIRE ■ Обслуживание серверов продлится 60 минут 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 技术工作在分火开始前就已开始 ■ 服务器维护将持续 60 分钟 📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340567)
+  - 原文: ■ В ЧЕСТЬ ВЫХОДА СЕЗОНА ДОСТУПЕН НОВЫЙ TWITCH DROPS ■ С 1 сентября 16:00 МСК по 15 сентября 16:00 МСК зрители смогут получить брелок операции Split Fire Для получения награды необходимо смотреть трансляции Rainbow Six...
+  - 中文: ■ 为了纪念本季的发布，推出了新的 TWITCH DROPS ■ 从莫斯科时间 9 月 1 日 16:00 到莫斯科时间 9 月 15 日 16:00，观众将能够收到“分火行动”钥匙扣 要获得奖励，您必须观看《彩虹六号》广播...
+- [Post](https://vk.com/wall-111837455_1340568)
+  - 原文: ■ ПАТЧ УЖЕ ДОСТУПЕН НА НЕКОТОРЫХ ПЛАТФОРМАХ ■ Размер обновления: *много* 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 补丁现已在某些平台上提供 ■ 更新大小：*许多* 📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340569)
+  - 原文: ■ ИСПРАВЛЕННЫЕ ОШИБКИ ПОСЛЕ ЗАВЕРШЕНИЯ TTS ■ ⚙ ИГРОВОЙ ПРОЦЕСС ИИ-боты теперь разрушают барьеры Azami, а не обходят их ИИ-боты больше не перемещаются по канату слишком медленно Исправлено несколько невыполнимых обучаю...
+  - 中文: ■ 完成 TTS 后修复的错误 ■ ⚙ 游戏玩法 AI 机器人现在会摧毁 Azami 障碍，而不是绕过它们 AI 机器人不再在走钢丝上移动太慢 修复了几个不可能的教程...
+- [Post](https://vk.com/wall-111837455_1340571)
+  - 原文: ■ СЕЗОН SPLIT FIRE ВЫШЕЛ НА ВСЕХ ПЛАТФОРМАХ ■ Впереди нас ждут 3 насыщенных и увлекательных месяца 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 所有平台上的分火季节均已结束 ■ 我们将迎来忙碌而激动人心的 3 个月📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340574)
+  - 原文: ■ ЗНАЧОК VALKJA УЖЕ ДОСТУПЕН ДЛЯ ПОЛУЧЕНИЯ ■ Эти брелки выдаются за платную подписку на Twitch-канал соответствующего стримера при условии, что ваш аккаунт Ubisoft привязан к Twitch Помимо этого, Ubisoft также обновил...
+  - 中文: ■ VALKJA BADGE 现已推出 ■ 这些钥匙串是为付费订阅相应主播的 Twitch 频道而授予的，前提是您的 Ubisoft 帐户已链接到 Twitch 此外，Ubisoft 还更新了...
+- [Post](https://vk.com/wall-111837455_1340577)
+  - 原文: ■ БОЕВОЙ ПРОПУСК ОПЕРАЦИИ SPLIT FIRE УЖЕ ДОСТУПЕН ■ Помимо этого, Ubisoft вернули возможность дарить BP за 1200 кредитов R6 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 操作分火战斗通行证现已推出 ■ 此外，Ubisoft 还恢复了以 1200 R6 积分给予 BP 的能力📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340578)
+  - 原文: ■ ИЗВЕСТНЫЕ ПРОБЛЕМЫ ПРИ СТАРТЕ SPLIT FIRE ■ ⚙ ЗАВИСАНИЕ ПРИ ЗАГРУЗКЕ МАТЧА «Мы получили ваши сообщения о том, что после выбора оперативников матч может зависнуть. Команда выясняет причину проблемы и поделится новостя...
+  - 中文: ■ 开始分火时的已知问题 ■ ⚙ 加载比赛时闪烁 “我们已收到您的消息，在选择操作员后，比赛可能会冻结。团队正在查找问题原因，并将分享该消息...
+- [Post](https://vk.com/wall-111837455_1340582)
+  - 原文: ■ ДОСТУПЕН ПЛЕЙЛИСТ С ОБНОВЛЁННОЙ КАРТОЙ VILLA ■ За игру в этом режиме вам будут давать больше очков BP 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 包含更新的别墅地图的播放列表已可用 ■ 在这种模式下玩，您将获得更多 BP 点数📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340583)
+  - 原文: ■ СТАРЫЕ СКИНЫ BLACK ICE УБРАЛИ, А НОВЫЕ НЕ ПОЛОЖИЛИ ■ Все думали, что со стартом сезона разработчики добавят другую ротацию разноцветных Black Ice в пакеты Alpha 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 旧的黑冰皮肤被移除，新皮肤也没有添加 ■ 每个人都认为随着赛季的开始，开发者会在 Alpha 包中添加另一轮多色黑冰 📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340585)
+  - 原文: ■ В ЭТОМ СЕЗОНЕ ВЛАДЕЛЬЦЫ R6 MEMBERSHIP СОБИРАЮТ СЕТЫ ДЛЯ THERMITE ■ 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 本赛季 R6 会员所有者为 THERMITE 收集套装 ■ 📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340588)
+  - 原文: ■ ПОРА ВКЛЮЧАТЬ R6 SHIELD GUARD SECURE PLATFORM ■ Это дополнительный уровень защиты, который введут для доступа к Legend Division с выходом межсезонного патча. Проверить выполнение этих требований можно в игре: открой...
+  - 中文: ■ 是时候启用 R6 SHIELD GUARD 安全平台了 ■ 这是一个额外的保护级别，随着季中补丁的发布，将为进入传奇部门而引入。您可以在游戏中检查是否满足这些要求：打开...
+- [Post](https://vk.com/wall-111837455_1340589)
+  - 原文: ■ В SIEGE CUP ДОБАВИЛИ СЕТ ДЛЯ GOYO ■ 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 攻城杯为 GOYO 添加了一套 ■ 📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340590)
+  - 原文: ■ ВЫШЛИ НОВЫЕ ESPORTS LEGACY СЕТЫ ■ Buck: 1680 кредитов R6 без BP / 1512 кредитов R6 с BP Mute: 1680 кредитов R6 без BP / 1512 кредитов R6 с BP Общий сет: 2700 кредитов R6 без BP / 2430 кредитов R6 с BP Скин на дрона ...
+  - 中文: ■ 新的电子竞技遗产套装已推出 ■ Buck：1680 R6 积分（无 BP）/ 1512 R6 积分（有 BP） 静音：1680 R6 积分（无 BP）/ 1512 R6 积分（有 BP） 总套装：2700 R6 积分（无 BP）/ 2430 R6 积分（有 BP 无人机皮肤）...
+- [Post](https://vk.com/wall-111837455_1340591)
+  - 原文: ■ ПОПОЛНЕНИЕ В ЦИФРОВОМ МАГАЗИНЕ SIEGE ■ Premier Pack включает в себя 7200 кредитов R6, эксклюзивный скин Masterpiece (3D + анимация перезарядки и осмотра) и бустер очков славы на 7 дней Welcome Pack включает в себя 4...
+  - 中文: ■ SIEGE 数字商店中的替换 ■ Premier Pack 包括 7200 R6 积分、独家杰作皮肤（3D + 重新加载和检查动画）以及 7 天的声望点助推器 欢迎包包括 4...
+- [Post](https://vk.com/wall-111837455_1340592)
+  - 原文: ■ В МАГАЗИН SIEGE ВЕРНУЛИ СТАРЫЕ ТАКТИЧЕСКИЕ СКИНЫ ■ Цена без BP: 1050 кредитов R6 или 52.000 очков славы Цена с BP: 945 кредитов R6 или 46.800 очков славы Разработчики добавили в магазин множество универсальных и сез...
+  - 中文: ■ 旧战术皮肤已返回《攻城战》商店 ■ 不含 BP 的价格：1050 R6 积分或 52,000 名誉点 含 BP 的价格：945 R6 积分或 46,800 名誉点 开发者添加了许多通用和季节性...
+- [Post](https://vk.com/wall-111837455_1340594)
+  - 原文: ■ ЭТИ СКИНЫ УБРАЛИ ИЗ МАГАЗИНА SIEGE ■ Универсальный скин Diamond стоимостью 100.000 очков славы убрали из магазина. Вместе с ним пропали однотонные белый и чёрный скины 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 这些皮肤已从《SIEGE》商店下架 ■ 价值 100,000 点声望点的通用钻石皮肤已从商店下架。随之而来的是，纯白和黑色的皮肤消失了📰#SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340596)
+  - 原文: ■ СТАРЫЕ НАБОРЫ СНОВА ПОЯВИЛИСЬ В МАГАЗИНЕ SIEGE ■ ⚙ ДО 8 СЕНТЯБРЯ 17:00 МСК Сезонный скин Beryl Matrix из Y7S2: 1200 кредитов R6 без BP / 1080 кредитов R6 с BP Сезонный скин White Dragon из Y2S3: 1920 кредитов R6 без...
+  - 中文: ■ 旧包再次出现在围攻商店中 ■ ⚙ 直到 9 月 8 日 17:00 UTC Y7S2 的季节性皮肤绿柱石矩阵：1200 积分 R6 无 BP / 1080 积分 R6 有 BP Y2S3 的季节性皮肤白龙：1920 积分 R6 无...
+- [Post](https://vk.com/wall-111837455_1340599)
+  - 原文: ■ ВЫШЕЛ СЛОМАННЫЙ НАБОР СО СКИНАМИ ДЛЯ 9X19VSN ■ Правильный состав — сверху, а в игре сейчас как снизу, поэтому можно получить 3D-скин, пока не исправили Описание и содержимое указаны верно, но на изображении показан ...
+  - 中文: ■ 9X19VSN 的破损皮肤包出来了 ■ 正确的构图位于顶部，但在游戏中现在它就像底部，因此您可以在修复之前获得 3D 皮肤 描述和内容是正确的，但图像显示...
+- [Post](https://vk.com/wall-111837455_1340601)
+  - 原文: ■ ДОСТУПНЫЕ КАРТЫ В РЕЙТИНГОВОМ РЕЖИМЕ ■ Следующая ротация будет во время межсезонного патча 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 排名模式中的可用地图 ■ 下一次轮换将在赛季中期补丁期间进行📰 #SiegeNews@r6club | 📰 #News@r6club
+- [Post](https://vk.com/wall-111837455_1340602)
+  - 原文: ■ R6FIX — ВСЁ, ТЕПЕРЬ ИСПОЛЬЗУЕМ UBISOFT BUG REPORTER ■ Bug Reporter — новый инструмент, с помощью которого игроки могут сообщать об ошибках, отслеживать их статус, находить уже известные проблемы и просматривать спис...
+  - 中文: ■ R6FIX - 全部，现在使用 UBISOFT BUG REPORTER ■ Bug Reporter 是一个新工具，允许玩家报告错误、跟踪其状态、查找已知问题和查看列表...
+- [Post](https://vk.com/wall-111837455_1340603)
+  - 原文: ■ ИНФЛЯЦИЯ СНОВА БЬЁТ ПО КАРМАНАМ ИГРОКОВ ■ Цена без BP: 550 кредитов R6 или 28.000 очков славы Цена с BP: 495 кредитов R6 или 25.200 очков славы Однотонные скины Azurite, Canary, Crimson, Gray, Haze, Jungle, Olive и ...
+  - 中文: ■ 通货膨胀再次击中玩家的口袋 ■ 不含 BP 的价格：550 R6 积分或 28,000 名誉点 含 BP 的价格：495 R6 积分或 25,200 名誉点 纯色皮肤 蓝铜矿、金丝雀、深红、灰色、薄雾、丛林、橄榄色和...
+- [Post](https://vk.com/wall-111837455_1340604)
+  - 原文: ■ NOOR НА СТАРТЕ ПОЛУЧИЛ СРАЗУ 2 НАБОРА СКИНОВ ■ Первый набор: 972 кредита R6 без BP / 874 кредита R6 с BP Второй набор: 2400 кредитов R6 без BP / 2160 кредитов R6 с BP Интересный факт о первом наборе: изначально скин...
+  - 中文: ■ NOOR 一开始就收到了 2 套皮肤 ■ 第一套：972 R6 积分（无 BP）/ 874 R6 积分（有 BP） 第二套：2400 R6 积分（无 BP）/ 2160 R6 积分（有 BP） 关于第一套的有趣事实：最初是皮肤...
+- [Post](https://vk.com/wall-1171627_8397425)
+  - 原文: Официальный аккаунт анонсирует смерть каналов и чатов выкладывающих мета сборки, начав самостоятельно предлагать таковые
+  - 中文: 官方帐户宣布发布元构建的频道和聊天已死亡，开始独立提供它们
+- [Post](https://vk.com/wall-1171627_8397433)
+  - 原文: Начинаем день с оппенинга MW4 в аниме-стиле 🇯🇵
+  - 中文: 让我们以动漫风格的 MW4 开场开始新的一天吧🇯🇵
+- [Post](https://vk.com/wall-1171627_8397456)
+  - 原文: Близкий взгляд на промо-скинчики для MW4 от монстрика
+  - 中文: 仔细看看 Monster 的 MW4 促销皮肤
+- [Post](https://vk.com/wall-1171627_8397464)
+  - 原文: Та самая фотка на внутренний паспорт
+  - 中文: 内部护照上的同一张照片
+- [Comment](https://vk.com/wall-111837455_1340338?reply=1340562)
+  - 原文: Мария, там так-то все ники написаны. Если не знаешь свой ник это странно
+  - 中文: 玛丽亚，所有的昵称都是这样写的。如果你不知道你的昵称那就奇怪了
+- [Comment](https://vk.com/wall-111837455_1340338?reply=1340563)
+  - 原文: Сергей, не заметила, бывает🤣
+  - 中文: 谢尔盖，我没注意到，它发生了🤣
+- [Comment](https://vk.com/wall-111837455_1340430?reply=1340555)
+  - 原文: Это там чо Пол Пот с ним сидит
+  - 中文: 波尔布特坐在他旁边吗？
+- [Comment](https://vk.com/wall-111837455_1340430?reply=1340559)
+  - 原文: Опять эти милитаритнутые
+  - 中文: 又是这些军事化的
+- [Comment](https://vk.com/wall-111837455_1340430?reply=1340600)
+  - 原文: Фея крёстная не в счёт 🤣
+  - 中文: 仙女教母不算🤣
+- [Comment](https://vk.com/wall-111837455_1340516?reply=1340561)
+  - 原文: Vanya, это невозможно обьяснить словами. Гуглите 🧘
+  - 中文: 万尼亚，这无法用言语解释。谷歌一下🧘
+- [Comment](https://vk.com/wall-111837455_1340516?reply=1340564)
+  - 原文: Павел, это связано с ютубером vanomas?
+  - 中文: Pavel，这与 YouTuber vanomas 有关吗？
+- [Comment](https://vk.com/wall-111837455_1340538?reply=1340556)
+  - 原文: Херня какая то, тем более когда есть каид
+  - 中文: 这是某种废话，尤其是当有凯德的时候
+- [Comment](https://vk.com/wall-111837455_1340542?reply=1340557)
+  - 原文: Музыка Wasteland Circuit прямо веет какими-нибудь ретро-инди) Классное звучание.
+  - 中文: Wasteland Circuit 的音乐闻起来就像某种复古的独立音乐）很酷的声音。
+- [Comment](https://vk.com/wall-111837455_1340568?reply=1340570)
+  - 原文: Можно мне такую скорость скачивания😭, а если честно хели они не могли раскатать на сезон обновление карт
+  - 中文: 我能有这个下载速度吗😭，但说实话，他们无法推出本赛季的地图更新
+- [Comment](https://vk.com/wall-111837455_1340568?reply=1340576)
+  - 原文: Имя
+  - 中文: 姓名
+- [Comment](https://vk.com/wall-111837455_1340569?reply=1340573)
+  - 原文: Вот читаю я список исправлений и поражаюсь, ощущение что игра вышла месяц назад и разрабы закрывают первые вылезшие баги по типу отсутствующих ботов и проблемы с голосовым чатом. А потом вспоминаю сколько лет игре.
+  - 中文: 我正在阅读修复列表，我很惊讶，感觉就像游戏在一个月前发布，开发人员正在修复第一个出现的错误，例如缺少机器人和语音聊天问题。然后我就记起了这个游戏有多久了。
+- [Comment](https://vk.com/wall-111837455_1340574?reply=1340575)
+  - 原文: во время игры баг какой то, постоянно гигами что то записывает. и убивает диск, с обновой.
+  - 中文: 游戏过程中出现了某种bug，它不断地记录一些千兆字节的东西。并通过更新杀死磁盘。
+- [Comment](https://vk.com/wall-1171627_8397307?reply=8397463)
+  - 原文: Александр, а ещё в игре отвратительные карты, отвратительный ттк, сломанный ттд, кривая оптимизация даже на консолях, сбмм, а также множество мелких вещей которые уже всех заебали в играх инфинити вард (например отсут...
+  - 中文: 亚历山大，这个游戏还有恶心的地图，恶心的ttk，破碎的ttd，甚至在游戏机上也有扭曲的优化，sbmm，以及许多已经在无限病房游戏中搞砸了每个人的小东西（例如，不......
+- [Comment](https://vk.com/wall-1171627_8397368?reply=8397442)
+  - 原文: Александр, отодрали опять не снимая штанов 😂😂😂😂
+  - 中文: 亚历山大，他们又没脱我裤子就操了我😂😂😂😂
+- [Comment](https://vk.com/wall-1171627_8397368?reply=8397443)
+  - 原文: Александр, это тебе не мышкой крутить 😂😂кто умеет играть на геймпаде тот просто правильно развивался ) а потом в инсте стримеры психуют что играть на мышке с клавой не умеют 😂и винят игроков кто на джойстике играет ) ...
+  - 中文: 亚历山大，你不适合用鼠标玩😂😂无论谁知道如何在游戏手柄上玩，都只是正确地开发）然后在 Instagram 上主播们惊慌失措，他们不知道如何在鼠标和键盘上玩 😂并且他们责怪那些​​在操纵杆上玩的玩家）...
+- [Comment](https://vk.com/wall-1171627_8397368?reply=8397449)
+  - 原文: Alex, о еще один недоношенный.
+  - 中文: 亚历克斯，另一个早产儿。
+- [Comment](https://vk.com/wall-1171627_8397368?reply=8397450)
+  - 原文: Александр, иди плач 😪 что ты дефектный тут такой
+  - 中文: 亚历山大，哭吧😪你为什么在这里这么有缺陷？
+- [Comment](https://vk.com/wall-1171627_8397406?reply=8397446)
+  - 原文: Данила, они нахуй не нужен,вот такой мув самый оптимальный
+  - 中文: 丹尼拉，你不需要它们，这是最好的电影
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397423)
+  - 原文: Чел с пехоткой на 1000+ км: подержите мое пиво
+  - 中文: 1000公里以上有步兵的人：拿着我的啤酒
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397427)
+  - 原文: Arseny, как по мне там нормальный ттк был Вполне приятный Хотя по сути там просто хп со 100 до 150 подняли
+  - 中文: Arseny，对我来说，那里的技术规格是正常的。相当令人愉快。虽然本质上他们只是将HP从100增加到150
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397428)
+  - 原文: Павел, в колде чем больше пинг тем хуже высокий ттк, меня с пингом 90 все сбривают просто, а мне надо секунду стрелять
+  - 中文: Pavel，在魔法中，Ping越高，TTK就越差，Ping为90，每个人都把我刮掉，但我需要射击一秒钟
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397429)
+  - 原文: Ясно, жаль
+  - 中文: 好吧，抱歉
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397430)
+  - 原文: У меня один вопрос: когда-нибудь Call of Duty закончится? Сколько можно!? 🤣
+  - 中文: 我有一个问题：《使命召唤》会完结吗？有多少可能！？ 🤣
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397431)
+  - 原文: Асист инвалидам отключите, пусть играют как нормальные люди
+  - 中文: 为残疾人禁用辅助，让他们像正常人一样玩耍
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397435)
+  - 原文: Народ, как обходите блокировку у кого провайдер мегафон?
+  - 中文: 大家，如何绕过扩音器提供商的封锁？
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397436)
+  - 原文: Арсений, делаешь из АК мини Ак и раздаёшь всем)
+  - 中文: Arseny，你用 AK 制作一把迷你 Ak 送给大家）
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397438)
+  - 原文: Arseny, я с пингом 130-150 играю и проблем не было
+  - 中文: 阿尔森尼，我玩的 ping 是 130-150，没有任何问题
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397439)
+  - 原文: Ели там - это в дерьме, то да, в целом
+  - 中文: 如果你在那里吃过饭——那是一坨屎，那么是的，一般来说
+- [Comment](https://vk.com/wall-1171627_8397413?reply=8397441)
+  - 原文: Пехотную винтовку собираются нёрфить не? Или ваншот что в голову, что в пятку это норма? А если это инвалид сосковый, то гг совсем
+  - 中文: 他们会削弱步兵步枪吗？或者头部和脚后跟都被一枪打中是常态吗？如果是乳头残疾，那绝对是</pre>
+    </div>
+  </div>
+</body>
+</html>
