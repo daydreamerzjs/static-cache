@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-09-04T02:51:54.167338+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-04/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1404626",
+      "url": "https://vk.com/wall-122458500_1404626",
+      "text": "#news@deadbydaylight_ru \n \nПроблема, затрагивающая фонарики, световые гранаты, хлопушки, Изучение, Драматургию, Световую гранату, Остаточное проявление и карту Крушение «Ностромо», решена. Этот контент снова доступен.\n \nРекомендуем перезапустить игру, если она уже запущена, чтобы изменения вступили в силу.\n\nСпасибо за терпение. До встречи в Тумане!\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-03 19:11:50+00:00",
+      "collected_at": "2026-09-04 02:37:58.164880+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1404593",
+      "url": "https://vk.com/wall-122458500_1404593",
+      "text": "#news@deadbydaylight_ru \n \n⚠ Выключатель снова в действии! \n \nВ связи с проблемой, влияющей на игру, мы отключили следующее: фонарики, световые гранаты, хлопушки, Изучение, Драматургию, Световую гранату, Остаточное проявление и карту Крушение «Ностромо». \n \nОни будут включены после устранения ошибки.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-03 14:34:25+00:00",
+      "collected_at": "2026-09-04 02:37:58.164880+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-04/community_deadbydaylight_ru/community_test.html"
+}
