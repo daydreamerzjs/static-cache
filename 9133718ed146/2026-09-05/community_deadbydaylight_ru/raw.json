@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-09-05T02:52:26.351864+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-05/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1404663",
+      "url": "https://vk.com/wall-122458500_1404663",
+      "text": "#memes@deadbydaylight_ru \n \nВсе хорошо, Морис, не вставай резко! Пожалуйста, не торопись! 🙃\n\n- Морис, когда за мной гонятся\n- Морис, когда за мной не гонятся\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-04 15:06:32+00:00",
+      "collected_at": "2026-09-05 02:38:33.855503+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-05/community_deadbydaylight_ru/community_test.html"
+}
