@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-09-07T02:53:16.714465+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-07/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1404724",
+      "url": "https://vk.com/wall-122458500_1404724",
+      "text": "#memes@deadbydaylight_ru \n \nМнения?\n \n#DeadbyDaylight #DBD #Halloween #HalloweenTheGame",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-06 15:27:49+00:00",
+      "collected_at": "2026-09-07 02:38:41.001098+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-07/community_deadbydaylight_ru/community_test.html"
+}
