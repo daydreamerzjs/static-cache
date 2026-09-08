@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-09-08T02:52:52.139673+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-08/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1404872",
+      "url": "https://vk.com/wall-122458500_1404872",
+      "text": "#news@deadbydaylight_ru \n \nОсень уже витает в воздухе 🍂 Посмотрите, что мы запланировали сентябрь, взглянув на нашу дорожную карту!\n\n📍 2 неделя — Возвращение режима \"2 против 8\" и продолжение коллекции \"Чужой\".\n📍 4 неделя — Благотворительное мероприятие и внутриигровые задания. Продолжение коллекций \"Gameplay Expo\" и \"Осенняя мода\". Старт ПБТ. Хоррор-фестиваль \"Dead Northern\".\n\n#DeadbyDaylight #DBD #Alien",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-07 17:09:07+00:00",
+      "collected_at": "2026-09-08 02:37:56.445540+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1404861",
+      "url": "https://vk.com/wall-122458500_1404861",
+      "text": "#news@deadbydaylight_ru \n \nХватайте свои дистанционные огнеметные турели и готовьтесь к бойне. \n \nКсеноморф вырывается из груди прямо в режим \"2 против 8\", захватывая территорию в стиле \"Чужого\". Завтра.\n \n#DeadbyDaylight #DBD #Alien",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-07 15:05:21+00:00",
+      "collected_at": "2026-09-08 02:37:56.445540+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-08/community_deadbydaylight_ru/community_test.html"
+}
