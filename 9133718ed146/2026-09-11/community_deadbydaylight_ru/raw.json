@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-09-11T02:53:51.672738+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-11/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405274",
+      "url": "https://vk.com/wall-122458500_1405274",
+      "text": "#news@deadbydaylight_ru \n \nИграйте в режим \"2 против 8\" и выполняйте задания, чтобы разблокировать эксклюзивные награды в стиле \"Чужого\"!\n \n#DeadbyDaylight #DBD #Alien",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-10 17:55:22+00:00",
+      "collected_at": "2026-09-11 02:38:55.222972+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405257",
+      "url": "https://vk.com/wall-122458500_1405257",
+      "text": "#news@deadbydaylight_ru \n \nУспейте погасить код до 10 октября, чтобы получить Баннер!\n \n✨ STARSGUIDE\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-10 15:14:24+00:00",
+      "collected_at": "2026-09-11 02:38:55.222972+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-11/community_deadbydaylight_ru/community_test.html"
+}
