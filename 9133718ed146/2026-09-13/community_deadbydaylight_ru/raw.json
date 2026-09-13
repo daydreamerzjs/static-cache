@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-09-13T02:52:44.349441+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-13/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405393",
+      "url": "https://vk.com/wall-122458500_1405393",
+      "text": "#news@deadbydaylight_ru \n \nФиналисты конкурса \"Дизайн косметики\" 2026 в категории Баннер профиля! \nКакие концепты понравились вам больше всего? \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-12 07:30:00+00:00",
+      "collected_at": "2026-09-13 02:37:58.078511+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405389",
+      "url": "https://vk.com/wall-122458500_1405389",
+      "text": "#news@deadbydaylight_ru \n \nФиналисты конкурса \"Дизайн косметики\" 2026 в категории Значок профиля! \nКакие концепты понравились вам больше всего? \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-12 07:00:01+00:00",
+      "collected_at": "2026-09-13 02:37:58.078511+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-13/community_deadbydaylight_ru/community_test.html"
+}
