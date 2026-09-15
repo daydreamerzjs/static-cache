@@ -1,0 +1,51 @@
+{
+  "run_at": "2026-09-15T02:57:32.307587+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-15/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405475",
+      "url": "https://vk.com/wall-122458500_1405475",
+      "text": "#news@deadbydaylight_ru \n \nВ настоящее время команда расследует заявления об использовании ИИ в составе финалистов конкурса \"Дизайн косметики\" для Dead by Daylight этого года. Мы связываемся с художниками, к которым относятся эти заявления, для дальнейшего обсуждения. Следите за обновлениями. \n\nМы разочарованы тем, что момент радости и признания работ финалистов был омрачен этими обвинениями, и мы должны настаивать на том, что травля и преследование недопустимы. Мы пересмотрим, как будет развиваться конкурс в будущем. Еще раз благодарим всех, кто представил свои замечательные работы.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-14 16:22:10+00:00",
+      "collected_at": "2026-09-15 02:37:51.556729+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405472",
+      "url": "https://vk.com/wall-122458500_1405472",
+      "text": "#news@deadbydaylight_ru \n \nСвежий выпуск \"Новостей от разработчиков\" о предстоящих изменениях навыков и колесе \"Намерений Выживших\", которые можно будет опробовать на ПБТ уже завтра!\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-14 15:12:01+00:00",
+      "collected_at": "2026-09-15 02:37:51.556729+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405466",
+      "url": "https://vk.com/wall-122458500_1405466",
+      "text": "#news@deadbydaylight_ru \n\nПродолжение коллекции \"Осенняя мода\" с новыми нарядами для Мэг, Витторио и Шейна!\n\nРелиз 22 сентября.\n\n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-14 13:00:00+00:00",
+      "collected_at": "2026-09-15 02:37:51.556729+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405453",
+      "url": "https://vk.com/wall-122458500_1405453",
+      "text": "#news@deadbydaylight_ru \n\nПродолжение коллекции \"GamePlay Expo\" с новыми нарядами для Микаэлы, Сейбл и Неведомого!\n\nРелиз 15 сентября.\n\n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-14 06:00:52+00:00",
+      "collected_at": "2026-09-15 02:37:51.556729+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-15/community_deadbydaylight_ru/community_test.html"
+}
