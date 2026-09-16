@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-09-16T02:57:50.727479+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-16/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405523",
+      "url": "https://vk.com/wall-122458500_1405523",
+      "text": "#news@deadbydaylight_ru \n \nВ 18:00 МСК вышло обновление, которое завершит текущее тестирование античита Denuvo и удалит его из Dead by Daylight. Мы благодарим всех за участие и ценные отзывы; мы проанализируем все полученные данные и отзывы перед проведением будущих испытаний. Следите за нашими страницами в социальных сетях, чтобы быть в курсе будущих мероприятий. \n \nНа нашем сайте поддержки игроков есть подробная статья об удалении остаточных файлов Denuvo с вашего ПК, если вы этого пожелаете.\n\nСпасибо \n \n-Команда Dead by Daylight\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-15 15:46:31+00:00",
+      "collected_at": "2026-09-16 02:37:45.420711+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405522",
+      "url": "https://vk.com/wall-122458500_1405522",
+      "text": "#shrine@deadbydaylight_ru \n \nХрам Тайн от 15.09.2026 \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-15 15:18:18+00:00",
+      "collected_at": "2026-09-16 02:37:45.420711+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-16/community_deadbydaylight_ru/community_test.html"
+}
