@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-09-18T02:58:15.635387+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-18/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405590",
+      "url": "https://vk.com/wall-122458500_1405590",
+      "text": "#news@deadbydaylight_ru \n#patch@deadbydaylight_ru \n \n🆕 Обновление 10.1.2а вышло 17 сентября в 18:00 МСК! \n \n• Возвращено значение окна кривой «Священного света» в режиме «Рвения» к 0,6 секунды (было 0,8 секунды).\n• Отменено окно кривой «Священного света» длительностью 0,3 секунды вне режима «Рвения».\n\nПримечание разработчиков: После прошлого Хотфикса эффективность Правосудия резко возросла. Мы отменяем изменения «Священного света», чтобы лучше оценить игру за Правосудие в течение более длительного периода времени. \n \nМы выпускаем обновление игры для решения растущей проблемы с Правосудием. Для этого не потребуется загрузка какого-либо нового контента, однако игрокам придется перезапустить игру.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-17 15:14:46+00:00",
+      "collected_at": "2026-09-18 02:38:49.176468+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-18/community_deadbydaylight_ru/community_test.html"
+}
