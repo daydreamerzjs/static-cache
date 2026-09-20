@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VK 游戏网络故障监控汇报</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    body { margin: 0; font-family: "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(135deg, #0f766e, #0ea5a4); color: #fff; border-radius: 14px; padding: 20px; }
+    .meta { margin-top: 8px; color: #d1fae5; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+    .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .kpi .v { font-size: 24px; font-weight: 700; }
+    .kpi .k { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    h2 { margin: 4px 0 10px; font-size: 18px; }
+    h3 { margin: 16px 0 10px; font-size: 16px; }
+    pre { white-space: pre-wrap; font-size: 12px; color: #334155; }
+    .alert { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 10px; padding: 14px 16px; margin: 12px 0; color: #7f1d1d; }
+    .alert-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .alert-desc { font-size: 13px; color: #991b1b; margin-bottom: 6px; }
+    .alert ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    .alert a { color: #b91c1c; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>VK 游戏网络故障监控汇报</h1>
+      <div class="meta">生成时间：2026-09-20 03:37:43 BST</div>
+      <div class="meta">报告输出时间：2026-09-20 03:50:47 BST</div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="kpi"><div class="v">15</div><div class="k">总命中数</div></div>
+      <div class="kpi"><div class="v">7</div><div class="k">命中游戏数</div></div>
+      <div class="kpi"><div class="v">15</div><div class="k">服务器连接失败</div></div>
+      <div class="kpi"><div class="v">1</div><div class="k">匹配失败</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>游戏维度汇总</h2>
+      <table>
+        <thead><tr><th>游戏</th><th>总命中</th><th>登录失败</th><th>匹配失败</th><th>服务器连接失败</th></tr></thead>
+        <tbody><tr><td>Dead by Daylight</td><td>4</td><td>0</td><td>0</td><td>4</td></tr><tr><td>Escape from Tarkov: Arena</td><td>4</td><td>2</td><td>0</td><td>4</td></tr><tr><td>Throne and Liberty</td><td>3</td><td>2</td><td>1</td><td>3</td></tr><tr><td>ARC Raiders</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Dota 2</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Escape from Tarkov</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>STALZONE</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>按游戏的故障明细（原文+中文）</h2>
+      <h3>Dead by Daylight（4）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-122458500_1405638?reply=1405640' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Евгения, играть через Гирап.</td><td>尤金妮,通过GearUP演奏。</td></tr><tr><td><a href='https://vk.com/wall-122458500_1405638?reply=1405642' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Евгения, смени станцию и не теряй надежд, у меня все работает. Главное не покупай гирап.</td><td>叶甫根尼娅,换站而不要失去希望,一切都对我有效. 只是不要买GearUP。</td></tr><tr><td><a href='https://vk.com/wall-122458500_1405638?reply=1405643' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>#купигирап</td><td>#库皮吉拉普#</td></tr><tr><td><a href='https://vk.com/wall-122458500_1405638?reply=1405646' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Евгения, у меня с ВПНом работает, без него таже фигня. Заведите нормальный платный ВПН, любой. Сейчас их полно</td><td>Evgenia 我和VPN一起工作 没有他就是胡扯 买一个普通的VPN,任何人。 他们已经满了</td></tr></tbody></table><h3>Escape from Tarkov: Arena（4）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-218983927_53223?reply=53226' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Вылетает карта лаборатории в батлпасе</td><td>战斗通道实验室的地图飞出。</td></tr><tr><td><a href='https://vk.com/wall-218983927_53119?reply=53250' target='_blank'>link</a></td><td>server_connection_failure, login_failure</td><td>0.42</td><td>Ничего не устранено Наблюдаю заставку на протяжении 30 мин и в игру не заходит, вчера один раз пропустил, сегодня так и не работает, стим версия.</td><td>没有消除 观看屏幕保护器30分钟,没有进入游戏,昨天我错过了一次,今天它不起作用,是tim版本.</td></tr><tr><td><a href='https://vk.com/wall-218983927_53103?reply=53211' target='_blank'>link</a></td><td>login_failure, server_connection_failure</td><td>0.34</td><td>В игру вообще не заходит)))) Нажимаешь на восстановление, и ошибку выдает на восстановление. Переустановил, все так же</td><td>完全不播放) 点击恢复,错误会给出恢复. 重新来过,同样的事情。</td></tr><tr><td><a href='https://vk.com/wall-218983927_53244?reply=53278' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Escape from Tarkov: Arena, ДЕЛАЛ, в отоге обновляет файлы и выдает ошибку</td><td>从塔尔科夫逃出: Arena, DELAL, 更新文件并发布错误</td></tr></tbody></table><h3>Throne and Liberty（4）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-234512887_86383?reply=86505' target='_blank'>link</a></td><td>server_connection_failure, matchmaking_failure, login_failure</td><td>0.99</td><td>с</td><td>打开</td></tr><tr><td><a href='https://vk.com/wall-234512887_86383?reply=86402' target='_blank'>link</a></td><td>server_connection_failure, login_failure</td><td>0.66</td><td>Кузьма, Талус, ну меня просто не пускает пишет ошибку 100199...</td><td>库兹玛 Talus,好了,我只是不 让自己写错误100199。 . . ..</td></tr><tr><td><a href='https://vk.com/wall-234512887_86383?reply=86397' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>сервер не работает?</td><td>服务器坏了吗?</td></tr><tr><td><a href='https://vk.com/wall-234512887_86298?reply=86367' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>No, почитай как работают ваши вэпээны и что они прописывают в реестре при установке. Всё там у тебя и было и есть</td><td>不,读读你的活塞工作原理 以及安装时在登记册中规定什么 你过去和现在都在这里</td></tr></tbody></table><h3>ARC Raiders（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-23051891_46854?reply=46871' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>ParalleL переезжает — и дарит: SCUM или 2 копии игры Dune: Awakening! Друзья, у нас большие новости! Мы перебираемся на новый сервис и сервер — и это отличный повод собраться всем вместе. Розыгрыш в честь переезда Раз...</td><td>参数 L 移动并给出: SCUM或 二本 Dune: Awakening! 朋友们,我们有好消息! 我们正转向一个新的服务和服务器, 拉兹的恶作剧</td></tr></tbody></table><h3>Dota 2（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-15413538_2934329?reply=2934348' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Парни подскажите, стим кликаю, не заходит, что делать? В диспетчере задач появляется</td><td>伙计们告诉我,蒸汽点击, 不进来,怎么办? 在任务管理器中出现</td></tr></tbody></table><h3>Escape from Tarkov（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-89771130_1706241?reply=1706295' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Второй день не работает переход с улиц таркова на лабу(пве)</td><td>第二天无法从Tarkov街道过渡到labu (pva)</td></tr></tbody></table><h3>STALZONE（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-2677092_1139821?reply=1139965' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Ребята, исправте проблему со звуком. Ну на самом деле, звук на максимум , а громкость не меняется. После обновы стало только тише и хуже. Не слышно даже врага. Вы там писали про объемный звук, если вы пытаетесь это сд...</td><td>伙计们,解决音效问题。 事实上,音量最大,音量不变. 更新后,它只会变得更安静和更糟. 你听不到敌人的声音 如果你尝试的话, 。 。 。 。</td></tr></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>运行日志摘要</h2>
+      <pre># VK 全局游戏网络故障监控日报
+
+- 执行时间: 2026-09-20 03:37:43 BST
+- 报告输出时间: 2026-09-20 03:50:47 BST
+- 查询词数量: 185
+- 必查社群数量(配置): 21
+- 必查社群抓取帖子: 44
+- 必查社群抓取评论: 619
+- 全局查询词数量: 185
+- 全局抓取帖子数: 0
+- 合并帖子数: 44
+- 故障命中帖子: 0
+- 全局下钻评论数: 0
+- 合并评论数: 613
+- 故障命中评论: 16
+- 评论采集告警数(显示&gt;0但抓取=0): 0
+
+## 故障命中帖子
+
+## 故障命中评论
+- [https://vk.com/wall-234512887_86383?reply=86505](https://vk.com/wall-234512887_86383?reply=86505) | type=server_connection_failure,matchmaking_failure,login_failure | conf=0.99
+  - 摘要: с
+  - 中文: 打开
+- [https://vk.com/wall-234512887_86383?reply=86402](https://vk.com/wall-234512887_86383?reply=86402) | type=server_connection_failure,login_failure | conf=0.66
+  - 摘要: Кузьма, Талус, ну меня просто не пускает пишет ошибку 100199...
+  - 中文: 库兹玛 Talus,好了,我只是不 让自己写错误100199。 . . ..
+- [https://vk.com/wall-218983927_53223?reply=53226](https://vk.com/wall-218983927_53223?reply=53226) | type=server_connection_failure | conf=0.6
+  - 摘要: Вылетает карта лаборатории в батлпасе
+  - 中文: 战斗通道实验室的地图飞出。
+- [https://vk.com/wall-122458500_1405638?reply=1405640](https://vk.com/wall-122458500_1405638?reply=1405640) | type=server_connection_failure | conf=0.5
+  - 摘要: Евгения, играть через Гирап.
+  - 中文: 尤金妮,通过GearUP演奏。
+- [https://vk.com/wall-122458500_1405638?reply=1405642](https://vk.com/wall-122458500_1405638?reply=1405642) | type=server_connection_failure | conf=0.5
+  - 摘要: Евгения, смени станцию и не теряй надежд, у меня все работает. Главное не покупай гирап.
+  - 中文: 叶甫根尼娅,换站而不要失去希望,一切都对我有效. 只是不要买GearUP。
+- [https://vk.com/wall-122458500_1405638?reply=1405643](https://vk.com/wall-122458500_1405638?reply=1405643) | type=server_connection_failure | conf=0.5
+  - 摘要: #купигирап
+  - 中文: #库皮吉拉普#
+- [https://vk.com/wall-218983927_53119?reply=53250](https://vk.com/wall-218983927_53119?reply=53250) | type=server_connection_failure,login_failure | conf=0.42
+  - 摘要: Ничего не устранено Наблюдаю заставку на протяжении 30 мин и в игру не заходит, вчера один раз пропустил, сегодня так и не работает, стим версия.
+  - 中文: 没有消除 观看屏幕保护器30分钟,没有进入游戏,昨天我错过了一次,今天它不起作用,是tim版本.
+- [https://vk.com/wall-89771130_1706241?reply=1706295](https://vk.com/wall-89771130_1706241?reply=1706295) | type=server_connection_failure | conf=0.42
+  - 摘要: Второй день не работает переход с улиц таркова на лабу(пве)
+  - 中文: 第二天无法从Tarkov街道过渡到labu (pva)
+- [https://vk.com/wall-122458500_1405638?reply=1405646](https://vk.com/wall-122458500_1405638?reply=1405646) | type=server_connection_failure | conf=0.38
+  - 摘要: Евгения, у меня с ВПНом работает, без него таже фигня. Заведите нормальный платный ВПН, любой. Сейчас их полно
+  - 中文: Evgenia 我和VPN一起工作 没有他就是胡扯 买一个普通的VPN,任何人。 他们已经满了
+- [https://vk.com/wall-23051891_46854?reply=46871](https://vk.com/wall-23051891_46854?reply=46871) | type=server_connection_failure | conf=0.38
+  - 摘要: ParalleL переезжает — и дарит: SCUM или 2 копии игры Dune: Awakening! Друзья, у нас большие новости! Мы перебираемся на новый сервис и сервер — и это отличный повод собраться всем вместе. Розыгрыш в честь переезда Раз...
+  - 中文: 参数 L 移动并给出: SCUM或 二本 Dune: Awakening! 朋友们,我们有好消息! 我们正转向一个新的服务和服务器, 拉兹的恶作剧
+- [https://vk.com/wall-218983927_53103?reply=53211](https://vk.com/wall-218983927_53103?reply=53211) | type=login_failure,server_connection_failure | conf=0.34
+  - 摘要: В игру вообще не заходит)))) Нажимаешь на восстановление, и ошибку выдает на восстановление. Переустановил, все так же
+  - 中文: 完全不播放) 点击恢复,错误会给出恢复. 重新来过,同样的事情。
+- [https://vk.com/wall-234512887_86383?reply=86397](https://vk.com/wall-234512887_86383?reply=86397) | type=server_connection_failure | conf=0.34
+  - 摘要: сервер не работает?
+  - 中文: 服务器坏了吗?
+- [https://vk.com/wall-218983927_53244?reply=53278](https://vk.com/wall-218983927_53244?reply=53278) | type=server_connection_failure | conf=0.3
+  - 摘要: Escape from Tarkov: Arena, ДЕЛАЛ, в отоге обновляет файлы и выдает ошибку
+  - 中文: 从塔尔科夫逃出: Arena, DELAL, 更新文件并发布错误
+- [https://vk.com/wall-234512887_86298?reply=86367](https://vk.com/wall-234512887_86298?reply=86367) | type=server_connection_failure | conf=0.3
+  - 摘要: No, почитай как работают ваши вэпээны и что они прописывают в реестре при установке. Всё там у тебя и было и есть
+  - 中文: 不,读读你的活塞工作原理 以及安装时在登记册中规定什么 你过去和现在都在这里
+- [https://vk.com/wall-15413538_2934329?reply=2934348](https://vk.com/wall-15413538_2934329?reply=2934348) | type=server_connection_failure | conf=0.26
+  - 摘要: Парни подскажите, стим кликаю, не заходит, что делать? В диспетчере задач появляется
+  - 中文: 伙计们告诉我,蒸汽点击, 不进来,怎么办? 在任务管理器中出现
+- [https://vk.com/wall-2677092_1139821?reply=1139965](https://vk.com/wall-2677092_1139821?reply=1139965) | type=server_connection_failure | conf=0.26
+  - 摘要: Ребята, исправте проблему со звуком. Ну на самом деле, звук на максимум , а громкость не меняется. После обновы стало только тише и хуже. Не слышно даже врага. Вы там писали про объемный звук, если вы пытаетесь это сд...
+  - 中文: 伙计们,解决音效问题。 事实上,音量最大,音量不变. 更新后,它只会变得更安静和更糟. 你听不到敌人的声音 如果你尝试的话, 。 。 。 。
+
+## 抓取样本（原文+中文）
+- [Post](https://vk.com/wall-111837455_1341133)
+  - 原文: Элитная сходка 😸 🎩 #Cosplay@r6club
+  - 中文: 精英聚会 {\fn方正黑体简体\fs18\b1\bord1\shad1\3cH2F2F2F}美国足球俱乐部
+- [Post](https://vk.com/wall-111837455_1341134)
+  - 原文: Ты не ты, когда голоден 🤤 🎨 #Arts@r6club
+  - 中文: # 艺术@r6club #
+- [Post](https://vk.com/wall-1171627_8398104)
+  - 原文: Начинаем выходные с нового фото со съемок MW4 — Трудно поверить, но Барри Слоун на посту капитана Прайса уже 8 лет (его кандидатуру утвердили в 2018-м)
+  - 中文: 从周末开始,拍摄MW4的新相片 — 难以相信,但巴里·斯隆出任普莱斯队长长达8年(他的候选资格被2018年批准).
+- [Post](https://vk.com/wall-1171627_8398105)
+  - 原文: Treyarch осенью 2025-го: мы все поняли, не бейте пожалуйсто, клоунских скинов не будет… Treyarch осенью 2026-го
+  - 中文: Treyarch在2025年秋天:我们都明白,别打,也许没有小丑皮 特瑞亚克2026年秋
+- [Post](https://vk.com/wall-1171627_8398112)
+  - 原文: Modern Warfare 4 Сезон 1, возможно, начнётся 5 ноября, всего через 13 дней после запуска: 💥 Black Ops 7 Сезон 6 в настоящее время заканчивается в эту дату согласно таймеру боевого пропуска — но это может быть обновлено.
+  - 中文: 现代战争 第4季 第1季可能从11月5日开始,即发射后13天: Black Ops 第7季 第6集目前根据战斗通过计时器在该日结束——但这可以更新.
+- [Post](https://vk.com/wall-1171627_8398141)
+  - 原文: Уоррен Коул, сыгравший Филиппа Грейвса в Modern Warfare, официально указан как участник актёрского состава MW4 на IMDB + актер выложил недавний сюжетный трейлер на свои странице в инсте — Лишь бы опять не погиб в танке…
+  - 中文: 在"现代战争"中出演菲利普·格雷夫斯(Philip Graves)的沃伦·科尔(Warren Cole)被正式列入IMDB + 上MW4的出品人名单,演员在"Insta"上在其页面上贴出一则近期的故事预告片-如果他不再死于坦克中......
+- [Post](https://vk.com/wall-1171627_8398148)
+  - 原文: AURA FARM: Прайс, Гоуст, Газ и Мадс на новом фото со съемок MW4 🔥
+  - 中文: AURA FARM: MW4拍摄的新相片中,
+- [Post](https://vk.com/wall-1171627_8398152)
+  - 原文: Modern Warfare и производитель швейцарских часов Hamilton вновь заколабились: в продажу поступит реплику часов Капитана Прайса из Modern Warfare 4. Цена (не капитан) – $795.
+  - 中文: 现代战争和瑞士制造商再次犹豫不决:出售时会复制现代战争中的克赖斯船长的手表 4. 价格(不是船长)为795美元。
+- [Post](https://vk.com/wall-122458500_1405633)
+  - 原文: 🤨Что происходит с ценами в Steam?? Габен навалил целую кучу топовых скидок на топовые игры в Steam — на этих выходных даже AAA-игры отдают по смешным ценам. IGMGG собрал для вас самое сочное в одной подборке. ⚡️Far Cr...
+  - 中文: 蒸汽价格如何? Gaben在Steam的顶级游戏上堆起一连串的顶级折扣——这个周末连AAA的游戏都以可笑的价格送出. IGMGG已经为你收集了其中最珍贵的 {\fn黑体\fs22\bord1\shad0\3aHBE\4aH00\fscx67\fscy66\2cHFFFFFF\3cH808080}你觉得怎么样?
+- [Post](https://vk.com/wall-122458500_1405638)
+  - 原文: #news@deadbydaylight_ru #patch@deadbydaylight_ru 🆕 ПБТ 10.2.0 стартовал 15 сентября в 18:00 МСК! Краткий обзор: 💬 Добавлена система «Намерений Выживших» 💠 Изменено 58 навыков 📍 Исправлены различные ошибки аудио, ботов...
+  - 中文: @deadbydaylight_ru #patch@deadbydaylight_ru PBT 10.2.0于9月15日格林尼治标准时间下午6:00开始! 总结:"幸存者的意向"系统增加了"##"58技能被改变"各种音频,bot错误被固定.
+- [Post](https://vk.com/wall-148211806_899842)
+  - 原文: 🏆🍂 Приглашаем на трансляцию второго дня первого финала PEC FALL! В студии комментаторов – odesskin, yarrmosh и Molodoct. Приятного просмотра 👇 #PUBG #BATTLEGROUNDS #КиберспортPUBG #PEC
+  - 中文: 我们邀请你参加 首届PEC Fall决赛第二天的广播! 评论家包括odesskin,yarrmosh和Molodoct. 喜欢看#PUBG#BATTLEGROUNDS#CybersportPUBG#PEC(英语:PEC).
+- [Post](https://vk.com/wall-15413538_2934326)
+  - 原文: 🔥 Аркадий Хромаев занял первое место среди игроков Европы Аркаша оказался лучшим европейским игроком в Dota 2
+  - 中文: Arkady Khromaev在欧洲球员中名列第一位 Arkasha是Dota 2的最佳欧洲球员.
+- [Post](https://vk.com/wall-15413538_2934329)
+  - 原文: 💀 Нашли ещё пачку условных Pay2Win-предметов Некоторые сеты из-за бага делают хитбокс героя горизонтальным — из-за этого по персонажу якобы становится сложнее попасть. Вот какие предметы нашли: ➖ Sigil Belt of The Gre...
+  - 中文: 一些由于被bug而使主角的打箱水平——因为这样,据称进入角色变得更加困难. 以下是发现的物品: 格雷的西吉尔带。
+- [Post](https://vk.com/wall-15413538_2934334)
+  - 原文: 🥲 Nightfall апнул 10.000 MMR Но все равно не смог обогнать Аркашу Храмова, который сейчас занимает топ-1 ладдера
+  - 中文: 夜幕降临了10 000个产妇死亡率 但是仍然无法超越阿卡沙·赫拉莫夫,他现在占据了第一阶梯
+- [Post](https://vk.com/wall-15413538_2934340)
+  - 原文: 🤯 Пудж наконец-то получил сет своей мечты Мясника из пиццерии обнаружили в Мастерской Steam
+  - 中文: 普杰终于实现了梦想 在Steam车间发现的 披萨的屠夫
+- [Post](https://vk.com/wall-15413538_2934351)
+  - 原文: Та самая, крайняя перед сном)) __________________________ Два часа, еще не придел 😏 Ваша любимая рубрика: пост от подписчиков
+  - 中文: 同一个,睡觉前的极端). ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+- [Post](https://vk.com/wall-15413538_2934360)
+  - 原文: ☺ Признайся, захотел? Нам, Дотерам, такое очень надо 🤤
+  - 中文: 承认吧,是吗? 我们Dothers真的需要这个。
+- [Post](https://vk.com/wall-15413538_2934370)
+  - 原文: 😏 Роман Кушнарёв назвал причину успеха Team Spirit на TI 2026 По его мнению, команда не смогла бы занять первое место без тренера Ярослава Найдёнова💁‍♂
+  - 中文: 罗曼·库什纳列夫(Roman Kushnarev)在TI 2026上称Team Spirit成功的原因 他认为,没有亚罗斯拉夫·纳伊德诺夫主教练,球队不可能取得第一名.
+- [Post](https://vk.com/wall-15413538_2934381)
+  - 原文: 😂 Бустанул в обратную сторону Те самые бустеры, которые надоели писать в ях 😈
+  - 中文: 那些助推者已经厌倦了写作
+- [Post](https://vk.com/wall-169653940_641238)
+  - 原文: Магазин предметов и алерты в PVE от 19.09.2026 Железная мышь уже вышла! 💜 Буду всем безмерно благодарен за покупку с тегом: FARTN1TE
+  - 中文: 从2026年9月19日在PVE储存物体和过敏物 铁老鼠已经出来了! 感谢各位用标签购买:FARTN1TE。
+- [Post](https://vk.com/wall-169653940_641242)
+  - 原文: Дропсы Ironmouse за просмотр её стрима на твиче Граффити - 30 минут Гитара - 1 час Сейчас её смотрят ~18к зрителей
+  - 中文: 在Graffiti Tweet上观看她的溪流时被铁摩斯滴下-30分吉他-1小时现在观看~18克观看.
+- [Post](https://vk.com/wall-169653940_641249)
+  - 原文: 🔥 ЭМОЦИЯ (В КОНЦЕ ВИДЕО) + ТРЕК "I Really Want to Stay at Your House" - ПОДТВЕРЖДЕНЫ ‼ Она почти пробила вашу защиту. Fortnite! Луперы даже не поймут, что их постигло… 😵 Люси из Cyberpunk: Edgerunners появится в гряду...
+  - 中文: QQ情感(视频结尾)+音轨"我真的想留在你家"-VEIFIED!. 堡垒! 路珀斯人甚至不会明白他们遭遇了什么 来自赛博朋克的露西:爱杰伦纳将出现在山脊. 。 。 。 。
+- [Post](https://vk.com/wall-169653940_641252)
+  - 原文: ЭМОЦИЯ ЛЮСИ И ОБЁРТКА - РАСШИФРОВАНЫ 🔥
+  - 中文: 露西的情感和车轮——解码器
+- [Post](https://vk.com/wall-169653940_641254)
+  - 原文: 🔥 СЛИВ ЭМОЦИИ ЛЮСИ С МУЗЫКОЙ "I Really Want to Stay at Your House" ‼️ Эмоция аж на 2 минуты 😳
+  - 中文: 我真的想呆在你家! ! ! ! 滚出你的家!
+- [Post](https://vk.com/wall-169653940_641263)
+  - 原文: Магазин предметов и алерты в PVE от 20.09.2026 (ВБ НЕТ) Люсина Кусинада из Сyberpunk Edgerunners УЖЕ в Fortnite! 💜 Буду всем безмерно благодарен за покупку с тегом: FARTN1TE
+  - 中文: 从2026年9月20日(WB NO)开始, 感谢各位用标签购买:FARTN1TE。
+- [Post](https://vk.com/wall-169653940_641267)
+  - 原文: 🔥 Детальный обзор Iron Mouse в магазине предметов ‼ 💜 Если хотите поддержать мой труд, перед покупкой просто введите тег: FARTN1TE - Это займет пару секунд и ничего вам не стоит, но для меня станет огромной поддержкой
+  - 中文: 细评"铁老鼠"入库物品!. кой 如果你想支持我的工作,在购买前只需输入标签:FARTN1TE - 这需要几秒钟,你却一无所获, 但对我来说将是一个巨大的支持
+- [Post](https://vk.com/wall-169653940_641269)
+  - 原文: 🔥 Детальный обзор Люсины Кусинады из Киберпанк: Бегущие по краю в магазине предметов ‼ 💛 Если хотите поддержать мой труд, перед покупкой просто введите тег: FARTN1TE - Это займет пару секунд и ничего вам не стоит, но ...
+  - 中文: Cyberpunk对Lucina Cucinada的详细评论:在物品商店中跑出边缘! кой 如果你想支持我的工作,在购买之前只需输入标签:FARTN1TE - 这将需要几秒钟,而且没有花费什么,但是...
+- [Post](https://vk.com/wall-192350539_1196978)
+  - 原文: Вот все, что вам нужно знать о #VALORANTChampions: #статья@valorant
+  - 中文: #ValorANT Champions:#Article@valorant# 需要知道的都在这里:
+- [Post](https://vk.com/wall-194535641_198031)
+  - 原文: Разработчики опубликовали неудержимый музыкальный видеоролик, подводящий итоги приключения Зомби-эпопеи "Это было настоящее приключение. Отправляйтесь в путешествие по истории «Тёмного эфира», которая началась ещё в р...
+  - 中文: 开发者发表了一出不可压抑的音乐录相带,总结了"僵尸"史诗"真实的冒险". 历经"黑暗以太"的历史,始于.
+- [Post](https://vk.com/wall-218983927_53223)
+  - 原文: Обзор наград #BattlePassSe3 #MorbusImperium #TarkovArena
+  - 中文: {\fn方正黑体简体\fs18\b1\bord1\shad1\3cH2F2F2F}塔克克瓦雷纳 塔克瓦雷纳
+- [Comment](https://vk.com/wall-111837455_1341115?reply=1341130)
+  - 原文: Ну норм
+  - 中文: 好吧,我们走。
+- [Comment](https://vk.com/wall-1171627_8397932?reply=8398113)
+  - 原文: Узнал Фару, Кайла и похоже слева это Алекс.
+  - 中文: 我认出了法拉,凯尔, 看起来像亚历克斯在左边。
+- [Comment](https://vk.com/wall-1171627_8397950?reply=8398114)
+  - 原文: У меня 3 нет и бо 4 и то потому что в стиме их нет
+  - 中文: 我没有3和Bo 4,因为我没有在Steam。
+- [Comment](https://vk.com/wall-1171627_8397960?reply=8398123)
+  - 原文: гавно это все движок у них збс. пусть делают новую часть калды не блек опс и не мв... наймут грамотного иторика или философа... он их идеями засыпит... только успевай игру собирать
+  - 中文: 让他们做一个新角色 而不是黑人行动 而不是mv... 雇用一个识字的历史学家或哲学家...
+- [Comment](https://vk.com/wall-1171627_8397960?reply=8398124)
+  - 原文: заебали эти зомби да картинка кукольного театра.... восковые солдатики
+  - 中文: 去他妈的僵尸 还有木偶戏院的照片... 蜡兵
+- [Comment](https://vk.com/wall-1171627_8397977?reply=8398117)
+  - 原文: Богдан, вспомним, как его Ле Шифр в "Казино Рояль" чесал Джеймсу Бонду яйца кнутом 🤣🤣🤣
+  - 中文: 博格丹,记住他在皇家赌场的"勒奇弗"(Le Chifr)如何用鞭子刮了詹姆斯·邦德的球.
+- [Comment](https://vk.com/wall-1171627_8397999?reply=8398115)
+  - 原文: скорей всего гоуст останется единственным выжившим из отг 141 Modern Warfare, и потом про него сделают спин офф Ghosts( ребут )
+  - 中文: 最有可能的是,我们... 盖斯特仍将是141"现代战争"中唯一的生还者,而后被"幽灵"(Ghosts)取而代之.
+- [Comment](https://vk.com/wall-1171627_8397999?reply=8398132)
+  - 原文: Кортез, тоже так думаю , ну старому уже надо на покой сколько лет мы его уже знаем
+  - 中文: Cortez 我也这么认为 那个老头子需要退休 我们认识他多少年了
+- [Comment](https://vk.com/wall-1171627_8398006?reply=8398130)
+  - 原文: Будет играть глав корейца 🤔 ?
+  - 中文: 他会扮演韩国人的头?
+- [Comment](https://vk.com/wall-1171627_8398013?reply=8398121)
+  - 原文: Слить Макарова чтобы взять этого деда. Ясно
+  - 中文: 留下马卡罗夫带走这位外公 好吧,我说...
+- [Comment](https://vk.com/wall-1171627_8398013?reply=8398126)
+  - 原文: збс отец сема портера из другой настоящий реальности в дэд стрендинг.. не понятно почему только лу девочка .. когда был выстрел в лу её спасди и оперировали поэтому у сема шрам... а когда он в реальном мире не берегу ...
+  - 中文: 血栓搬运工的父亲 从另一个真正的现实 在死线。 不清楚为什么只有那个女孩... 当在厕所里被射中时 她被救活并手术了 所以这个疤痕...
+- [Comment](https://vk.com/wall-1171627_8398013?reply=8398127)
+  - 原文: Demi, точняк...
+  - 中文: 德米,没错...
+- [Comment](https://vk.com/wall-1171627_8398013?reply=8398128)
+  - 原文: зашестерили связи кодзимы в подразделении иксбокс) видимо лильно он хочет доделать свой шпионский проект.. поглядывая в бумажник майкрасофт)
+  - 中文: 他在Xbox分部有舒适的领带 显然他想完成他的间谍项目 调查他的钱包
+- [Comment](https://vk.com/wall-1171627_8398013?reply=8398134)
+  - 原文: Сергей, ирония в том что этот дед хорошо бы сыграл в Макарова, но вместо этого позвали ноунейма
+  - 中文: 谢尔盖,讽刺的是,这位外公本来会扮演马卡罗夫的好角色,却取而代之地称"Nouneim".
+- [Comment](https://vk.com/wall-1171627_8398013?reply=8398137)
+  - 原文: Ну в целом да, в итоге он какой-то Арчер
+  - 中文: 最后他还是个阿彻
+- [Comment](https://vk.com/wall-1171627_8398037?reply=8398116)
+  - 原文: Александр, да
+  - 中文: 亚历山大,是的。
+- [Comment](https://vk.com/wall-1171627_8398037?reply=8398119)
+  - 原文: Эх... А я так ждал мв4 от старой трилогии
+  - 中文: 我在等三部曲的MV4
+- [Comment](https://vk.com/wall-1171627_8398037?reply=8398129)
+  - 原文: Слова Treyarch, а именно Кевина Дрю про »хотят сделать что-то совершенно новое» относились к зомби режиму. Но не исключено, что сама новая часть также будет чем то совершенно новым
+  - 中文: Treyarch的言论,特别是Kevin Drew关于“想做点全新的事”的话,提到了僵尸政权。 但新部分本身也可能是全新的。
+- [Comment](https://vk.com/wall-1171627_8398042?reply=8398108)
+  - 原文: Взяли оригинал на нем и пытаются выезжать. Персонажей изуродовали, половина погибла как идиоты какие то , вообще ребут не цепляет сюжетно. Позор что так серию коверкаюи
+  - 中文: 他们拿走了上面的原件,想离开。 角色变形,一半像白痴一样死去 一般来说 答辩书没有抓住阴谋 可惜是一系列的骗子
+- [Comment](https://vk.com/wall-1171627_8398042?reply=8398109)
+  - 原文: Артур, да да и с захаевыми цирк вышел все схавает новое поколение игроков. Все так
+  - 中文: 亚瑟,是的,随着疯狂的马戏团的出道, 这一切都挤出新一代的玩家。 就是这样。
+- [Comment](https://vk.com/wall-1171627_8398083?reply=8398103)
+  - 原文: Сергей, Озон-3
+  - 中文: 谢尔盖,奥松-3
+- [Comment](https://vk.com/wall-1171627_8398083?reply=8398110)
+  - 原文: Реми
+  - 中文: 莱米。
+- [Comment](https://vk.com/wall-1171627_8398099?reply=8398140)
+  - 原文: Хз в пс плюс ничего такого нету
+  - 中文: Hz in Ps 加上没有这样的。
+- [Comment](https://vk.com/wall-1171627_8398105?reply=8398106)
+  - 原文: Хеллоуин это таки другое😉 (никогда такого не было и вот опять)
+  - 中文: 万圣节不同了(再也没有发生过)
+- [Comment](https://vk.com/wall-1171627_8398105?reply=8398107)
+  - 原文: Думгай выглядит хорошо, икона греха и мародер не очень
+  - 中文: 道姆盖看起来不错, 罪人偶像和行凶者不太好
+- [Comment](https://vk.com/wall-1171627_8398105?reply=8398111)
+  - 原文: Ну так они не совсем клоунские
+  - 中文: 他们不是小丑
+- [Comment](https://vk.com/wall-1171627_8398105?reply=8398118)
+  - 原文: Самого сасного из 2016 не завезли?
+  - 中文: 你得到2016年最胖吗?
+- [Comment](https://vk.com/wall-1171627_8398105?reply=8398120)
+  - 原文: Админ до сих пор не понял, что шестой сезон это праздничный хэллоуинский сезон, где такие скины это база. Или люди должны играть в серых милитари скинах весь год?
+  - 中文: 行政官仍然没有意识到第六季是假日万圣节季,这种皮肤是这里的基地. 还是人们必须玩 灰色的军国主义皮?
+- [Comment](https://vk.com/wall-1171627_8398105?reply=8398122)
+  - 原文: Сергей, че то на скины люди не жаловались в старых калофдути, годами в них играя
+  - 中文: 谢尔盖,人们没有抱怨 皮肤在老克洛夫杜蒂, 玩他们多年
+- [Comment](https://vk.com/wall-1171627_8398105?reply=8398125)
+  - 原文: Админ, ты как, хорошо себя чувствуешь? Думгай у нас теперь клоун? Или может быть два других выглядят по клоунски? 🤷‍♂️
+  - 中文: 管理员,你没事吧? 我们现在有小丑了吗? 或者其他两个看起来像小丑?</pre>
+    </div>
+  </div>
+</body>
+</html>
