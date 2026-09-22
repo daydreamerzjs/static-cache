@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-09-22T02:56:15.953070+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-22/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405670",
+      "url": "https://vk.com/wall-122458500_1405670",
+      "text": "#news@deadbydaylight_ru \n \nСервисы Epic Online будут недоступны из-за технического обслуживания 22 сентября с 9:00 МСК примерно в течение 90 минут. Это может повлиять на подбор игроков и формирование лобби.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-21 19:17:30+00:00",
+      "collected_at": "2026-09-22 02:37:40.841304+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405664",
+      "url": "https://vk.com/wall-122458500_1405664",
+      "text": "#news@deadbydaylight_ru \n \nУспейте погасить код до октября, чтобы получить куртку для Шейна Уиигвааса! \n \n🪶 ROADTRIP \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-21 15:09:44+00:00",
+      "collected_at": "2026-09-22 02:37:40.841304+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-22/community_deadbydaylight_ru/community_test.html"
+}
