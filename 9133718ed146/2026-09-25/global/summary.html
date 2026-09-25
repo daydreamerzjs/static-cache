@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VK 游戏网络故障监控汇报</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    body { margin: 0; font-family: "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(135deg, #0f766e, #0ea5a4); color: #fff; border-radius: 14px; padding: 20px; }
+    .meta { margin-top: 8px; color: #d1fae5; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+    .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .kpi .v { font-size: 24px; font-weight: 700; }
+    .kpi .k { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    h2 { margin: 4px 0 10px; font-size: 18px; }
+    h3 { margin: 16px 0 10px; font-size: 16px; }
+    pre { white-space: pre-wrap; font-size: 12px; color: #334155; }
+    .alert { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 10px; padding: 14px 16px; margin: 12px 0; color: #7f1d1d; }
+    .alert-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .alert-desc { font-size: 13px; color: #991b1b; margin-bottom: 6px; }
+    .alert ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    .alert a { color: #b91c1c; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>VK 游戏网络故障监控汇报</h1>
+      <div class="meta">生成时间：2026-09-25 03:38:37 BST</div>
+      <div class="meta">报告输出时间：2026-09-25 03:51:42 BST</div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="kpi"><div class="v">27</div><div class="k">总命中数</div></div>
+      <div class="kpi"><div class="v">9</div><div class="k">命中游戏数</div></div>
+      <div class="kpi"><div class="v">24</div><div class="k">服务器连接失败</div></div>
+      <div class="kpi"><div class="v">0</div><div class="k">匹配失败</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>游戏维度汇总</h2>
+      <table>
+        <thead><tr><th>游戏</th><th>总命中</th><th>登录失败</th><th>匹配失败</th><th>服务器连接失败</th></tr></thead>
+        <tbody><tr><td>League of Legends</td><td>7</td><td>2</td><td>0</td><td>5</td></tr><tr><td>Throne and Liberty</td><td>5</td><td>1</td><td>0</td><td>4</td></tr><tr><td>VALORANT</td><td>4</td><td>0</td><td>0</td><td>4</td></tr><tr><td>ARC Raiders</td><td>3</td><td>0</td><td>0</td><td>3</td></tr><tr><td>Dead by Daylight</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>Dota 2</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>Escape from Tarkov</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>FACEIT</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>STALZONE</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>按游戏的故障明细（原文+中文）</h2>
+      <h3>League of Legends（7）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-49423435_2960149?reply=2960526' target='_blank'>link</a></td><td>login_failure</td><td>0.82</td><td>Не заходит в игру. Кто-нибудь знает решение? ни на европу, ни на ру. После выбора героев не может игра загрузится.</td><td>他不在比赛里 有人知道解决办法吗? 无论是在欧洲还是方向舵上 在选择英雄后,游戏不能启动.</td></tr><tr><td><a href='https://vk.com/wall-49423435_2960149?reply=2960577' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Евгений, много людей в катках вылетает ?</td><td>Yevgeny,很多人在溜冰场里飞?</td></tr><tr><td><a href='https://vk.com/wall-49423435_2960149?reply=2960510' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Не пускает дальше лаунчера в катки, уже успел в ранкеде лохануться, не запускает даже в тренировку. Пробовал впн (США) - запустило, но с российскими не прокатывает, хз насколько безопасно вообще регать с впном. Много ...</td><td>它不会让发射器进入滑冰场,已经设法在排名中搞砸了,甚至不会发射进入训练. Tried VPN(美国)-推出, 许多...</td></tr><tr><td><a href='https://vk.com/wall-49423435_2960149?reply=2960609' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Попробуй связку Zapret + WARP Если WARP у тебя всё-таки запустится, есть рабочий способ: сначала включи Zapret, потом WARP, и только после этого запускай Riot Client. Сработало, клиент запустился</td><td>如果您仍然开始WARP,有一个工作方式:首先打开Zapret,然后是WARP,然后才启动Riot客户端. 成功了 客户开始了</td></tr><tr><td><a href='https://vk.com/wall-49423435_2960479?reply=2960553' target='_blank'>link</a></td><td>login_failure</td><td>0.3</td><td>Ребят, работает ли у кого-то лига в Москве и московской области? Я уже 4 с половиной часа не могу запуститься в катку после выбора чемпиона</td><td>你们在莫斯科和莫斯科地区有联盟吗? 我选了冠军之后 已经有4个半小时没参加过比赛了</td></tr><tr><td><a href='https://vk.com/wall-49423435_2960479?reply=2960566' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Юрий, тюмень, вчера ночью вылетал клиент, показывая, что я неизвестный игрок, помогло исправить файлы через клиент ритосов и перезапуск ноута после этого. а вот седня ради интереса с утра решила глянуть работает или н...</td><td>尤里,Tyumen,昨晚一个客户机飞走了,显示我是一个未知的玩家,帮助通过Rhytos的客户机修正了文件,之后重新启动了笔记本电脑. 但Sedna为了早上的利益 决定看它是否有效</td></tr><tr><td><a href='https://vk.com/wall-49423435_2960479?reply=2960576' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>чёрный экран в TFT, Riot Client не отображает игры, в LOL не пускает.</td><td>TFT中的黑屏幕,Riot客户端不会在LOL中显示游戏.</td></tr></tbody></table><h3>Throne and Liberty（5）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-234512887_87284?reply=87336' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>Эммм) опять не заходит, та же самая история, выкинуло - потеряно соединение при тп на Морукай</td><td>嗯,再次没有进来, 同一故事, 抛出 - 失去连接 在Tp在莫鲁凯。</td></tr><tr><td><a href='https://vk.com/wall-234512887_87252?reply=87269' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>Афоня, на 2ух компах дома после какой то из обнов стабильно вылетает так с разными причинами….</td><td>Athos, 在家里的两台电脑上, 在一些更新之后, 尖锐地飞走了, 有着不同的原因。</td></tr><tr><td><a href='https://vk.com/wall-234512887_87252?reply=87268' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Ждём когда закончится! Сегодня боле 20ти раз вылетало на разных компьютерах.</td><td>我们等着它结束! 今天,有20多次在不同的计算机上飞行。</td></tr><tr><td><a href='https://vk.com/wall-234512887_87284?reply=87317' target='_blank'>link</a></td><td>login_failure</td><td>0.3</td><td>У меня вообще в игру не заходит,просто висит картинка и все.</td><td>我没有游戏,只是挂图而已</td></tr><tr><td><a href='https://vk.com/wall-234512887_87284?reply=87323' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Константин, я в дс сижу через oflvpn из телеги, пока нормуль работает</td><td>康斯坦丁岛 正常工作时,我坐在车厢里</td></tr></tbody></table><h3>VALORANT（5）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-192350539_1197017?reply=1197066' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.58</td><td>Кароче ребят, отрубайте нахимик и не трогайте главное вг, мой вам совет, и если ошибка 43 то переподключайтесь через другое гнездо роутера или через вайфай</td><td>Karoche伙计们,切断嗅探器 不要碰主wg,我的建议, 如果错误43,然后通过另一个路由器的插座或通过WiFi重新连接。</td></tr><tr><td><a href='https://vk.com/wall-192350539_1197084?reply=1197090' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.58</td><td>What, у всех 43 ошибка,5-7 раз перезаходи</td><td>什么,每个人都有43个错误,5 -7次</td></tr><tr><td><a href='https://vk.com/wall-192350539_1197084?reply=1197091' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.58</td><td>Денис, у всех 43 ошибка,5-7 раз перезаходи</td><td>Denise, 每个人都有43个错误,5 -7次重设</td></tr><tr><td><a href='https://vk.com/wall-192350539_1197080?reply=1197083' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>А валорант теперь на 10 не работает что-ли</td><td>而今华严品第十或无功用.</td></tr><tr><td><a href='https://vk.com/wall-192350539_1197084?reply=1197088' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>У кого то еще в вал не заходит?</td><td>还有谁没有进入斜坡吗?</td></tr></tbody></table><h3>ARC Raiders（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-23051891_46889?reply=46893' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>А вылеты с ошибкой анрил энджин починили?</td><td>Henril Engin的航班修好了吗?</td></tr><tr><td><a href='https://vk.com/wall-23051891_46889?reply=46897' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Иван, это ты железо свое чини.за год игры ниразу с такой ошибкой не вылетал</td><td>伊万,你的铁修。 在一年的演奏中,你从来没有犯过这样的错误.</td></tr><tr><td><a href='https://vk.com/wall-23051891_46889?reply=46920' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Иван, ни разу не было 8 месяцев играю , не каждый день конечно но вылетов нет</td><td>Ivan 我8个月没玩过 当然不是每天</td></tr></tbody></table><h3>Dead by Daylight（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-122458500_1405688?reply=1405729' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Скиньте пж впн запрет для андроид.Не могу найти</td><td>解脱安得戒. итぃ</td></tr><tr><td><a href='https://vk.com/wall-122458500_1405688?reply=1405731' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Memento, в телеге найди oflvpn, я на сяоми с ним чётенько сижу</td><td>Memento,在车里找到Ivpn, 我和他坐在一起。</td></tr></tbody></table><h3>Dota 2（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-15413538_2934858?reply=2935010' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Рейтинг уже давно ничего не значит, покупал несколько акк. С рекрутами и титанами... Играют все так же. На рекрутах бывает раз в 20игр внатуре рекруты. А так все тоже самое. Я просто в ахе...Тут сейчас скорее всего по...</td><td>长期评分不意味着什么,买了几张ACC. 带着新兵和巨人... 他们都一样 每20场比赛就有新兵. 亦复如是. 我刚刚加入... 可能会是的 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-15413538_2934889?reply=2934942' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>А вот фея кста сейчас имба на мой взгляд Покупаешь ветра шард глимер октарин и тараску,такое хрен убьешь за файт Станы идут по кд команда вражеская тупо страдает и не может спокойно зайти на хз или даже просто подрать...</td><td>但仙女Ksta现在的imba 在我看来 购买风滑滑石八角星和塔拉斯加 这样的家伙会为了档案而死 史丹去敌方的CD小组是愚蠢的痛苦,不能平静地去hz甚至只是吹. . . ..</td></tr></tbody></table><h3>Escape from Tarkov（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-89771130_1706912?reply=1707036' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.62</td><td>Отсылка на дисконект?</td><td>提到折扣?</td></tr><tr><td><a href='https://vk.com/wall-89771130_1707122?reply=1707137' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>А че дропсы с трансляций Arena Free Weekend забрать то не дает? Прогресс заполнился, а при нажатии получить дропс выдает ошибку - че за ботва то?</td><td>不如你从&quot;自由周末&quot;里拿点酒 进展被填满了 当按下滴水就会出错 - 怎么了?</td></tr></tbody></table><h3>FACEIT（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-70665401_197261?reply=197354' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Роман, на фасике античит один из лучших, если не лучший, но какая нибудь дма карта с прошивкой за 500к спокойно обходит и ты никогда не заметишь играет ли против тебя читер или нет, так что смысла щас нету особо на фа...</td><td>罗曼,在Fasic anticheat上是最好的,如果不是最好的, 但任何Dma卡 与坚定的软件500k 平静地绕过, 你永远不会注意到一个骗子是不是在玩弄你, 所以现在的法没有意义。 。 。 。</td></tr></tbody></table><h3>STALZONE（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-2677092_1141505?reply=1141692' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Мой главный враг - это фризы, лаги и 150 пинга стимовской версии</td><td>我最大的敌人是friezes,lagas和150 pings的Steam版本。</td></tr></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>运行日志摘要</h2>
+      <pre># VK 全局游戏网络故障监控日报
+
+- 执行时间: 2026-09-25 03:38:37 BST
+- 报告输出时间: 2026-09-25 03:51:42 BST
+- 查询词数量: 185
+- 必查社群数量(配置): 21
+- 必查社群抓取帖子: 61
+- 必查社群抓取评论: 727
+- 全局查询词数量: 185
+- 全局抓取帖子数: 0
+- 合并帖子数: 61
+- 故障命中帖子: 0
+- 全局下钻评论数: 0
+- 合并评论数: 727
+- 故障命中评论: 28
+- 评论采集告警数(显示&gt;0但抓取=0): 0
+
+## 故障命中帖子
+
+## 故障命中评论
+- [https://vk.com/wall-234512887_87284?reply=87336](https://vk.com/wall-234512887_87284?reply=87336) | type=server_connection_failure | conf=0.99
+  - 摘要: Эммм) опять не заходит, та же самая история, выкинуло - потеряно соединение при тп на Морукай
+  - 中文: 嗯,再次没有进来, 同一故事, 抛出 - 失去连接 在Tp在莫鲁凯。
+- [https://vk.com/wall-49423435_2960149?reply=2960526](https://vk.com/wall-49423435_2960149?reply=2960526) | type=login_failure | conf=0.82
+  - 摘要: Не заходит в игру. Кто-нибудь знает решение? ни на европу, ни на ру. После выбора героев не может игра загрузится.
+  - 中文: 他不在比赛里 有人知道解决办法吗? 无论是在欧洲还是方向舵上 在选择英雄后,游戏不能启动.
+- [https://vk.com/wall-89771130_1706912?reply=1707036](https://vk.com/wall-89771130_1706912?reply=1707036) | type=server_connection_failure | conf=0.62
+  - 摘要: Отсылка на дисконект?
+  - 中文: 提到折扣?
+- [https://vk.com/wall-23051891_46889?reply=46893](https://vk.com/wall-23051891_46889?reply=46893) | type=server_connection_failure | conf=0.6
+  - 摘要: А вылеты с ошибкой анрил энджин починили?
+  - 中文: Henril Engin的航班修好了吗?
+- [https://vk.com/wall-234512887_87252?reply=87269](https://vk.com/wall-234512887_87252?reply=87269) | type=server_connection_failure | conf=0.6
+  - 摘要: Афоня, на 2ух компах дома после какой то из обнов стабильно вылетает так с разными причинами….
+  - 中文: Athos, 在家里的两台电脑上, 在一些更新之后, 尖锐地飞走了, 有着不同的原因。
+- [https://vk.com/wall-49423435_2960149?reply=2960577](https://vk.com/wall-49423435_2960149?reply=2960577) | type=server_connection_failure | conf=0.6
+  - 摘要: Евгений, много людей в катках вылетает ?
+  - 中文: Yevgeny,很多人在溜冰场里飞?
+- [https://vk.com/wall-192350539_1197017?reply=1197066](https://vk.com/wall-192350539_1197017?reply=1197066) | type=server_connection_failure | conf=0.58
+  - 摘要: Кароче ребят, отрубайте нахимик и не трогайте главное вг, мой вам совет, и если ошибка 43 то переподключайтесь через другое гнездо роутера или через вайфай
+  - 中文: Karoche伙计们,切断嗅探器 不要碰主wg,我的建议, 如果错误43,然后通过另一个路由器的插座或通过WiFi重新连接。
+- [https://vk.com/wall-192350539_1197084?reply=1197090](https://vk.com/wall-192350539_1197084?reply=1197090) | type=server_connection_failure | conf=0.58
+  - 摘要: What, у всех 43 ошибка,5-7 раз перезаходи
+  - 中文: 什么,每个人都有43个错误,5 -7次
+- [https://vk.com/wall-192350539_1197084?reply=1197091](https://vk.com/wall-192350539_1197084?reply=1197091) | type=server_connection_failure | conf=0.58
+  - 摘要: Денис, у всех 43 ошибка,5-7 раз перезаходи
+  - 中文: Denise, 每个人都有43个错误,5 -7次重设
+- [https://vk.com/wall-15413538_2934858?reply=2935010](https://vk.com/wall-15413538_2934858?reply=2935010) | type=server_connection_failure | conf=0.42
+  - 摘要: Рейтинг уже давно ничего не значит, покупал несколько акк. С рекрутами и титанами... Играют все так же. На рекрутах бывает раз в 20игр внатуре рекруты. А так все тоже самое. Я просто в ахе...Тут сейчас скорее всего по...
+  - 中文: 长期评分不意味着什么,买了几张ACC. 带着新兵和巨人... 他们都一样 每20场比赛就有新兵. 亦复如是. 我刚刚加入... 可能会是的 。 。 。
+- [https://vk.com/wall-122458500_1405688?reply=1405729](https://vk.com/wall-122458500_1405688?reply=1405729) | type=server_connection_failure | conf=0.38
+  - 摘要: Скиньте пж впн запрет для андроид.Не могу найти
+  - 中文: 解脱安得戒. итぃ
+- [https://vk.com/wall-49423435_2960149?reply=2960510](https://vk.com/wall-49423435_2960149?reply=2960510) | type=server_connection_failure | conf=0.38
+  - 摘要: Не пускает дальше лаунчера в катки, уже успел в ранкеде лохануться, не запускает даже в тренировку. Пробовал впн (США) - запустило, но с российскими не прокатывает, хз насколько безопасно вообще регать с впном. Много ...
+  - 中文: 它不会让发射器进入滑冰场,已经设法在排名中搞砸了,甚至不会发射进入训练. Tried VPN(美国)-推出, 许多...
+- [https://vk.com/wall-49423435_2960149?reply=2960609](https://vk.com/wall-49423435_2960149?reply=2960609) | type=server_connection_failure | conf=0.38
+  - 摘要: Попробуй связку Zapret + WARP Если WARP у тебя всё-таки запустится, есть рабочий способ: сначала включи Zapret, потом WARP, и только после этого запускай Riot Client. Сработало, клиент запустился
+  - 中文: 如果您仍然开始WARP,有一个工作方式:首先打开Zapret,然后是WARP,然后才启动Riot客户端. 成功了 客户开始了
+- [https://vk.com/wall-192350539_1197080?reply=1197083](https://vk.com/wall-192350539_1197080?reply=1197083) | type=server_connection_failure | conf=0.34
+  - 摘要: А валорант теперь на 10 не работает что-ли
+  - 中文: 而今华严品第十或无功用.
+- [https://vk.com/wall-122458500_1405688?reply=1405731](https://vk.com/wall-122458500_1405688?reply=1405731) | type=server_connection_failure | conf=0.3
+  - 摘要: Memento, в телеге найди oflvpn, я на сяоми с ним чётенько сижу
+  - 中文: Memento,在车里找到Ivpn, 我和他坐在一起。
+- [https://vk.com/wall-15413538_2934889?reply=2934942](https://vk.com/wall-15413538_2934889?reply=2934942) | type=server_connection_failure | conf=0.3
+  - 摘要: А вот фея кста сейчас имба на мой взгляд Покупаешь ветра шард глимер октарин и тараску,такое хрен убьешь за файт Станы идут по кд команда вражеская тупо страдает и не может спокойно зайти на хз или даже просто подрать...
+  - 中文: 但仙女Ksta现在的imba 在我看来 购买风滑滑石八角星和塔拉斯加 这样的家伙会为了档案而死 史丹去敌方的CD小组是愚蠢的痛苦,不能平静地去hz甚至只是吹. . . ..
+- [https://vk.com/wall-23051891_46889?reply=46897](https://vk.com/wall-23051891_46889?reply=46897) | type=server_connection_failure | conf=0.3
+  - 摘要: Иван, это ты железо свое чини.за год игры ниразу с такой ошибкой не вылетал
+  - 中文: 伊万,你的铁修。 在一年的演奏中,你从来没有犯过这样的错误.
+- [https://vk.com/wall-23051891_46889?reply=46920](https://vk.com/wall-23051891_46889?reply=46920) | type=server_connection_failure | conf=0.3
+  - 摘要: Иван, ни разу не было 8 месяцев играю , не каждый день конечно но вылетов нет
+  - 中文: Ivan 我8个月没玩过 当然不是每天
+- [https://vk.com/wall-234512887_87252?reply=87268](https://vk.com/wall-234512887_87252?reply=87268) | type=server_connection_failure | conf=0.3
+  - 摘要: Ждём когда закончится! Сегодня боле 20ти раз вылетало на разных компьютерах.
+  - 中文: 我们等着它结束! 今天,有20多次在不同的计算机上飞行。
+- [https://vk.com/wall-234512887_87284?reply=87317](https://vk.com/wall-234512887_87284?reply=87317) | type=login_failure | conf=0.3
+  - 摘要: У меня вообще в игру не заходит,просто висит картинка и все.
+  - 中文: 我没有游戏,只是挂图而已
+- [https://vk.com/wall-234512887_87284?reply=87323](https://vk.com/wall-234512887_87284?reply=87323) | type=server_connection_failure | conf=0.3
+  - 摘要: Константин, я в дс сижу через oflvpn из телеги, пока нормуль работает
+  - 中文: 康斯坦丁岛 正常工作时,我坐在车厢里
+- [https://vk.com/wall-49423435_2960479?reply=2960553](https://vk.com/wall-49423435_2960479?reply=2960553) | type=login_failure | conf=0.3
+  - 摘要: Ребят, работает ли у кого-то лига в Москве и московской области? Я уже 4 с половиной часа не могу запуститься в катку после выбора чемпиона
+  - 中文: 你们在莫斯科和莫斯科地区有联盟吗? 我选了冠军之后 已经有4个半小时没参加过比赛了
+- [https://vk.com/wall-49423435_2960479?reply=2960566](https://vk.com/wall-49423435_2960479?reply=2960566) | type=server_connection_failure | conf=0.3
+  - 摘要: Юрий, тюмень, вчера ночью вылетал клиент, показывая, что я неизвестный игрок, помогло исправить файлы через клиент ритосов и перезапуск ноута после этого. а вот седня ради интереса с утра решила глянуть работает или н...
+  - 中文: 尤里,Tyumen,昨晚一个客户机飞走了,显示我是一个未知的玩家,帮助通过Rhytos的客户机修正了文件,之后重新启动了笔记本电脑. 但Sedna为了早上的利益 决定看它是否有效
+- [https://vk.com/wall-70665401_197261?reply=197354](https://vk.com/wall-70665401_197261?reply=197354) | type=server_connection_failure | conf=0.3
+  - 摘要: Роман, на фасике античит один из лучших, если не лучший, но какая нибудь дма карта с прошивкой за 500к спокойно обходит и ты никогда не заметишь играет ли против тебя читер или нет, так что смысла щас нету особо на фа...
+  - 中文: 罗曼,在Fasic anticheat上是最好的,如果不是最好的, 但任何Dma卡 与坚定的软件500k 平静地绕过, 你永远不会注意到一个骗子是不是在玩弄你, 所以现在的法没有意义。 。 。 。
+- [https://vk.com/wall-89771130_1707122?reply=1707137](https://vk.com/wall-89771130_1707122?reply=1707137) | type=server_connection_failure | conf=0.3
+  - 摘要: А че дропсы с трансляций Arena Free Weekend забрать то не дает? Прогресс заполнился, а при нажатии получить дропс выдает ошибку - че за ботва то?
+  - 中文: 不如你从"自由周末"里拿点酒 进展被填满了 当按下滴水就会出错 - 怎么了?
+- [https://vk.com/wall-192350539_1197084?reply=1197088](https://vk.com/wall-192350539_1197084?reply=1197088) | type=server_connection_failure | conf=0.26
+  - 摘要: У кого то еще в вал не заходит?
+  - 中文: 还有谁没有进入斜坡吗?
+- [https://vk.com/wall-2677092_1141505?reply=1141692](https://vk.com/wall-2677092_1141505?reply=1141692) | type=server_connection_failure | conf=0.26
+  - 摘要: Мой главный враг - это фризы, лаги и 150 пинга стимовской версии
+  - 中文: 我最大的敌人是friezes,lagas和150 pings的Steam版本。
+- [https://vk.com/wall-49423435_2960479?reply=2960576](https://vk.com/wall-49423435_2960479?reply=2960576) | type=server_connection_failure | conf=0.26
+  - 摘要: чёрный экран в TFT, Riot Client не отображает игры, в LOL не пускает.
+  - 中文: TFT中的黑屏幕,Riot客户端不会在LOL中显示游戏.
+
+## 抓取样本（原文+中文）
+- [Post](https://vk.com/wall-111837455_1341260)
+  - 原文: Осторожно, ZeroBytes переворачивает дома 🗣 Хотел бы поиграть на такой карте? 👾 #Other@r6club
+  - 中文: 小心点,ZeroBytes翻房子 你想在这张地图上玩吗? # 其他@r6俱乐部
+- [Post](https://vk.com/wall-111837455_1341262)
+  - 原文: В Heated Metal добавили нового оперативника защиты — Furnace Он устанавливает маленькие печки, которые имеют неплохой радиус действия. Когда атакующий входит в радиус действия устройства, он начинает получать урон огн...
+  - 中文: 加热金属增加了一个新的保护特工 - Furnace 他安装了射程良好的小炉灶. 攻击者进入装置射程后,开始接受火力损伤. 。 。 。
+- [Post](https://vk.com/wall-111837455_1341275)
+  - 原文: Забираем эту безумную тактику в свою копилку 👁‍🗨 #Guide@r6club
+  - 中文: 把这疯狂的战术带到你的小猪库 指南@r6club
+- [Post](https://vk.com/wall-111837455_1341278)
+  - 原文: А вы пользуетесь [ Fantasy]? 🏆 #Esports@r6club
+  - 中文: 你使用[幻想]吗? # 体育@r6club
+- [Post](https://vk.com/wall-111837455_1341280)
+  - 原文: Групповая фотосессия подписчиков 😁 🎩 #Cosplay@r6club
+  - 中文: 用户集体照片 #Cosplay@r6俱乐部
+- [Post](https://vk.com/wall-111837455_1341281)
+  - 原文: ■ РАСПРОДАЖА ИГР ОТ ЛУЧШЕЙ СТУДИИ В МИРЕ — UBISOFT ■ До 1 октября в Steam действуют скидки до 90% на игры Ubisoft. А до 28 сентября в Ubisoft Store можно бесплатно забрать For Honor — игра останется у вас навсегда 📰 #...
+  - 中文: ■ 来自世界最佳工作室的游戏销售量 – UBISOFT ~ 直到10月1日,Steam在Ubisoft游戏上享有高达90%的折扣. 直到9月28日 在Ubisoft商店 你可以免费拿起荣誉 - 游戏将永远和你在一起。
+- [Post](https://vk.com/wall-111837455_1341282)
+  - 原文: ■ FNATIC ВЫИГРАЛИ РАУНД — BLAST ВЕЛЕЛИ СЫГРАТЬ ЕГО ЗАНОВО ■ Во втором раунде на карте Border Deapek убил Doki. Через несколько секунд на трансляции сообщили, что игрока G2 выбросило с сервера. Fnatic доиграли раунд и ...
+  - 中文: ■ 花花公子跑 - BLAST 告诉他再次玩他 第二轮,边境德佩克杀死了多基. 几秒钟后,广播报道说玩家G2是从服务器上扔出来的. Fnatic完成了回合和...
+- [Post](https://vk.com/wall-111837455_1341283)
+  - 原文: ■ ИГРЫ UBISOFT НА XBOX ТЕПЕРЬ МОЖНО ЗАПУСКАТЬ БЕЗ ДИСКА ■ Ubisoft присоединились к программе Xbox Disc-to-Digital. Её участники могут вставить совместимый диск в Xbox One или Xbox Series X, запустить игру и получить ц...
+  - 中文: ■ UBISOFT XBOX 软件 游戏现在可以在没有Disk ^ Ubisoft加入Xbox Disc到数字程序的情况下启动. 其参与者可以在Xbox One或Xbox Series X中插入兼容盘,启动游戏并获得下载.
+- [Post](https://vk.com/wall-111837455_1341284)
+  - 原文: Мужчины в рассвете сил 🤤 🎨 #Arts@r6club
+  - 中文: #艺术#R6俱乐部
+- [Post](https://vk.com/wall-1171627_8398311)
+  - 原文: Без масок 😦
+  - 中文: 没有面具...
+- [Post](https://vk.com/wall-1171627_8398342)
+  - 原文: BREAKING: Warzone сохранит весь старый контент после интеграции с MW4, но есть нюансы… — Весь контент из MWII, MWIII, BO6 и BO7 останется но его можно будет отключать через специальный фильтр, заменив все на оперов из...
+  - 中文: Warzone将与MW4整合后保留所有旧内容,但其中存在细微差别. MWII,MWIII,BO6和BO7的所有内容都将保留下来,但可以通过特殊的过滤器将其关闭,用歌剧从.
+- [Post](https://vk.com/wall-1171627_8398344)
+  - 原文: Аккаунт COD в твиттере заявляет, что они не смогли добавить фильтр скинов в Black Ops 6, потому что переключатель требует «новых технологий, которые станут доступны только начиная с Season 01» Modern Warfare 4.
+  - 中文: 国防部 Twitter帳戶表示,他们无法在Black Ops 6中添加皮肤过滤器,因为开关需要"从第01季开始才会出现的新技术"现代战争4.
+- [Post](https://vk.com/wall-15413538_2934945)
+  - 原文: ⚡ Topson и SSS стали игроками OG Лазарев перешел в европейскую организацию на правах аренды. Он занял место Марка "Raven" Фаусто, который покинул клуб в начале сентября У SSS все еще есть действующий контракт с PARIVI...
+  - 中文: Topson和SSS成为OG Lazarev借入欧洲组织的玩家. 他取代了9月初离开俱乐部的马克·"拉文"·福斯托. . . ..
+- [Post](https://vk.com/wall-15413538_2934967)
+  - 原文: Дроп с квартиры __________________________ Ля, ну Гейб в этом году как никода щедрый, согласны? 😏 Ваша любимая рубрика: пост от подписчиков
+  - 中文: La, 好了, Gabe今年很慷慨, 你不觉得吗? 您最喜欢的类别: 订阅者邮报
+- [Post](https://vk.com/wall-15413538_2934980)
+  - 原文: 🤔 Skiter об Aurora Оливер Лепко рассказал об адаптации к новому составу по Dota 2. Ему непривычно выступать c новыми игроками после ухода из Team Falcons 🙈
+  - 中文: 关于奥罗拉·奥利弗·莱普科的滑雪讲述了适应Dota 2的新阵容. 他离开猎鹰队后不习惯与新球员比赛.
+- [Post](https://vk.com/wall-15413538_2935003)
+  - 原文: 😃 Алик Воробей высказался о финале The International 2026 На стриме Романа "RAMZES666" Кушнарёва он объяснил, что помогло Team Spirit победить в матче 👇 — Я думаю, Spirit выиграли финал TI15, потому что первое — PARIV...
+  - 中文: Alik Vorobey谈到2026年国际赛事的决赛, 在罗马“RAMZES666”Kushnaryov的溪流上, 他解释说,他帮助Team Spirit赢得了比赛 ^ — 我认为Spirity赢得了TI15的决赛, 因为第一个是PARIV. . . ..
+- [Post](https://vk.com/wall-15413538_2935009)
+  - 原文: 🔥 29 сентября Дота возвращается с тир-1 турниром На Мальте пройдёт BLAST SLAM VIII — по сути первый крупный тир-1 турнир нового сезона Так команды распределились по группам на старте чемпионата
+  - 中文: ^ 9月29日,Dota回归与Tir-1联赛马耳他将主办BLAST SLAM VIII——事实上是新赛季第一场主要的Tir-1联赛. 所以在冠军赛开始时 球队被分成小组
+- [Post](https://vk.com/wall-15413538_2935019)
+  - 原文: 🚫 Этих 25 героев можно было вообще не ждать на PGL Wallachia S9 За весь групповой этап турнира их ни разу не пикнули и не забанили Сохраняем список тех, кого команды полностью проигнорировали
+  - 中文: 这25名英雄在PGL Wallachia S9上完全无法预料,对于联赛的整个小组赛阶段来说,他们从未被踢或被禁止.
+- [Post](https://vk.com/wall-15413538_2935033)
+  - 原文: 🥺 Угадайте героя с первой Доты на картинке Пишите правильные ответы в
+  - 中文: 猜第一幅Dota照片上的英雄 写正确的答案
+- [Post](https://vk.com/wall-15413538_2935039)
+  - 原文: 😀 Наконец-то мы узнаем всю правду
+  - 中文: 😀 我们终于知道真相了
+- [Post](https://vk.com/wall-169653940_641380)
+  - 原文: 3 ТИЗЕР-ТРЕЙЛЕРА FORTNITEMARES
+  - 中文: 3个 茶叶拖车
+- [Post](https://vk.com/wall-169653940_641381)
+  - 原文: ВСЕ ЗАТИЗЕРЕННЫЕ КОЛЛАБОРАЦИИ FORTNITEMARES The Purge Beetlejuice Predator Slender Man The Exorcist Obsession Freddy Krueger End of Abyss
+  - 中文: 驱魔者弗雷迪·克鲁格
+- [Post](https://vk.com/wall-169653940_641382)
+  - 原文: СКИНЫ RESIDENT EVIL МОГУТ ВЕРНУТЬСЯ НА ЭТОТ ХЭЛЛОУИН Сейчас в PS Store есть раздел «Featured in Fortnite: Override» с коллаборациями, вышедшими или вернувшимися в этом сезоне, и там есть Resident Evil 2 и Requiem
+  - 中文: 现场恶棍可以回到这个万圣节 现在PS Store有一个"Featured in Fortnite: Override"部分,与本季发行或回归的合作,还有居民邪恶2和Requiem.
+- [Post](https://vk.com/wall-169653940_641383)
+  - 原文: Магазин этой недели готов украсть ваше сердце 💞
+  - 中文: 本周的商店准备偷你的心脏。
+- [Post](https://vk.com/wall-169653940_641384)
+  - 原文: МАГАЗИН НА ЭТОЙ НЕДЕЛЕ: - МЭДИСОН - ЗАВТРА - ПЕРСОНА - ПОСЛЕЗАВТРА
+  - 中文: 麦迪逊 - 明天 - 人 - 明天之后
+- [Post](https://vk.com/wall-169653940_641385)
+  - 原文: 🔥 ТРЕЙЛЕР PERSONA x FORTNITE ‼
+  - 中文: 个人X ForTNITE拖车!
+- [Post](https://vk.com/wall-169653940_641386)
+  - 原文: ДЖОКЕР ИЗ ПЕРСОНЫ - РАСШИФРОВАН 🔥
+  - 中文: 小丑从人 - 加密
+- [Post](https://vk.com/wall-192350539_1197072)
+  - 原文: Смотрите #VALORANTChampions Shanghai и зарабатывайте награды. Выберите варианты, а затем присоединитесь к приложению Shotcall во время трансляции VCT, чтобы сделать прогнозы. Подробнее: #киберспорт@valorant
+  - 中文: 观看#ValoranT 冠军上海获奖. 选择选项,然后在VCT广播时加入Shotcall应用以作出预测. 更多信息:#cybersport@valorant
+- [Post](https://vk.com/wall-194535641_198079)
+  - 原文: Весь контент, выпущенный после выхода Modern Warfare II, останется доступным в Warzone после интеграции с Modern Warfare 4 Все исполнители, виды оружия, чертежи и камуфляжи из MWII, MWIII, BO6 и BO7 будут перенесены в...
+  - 中文: 在"现代战争II"发布后发布的所有内容在与"现代战争4"整合后将保留在沃兹内,MWII,MWIII,BO6和BO7的所有艺术家,武器,蓝图和伪装都将转移到沃兹内.
+- [Post](https://vk.com/wall-194535641_198080)
+  - 原文: Играйте в Call of Duty: Warzone так, как вам Начиная с 1-го сезона, новый переключатель позволяет отображать в игре только исполнителей из MW4
+  - 中文: Play Call of D职责: Warzone as You Earth Stain 1, 新开关允许您在游戏中只显示MW4的艺术家.
+- [Comment](https://vk.com/wall-111837455_1341242?reply=1341268)
+  - 原文: Интересно🤔
+  - 中文: 真有趣,我还不知道
+- [Comment](https://vk.com/wall-111837455_1341244?reply=1341264)
+  - 原文: Походу со скинами Ренгоку случилась ошибка когда они стоили по очков славы.
+  - 中文: 骑着皮革 任高古犯了一个错误 当他们值得荣耀点。
+- [Comment](https://vk.com/wall-111837455_1341246?reply=1341267)
+  - 原文: Даже не сомневался что говночемпы и около шушера активно юзает гличи и баги
+  - 中文: 我甚至毫不怀疑 粪便 和周围的shusher 正在积极使用 故障和虫子。
+- [Comment](https://vk.com/wall-111837455_1341253?reply=1341265)
+  - 原文: &gt; смена ника внутри игры и продвинутый античит — только для Китая
+  - 中文: 游戏内部昵称的更改和高级Anticheat - 只针对中国
+- [Comment](https://vk.com/wall-111837455_1341257?reply=1341259)
+  - 原文: Выпустили клон Area F2
+  - 中文: 区域 F2 克隆
+- [Comment](https://vk.com/wall-1171627_8397999?reply=8398324)
+  - 原文: Кортез, и в титрах: Продолжение в ВАРЗОН.
+  - 中文: 科特兹,在学分中: 继续去瓦宗
+- [Comment](https://vk.com/wall-1171627_8398037?reply=8398309)
+  - 原文: Ха хаха хахахахахах Call of Duty: Infinite Warfare, Call of Duty: Advanced Warfare, Call of Duty: Ghosts, Call of Duty: Vanguard , ПРОШУ БЛ НЕ НАДО , Call of Duty: Modern Warfare 3 (2011) Remastered не ну это можно , ...
+  - 中文: 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈. 使命召唤:无限战争,使命召唤:高级战争,使命召唤:幽灵, 责任召唤:先锋, 请不要,《使命召唤:现代战争3》(2011年) 重操旧业是不可能的
+- [Comment](https://vk.com/wall-1171627_8398095?reply=8398323)
+  - 原文: кстати заметьте, ни одна из игр, которая отличается от MW и BO не заимела продолжения. Да и по итогу после осовременивания серии в 2007 году вышло 15 основных игр связанные со вселенной BO(+WaW, ибо там начало серии З...
+  - 中文: 顺便说一下,与MW和BO不同的游戏都没有续集. 也因此,在2007年系列的现代化之后,发行了15款与BO宇宙(+WAW)相关的大游戏,因为系列游戏的开始.
+- [Comment](https://vk.com/wall-1171627_8398156?reply=8398320)
+  - 原文: Александр, а шо за рыжуля Даллас?
+  - 中文: 亚历山大,红发达拉斯呢?
+- [Comment](https://vk.com/wall-1171627_8398156?reply=8398321)
+  - 原文: Александр, из мультиплеера
+  - 中文: 亚历山大,从多人。
+- [Comment](https://vk.com/wall-1171627_8398156?reply=8398353)
+  - 原文: Денис, ГОСТу и прайсу
+  - 中文: 丹尼斯、戈斯特和皮卡
+- [Comment](https://vk.com/wall-1171627_8398186?reply=8398319)
+  - 原文: Алексей, ага, особенно миссия с расстрелом и ядерным взрывом в CoD 4. Или отравление Новой-6 в BO 1.
+  - 中文: 阿列克谢,是的, 特别是任务 在COD的射击和核爆炸 4个 或BO 1中Nova 6的中毒.
+- [Comment](https://vk.com/wall-1171627_8398213?reply=8398318)
+  - 原文: Мухоловка, не говоря уже о том, что часть контента пропадёт со временем. Я играл в CoD BO Cold War в 2025 году, во вкладках видеоролики, там тупо нету роликов за первые сезоны. WW2 была последней игрой, в котором сюже...
+  - 中文: 更别提有些内容会随时间消失 我在2025年出演了科德BO冷战,标签中没有视频,第一季没有视频. WW2是最后一场...
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398312)
+  - 原文: Денис, 6k на пс 5 стоит
+  - 中文: Denis, 6k on ps 5费用
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398313)
+  - 原文: Непонятно что лучше взять ГТА 6 иди новую калду цена одинаковая
+  - 中文: 不清楚的是,是否最好采用GTA 6或者新的Caldoo价格相同.
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398315)
+  - 原文: Андрей, ну в Стиме на казах акк дешевле через плати ру гифтом
+  - 中文: 安德烈,在史提姆,哈萨克AKK便宜 通过付费鲁礼仪
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398327)
+  - 原文: Стала хуже
+  - 中文: 情况越来越糟了
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398333)
+  - 原文: Андрей, я не стал голову ломать, взял обе
+  - 中文: 安德鲁,我没有摔断头,我拿了两个
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398339)
+  - 原文: Андрей, да тут и так все новинки куплены хелуин .новая игра плюс от создателей ведьмак 3 ,контрол резонанс ,Самсон чета прям сентябрь урожайный по играм
+  - 中文: 安德烈,是的,在这里和所有的新奇 买希鲁因。 新游戏+魔女3的创造者,控制共鸣.
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398340)
+  - 原文: Андрей, я скипнул, проходняки как по мне.
+  - 中文: 安德烈,我快沸腾了,你们看起来像我
+- [Comment](https://vk.com/wall-1171627_8398269?reply=8398354)
+  - 原文: Денис, леее спасибо большое про цену на плати ру Норм так секономил мне деньги
+  - 中文: 丹尼斯 非常感谢你为我付诺姆这么多钱
+- [Comment](https://vk.com/wall-1171627_8398295?reply=8398316)
+  - 原文: Никита, ведь это база.
+  - 中文: Nikita 这是基地
+- [Comment](https://vk.com/wall-1171627_8398295?reply=8398325)
+  - 原文: Так Грейвс и не водил дружбу с капитаном Ценником. Действовал по приказу Шепарда и не более. В новой игре видимо кто-то заплатит за поимку пенсионера, возможно даже его бывшее начальство.
+  - 中文: 格雷夫斯对普莱斯船长不友好 照薛帕德的命令行事,没有别的了. 在新游戏中,显然有人会为俘虏养老金领取者而付出代价,甚至可能是他的前上级.
+- [Comment](https://vk.com/wall-1171627_8398295?reply=8398334)
+  - 原文: Если кто не знал, чвк так и работают. Кто платит - на того и работают. Никаких моральных принципов там нет
+  - 中文: 如果你不知道,这就是它的工作原理。 薪者为工. 那里没有道德原则。
+- [Comment](https://vk.com/wall-1171627_8398295?reply=8398336)
+  - 原文: Мммммм, прям сюжет Halo 5.
+  - 中文: 嗯,这就是光环5的故事。
+- [Comment](https://vk.com/wall-1171627_8398295?reply=8398337)
+  - 原文: Руслан, хм, а ведь и правда
+  - 中文: 罗斯兰,嗯,这是真的。
+- [Comment](https://vk.com/wall-1171627_8398295?reply=8398338)
+  - 原文: Да не подорвали его в танке!….
+  - 中文: 别在坦克里炸掉它! 。 。 。 。
+- [Comment](https://vk.com/wall-1171627_8398298?reply=8398308)
+  - 原文: Эх жаль что щас в бо7 ивент классный будет с Думгай но увы он варзоне тоже не останется , так что смысл брать его нету , а в будущем я не спешу возвращаться в старые части калды , ну максимум только в мв 1 -3 часть , ...
+  - 中文: 可惜的是,现在在Bo7里,这个活动会和Dumgay一起很酷,但可惜他也不会留下,所以没有意义拿它,今后我不再急于回到卡尔达的老地方,好,最多只能用mv 1-3部分.
+- [Comment](https://vk.com/wall-1171627_8398298?reply=8398310)
+  - 原文: Мамочка всех накормит
+  - 中文: 妈妈喂大家吃。
+- [Comment](https://vk.com/wall-1171627_8398298?reply=8398314)
+  - 原文: кстати вопрос, а Зомби будут в МВ4? Просто МВ3 Зомби завершилось с намёком на продолжение.
+  - 中文: 问题是,僵尸会在MV4吗? 只是MV3僵尸以续集的暗示结束.</pre>
+    </div>
+  </div>
+</body>
+</html>
