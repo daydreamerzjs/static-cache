@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-09-27T02:57:58.903072+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-09-27/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405787",
+      "url": "https://vk.com/wall-122458500_1405787",
+      "text": "#news@deadbydaylight_ru \n \nОт Тумана до владений Дракулы, мы поднимаем наш кубок, чтобы отметить 40-летие Кастлвании! 🩸 \nЗа неизменное наследие и за множество испытаний впереди.\n \n#DeadbyDaylight #DBD #Castlevania #Konami",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-26 18:00:02+00:00",
+      "collected_at": "2026-09-27 02:37:59.833952+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405782",
+      "url": "https://vk.com/wall-122458500_1405782",
+      "text": "#news@deadbydaylight_ru \n \nВнимание всем Выжившим! С 25 по 27 сентября мы увеличим сумму пожертвований в 1,5 раза, если достигнем отметки в 445 000 отремонтированных генераторов. Не забывайте: каждая починка имеет значение.\n\n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-26 15:05:10+00:00",
+      "collected_at": "2026-09-27 02:37:59.833952+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-09-27/community_deadbydaylight_ru/community_test.html"
+}
