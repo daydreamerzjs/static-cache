@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-10-01T02:59:34.790614+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-01/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1405883",
+      "url": "https://vk.com/wall-122458500_1405883",
+      "text": "#news@deadbydaylight_ru \n#stream@deadbydaylight_ru \n \nВ этом октябре вас ждут сюрпризы и угощения: завтра в 18:00 МСК во время нашей трансляции «Октябрь ужасов» вы сможете заработать четыре Twitch Drops.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-30 17:05:46+00:00",
+      "collected_at": "2026-10-01 02:37:54.137072+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1405873",
+      "url": "https://vk.com/wall-122458500_1405873",
+      "text": "#news@deadbydaylight_ru \n#stream@deadbydaylight_ru\n \nНас ждет месяц, полный жутких сюрпризов! 🎃 Смотрите нашу трансляцию «Октябрь ужасов» 1 октября в 18:00 МСК на YouTube или Twitch.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-09-30 15:05:50+00:00",
+      "collected_at": "2026-10-01 02:37:54.137072+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-01/community_deadbydaylight_ru/community_test.html"
+}
