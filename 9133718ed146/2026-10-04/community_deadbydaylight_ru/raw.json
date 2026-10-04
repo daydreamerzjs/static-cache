@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-10-04T02:56:45.865606+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-04/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1406060",
+      "url": "https://vk.com/wall-122458500_1406060",
+      "text": "#news@deadbydaylight_ru \n \nВот что вас ждет в Тумане в этот жуткий сезон 🎃 Взгляните на октябрьскую дорожную карту! \n \n📍 1 неделя — Продолжение коллекции \"Священное увядание\", конвенция \"Silver Scream\".\n📍 2 неделя — Коллаб-коллекция \"Nier: Automata\", новый Разрыв \"Академия\", задания в честь Дня DBD, благотворительная акция.\n📍 3 неделя — Начало события \"Призраки дневного света\", возвращение коллекции \"Гадости и сладости\".\n📍 4 неделя — День DBD, живое мероприятие Ark/8, Хэллоуинская распродажа, коллаб-коллекция \"Diablo\".\n📍 5 неделя — Старт ПБТ, стримы в рамках Twitch Rivals, продолжение коллекции \"Ноябрьские деньки\".\n \n#DeadbyDaylight #DBD #NierAutomata #Nier #Diablo",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-03 17:13:27+00:00",
+      "collected_at": "2026-10-04 02:37:51.258331+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1406054",
+      "url": "https://vk.com/wall-122458500_1406054",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nБорьба за человечество продолжится в Тумане. \nКоллекция NieR:Automata выйдет 6 октября. \n \n#DeadbyDaylight #DBD #NieRAutomata #NieR",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-03 15:04:37+00:00",
+      "collected_at": "2026-10-04 02:37:51.258331+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-04/community_deadbydaylight_ru/community_test.html"
+}
