@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-10-05T02:56:34.529750+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-05/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1406095",
+      "url": "https://vk.com/wall-122458500_1406095",
+      "text": "#news@deadbydaylight_ru \n \nУспейте погасить код до 31 октября, чтобы получить Амулет! \n \n🔪 MACHETE \n \n#DeadbyDaylight #DBD #Fridaythe13th",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-04 15:04:19+00:00",
+      "collected_at": "2026-10-05 02:37:47.006789+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-05/community_deadbydaylight_ru/community_test.html"
+}
