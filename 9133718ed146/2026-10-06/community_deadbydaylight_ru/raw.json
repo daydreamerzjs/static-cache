@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-10-06T02:57:49.764500+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-06/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1406132",
+      "url": "https://vk.com/wall-122458500_1406132",
+      "text": "#news@deadbydaylight_ru \n \nВ этом году на Хэллоуин на прилавках появится новая серия кошмаров. \nВзгляните на новинки нашего \"Октября ужасов\".\n \n#DeadbyDaylight #DBD #Fridaythe13th #Diablo #StrangerThings",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-05 18:02:17+00:00",
+      "collected_at": "2026-10-06 02:38:29.537560+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1406112",
+      "url": "https://vk.com/wall-122458500_1406112",
+      "text": "#news@deadbydaylight_ru \n \nВсе живое обречено на гибель... особенно в Тумане. \nПриготовьтесь к игре за 2B, A2 и Эмиля с коллекцией \"NieR Automata\", которая станет доступна завтра. \n \n#DeadbyDaylight #DBD #NieRAutomata #NieR",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-05 15:04:40+00:00",
+      "collected_at": "2026-10-06 02:38:29.537560+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-06/community_deadbydaylight_ru/community_test.html"
+}
