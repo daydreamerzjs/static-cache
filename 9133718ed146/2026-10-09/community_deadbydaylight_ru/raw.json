@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-10-09T02:58:38.456256+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-09/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1406384",
+      "url": "https://vk.com/wall-122458500_1406384",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nОт одной бесконечной борьбы за выживание к другой, битва за человечество перемещается в Туман. \n \n#DeadbyDaylight #DBD #NieRAutomata #NieR",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-08 16:57:18+00:00",
+      "collected_at": "2026-10-09 02:37:56.737122+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-09/community_deadbydaylight_ru/community_test.html"
+}
