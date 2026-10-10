@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-10-10T02:59:37.443812+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-10/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1406438",
+      "url": "https://vk.com/wall-122458500_1406438",
+      "text": "#news@deadbydaylight_ru \n \nВ сентябре этого года мы обещали пожертвовать 100% выручки от продажи наряда Шейна \"Изучение дел\" , который продавался с 22 по 30 сентября, в пользу IM4 Media Lab. Также мы предоставили вам возможность увеличить итоговую сумму пожертвования, приняв участие в общественном челлендже, который пройдет с 25 по 27 сентября.\n\nМы рады сообщить, что благодаря вашей поддержке мы пожертвуем 100 000 канадских долларов медиа-лаборатории IM4 в поддержку американских коренных художников, создателей контента, разработчиков игр и медиа-профессионалов.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-09 18:15:04+00:00",
+      "collected_at": "2026-10-10 02:38:07.757197+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1406433",
+      "url": "https://vk.com/wall-122458500_1406433",
+      "text": "#news@deadbydaylight_ru \n \nРазрыв «Академия» открыт — занятия возобновляются! 🕰 \nОзнакомьтесь с доступными курсами и поделитесь своей тройкой лучших в комментариях. 📝\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-09 16:08:43+00:00",
+      "collected_at": "2026-10-10 02:38:07.757197+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-10/community_deadbydaylight_ru/community_test.html"
+}
