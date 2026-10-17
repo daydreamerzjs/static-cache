@@ -1,0 +1,41 @@
+{
+  "run_at": "2026-10-17T02:50:55.116585+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-17/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1406667",
+      "url": "https://vk.com/wall-122458500_1406667",
+      "text": "#news@deadbydaylight_ru \n \n⚠ Выключатель приведен в действие! \n \nВ связи с ошибкой, затрагивающей один из участков карты «Чудовищная кладовая», мы временно отключаем эту карту. Обратите внимание, что карта будет повторно включена в одном из будущих обновлений. \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-16 19:13:43+00:00",
+      "collected_at": "2026-10-17 02:37:28.233596+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1406662",
+      "url": "https://vk.com/wall-122458500_1406662",
+      "text": "#news@deadbydaylight_ru \n \nМы позаботились о ваших костюмах! 🍬 \n \nПусть сладости и гадости льются рекой с двумя новыми косметическими предметами для Неи Карлссон и Эйса Висконти, которые уже доступны во внутриигровом магазине.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-16 15:37:39+00:00",
+      "collected_at": "2026-10-17 02:37:28.233596+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1406658",
+      "url": "https://vk.com/wall-122458500_1406658",
+      "text": "#news@deadbydaylight_ru \n \nМы впервые выпускаем коллекционные предметы в Discord, как раз к сезону ужасов! \n \nПродемонстрируйте свою любовь к игре с помощью новых украшений для аватара, эффектов профиля и многого другого, все это вдохновлено культовыми кошмарами из Тумана.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-16 13:14:57+00:00",
+      "collected_at": "2026-10-17 02:37:28.233596+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-17/community_deadbydaylight_ru/community_test.html"
+}
