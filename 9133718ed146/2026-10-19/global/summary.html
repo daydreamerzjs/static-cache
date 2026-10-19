@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VK 游戏网络故障监控汇报</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    body { margin: 0; font-family: "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(135deg, #0f766e, #0ea5a4); color: #fff; border-radius: 14px; padding: 20px; }
+    .meta { margin-top: 8px; color: #d1fae5; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+    .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .kpi .v { font-size: 24px; font-weight: 700; }
+    .kpi .k { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    h2 { margin: 4px 0 10px; font-size: 18px; }
+    h3 { margin: 16px 0 10px; font-size: 16px; }
+    pre { white-space: pre-wrap; font-size: 12px; color: #334155; }
+    .alert { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 10px; padding: 14px 16px; margin: 12px 0; color: #7f1d1d; }
+    .alert-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .alert-desc { font-size: 13px; color: #991b1b; margin-bottom: 6px; }
+    .alert ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    .alert a { color: #b91c1c; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>VK 游戏网络故障监控汇报</h1>
+      <div class="meta">生成时间：2026-10-19 03:38:18 BST</div>
+      <div class="meta">报告输出时间：2026-10-19 03:50:57 BST</div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="kpi"><div class="v">27</div><div class="k">总命中数</div></div>
+      <div class="kpi"><div class="v">9</div><div class="k">命中游戏数</div></div>
+      <div class="kpi"><div class="v">27</div><div class="k">服务器连接失败</div></div>
+      <div class="kpi"><div class="v">0</div><div class="k">匹配失败</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>游戏维度汇总</h2>
+      <table>
+        <thead><tr><th>游戏</th><th>总命中</th><th>登录失败</th><th>匹配失败</th><th>服务器连接失败</th></tr></thead>
+        <tbody><tr><td>Call of Duty: Warzone</td><td>7</td><td>1</td><td>0</td><td>7</td></tr><tr><td>PUBG: BATTLEGROUNDS</td><td>6</td><td>1</td><td>0</td><td>6</td></tr><tr><td>Call of Duty</td><td>5</td><td>0</td><td>0</td><td>5</td></tr><tr><td>Escape from Tarkov</td><td>3</td><td>0</td><td>0</td><td>3</td></tr><tr><td>STALZONE</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>FARTNITE | Сливы Fortnite | Новости Фортнайт</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Throne and Liberty</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>VALORANT</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>社区: r6club</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>按游戏的故障明细（原文+中文）</h2>
+      <h3>PUBG: BATTLEGROUNDS（9）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-148211806_900921?reply=901544' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.98</td><td>Андрей, стример один известный сказал до конца года точно не починят, через впн работает</td><td>安德烈,一位著名流星手 说在年底前完全不会修复 通过VPN的作品。</td></tr><tr><td><a href='https://vk.com/wall-148211806_900921?reply=901508' target='_blank'>link</a></td><td>server_connection_failure, login_failure</td><td>0.64</td><td>Всем привет. Уже больше недели не могу зайти в катку. Может кто знает, как решить? В игру захожу, лобби, клан, магазин, мастерская и т.д. - все работает, везде пускает. Но стоит запустить любую катку, выдает ошибку та...</td><td>嘿,大家好,你们好。 我一个多星期没进冰球了 谁知道如何决定? 我进入了游戏,游说,氏族,商店,车间等——一切正常,随处可见. 但必须开始任何滑冰比赛,这会造成错误。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-148211806_900886?reply=901525' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Денис, выше всё написано, сервера работают, через герап бустер, на любых играть можно, не ждите чуда</td><td>丹尼斯,所有东西都在上面写,服务器工作, 通过GearUP助推器,你可以玩任何, 不要期待奇迹。</td></tr><tr><td><a href='https://vk.com/wall-148211806_901408?reply=901540' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Gear up решает . Но платить нужно</td><td>盖尔决定。 但你必须付出代价。</td></tr><tr><td><a href='https://vk.com/wall-148211806_900886?reply=901538' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>И Стим палка тоже не работает</td><td>和兴奋棒也不起作用。</td></tr><tr><td><a href='https://vk.com/wall-148211806_900921?reply=901488' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Что до сих пор не работает игра?есть новости когда починят?</td><td>游戏还有效吗? 你们有什么消息吗?</td></tr><tr><td><a href='https://vk.com/wall-148211806_901328?reply=901543' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Дима, не работает</td><td>帝玛不效.</td></tr><tr><td><a href='https://vk.com/wall-148211806_900886?reply=901537' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.36</td><td>Владимир, чё написанно сервак лежат</td><td>弗拉基米尔,什么是写 农奴说谎</td></tr><tr><td><a href='https://vk.com/wall-148211806_901215?reply=901510' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Дима, это работает только через впнкастылем или просто состима?</td><td>迪玛,这只管穿刺或刺激?</td></tr></tbody></table><h3>Call of Duty: Warzone（8）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-194535641_198573?reply=198632' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.46</td><td>Артем, очень легко зайти, если на ноуте/пк запустить ускоритель Гир ап. Он прокинет скоростные прокси на консоль</td><td>Artem 如果你用笔记本电脑操作Gir加速器 很容易进去 他会向控制台投放高速的代理.</td></tr><tr><td><a href='https://vk.com/wall-194535641_194242?reply=198607' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Так и она заходит по всем прокси, что в чате нашел.</td><td>所以她通过所有代理 她发现在聊天。</td></tr><tr><td><a href='https://vk.com/wall-194535641_194242?reply=198626' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Работает. Пробуйте. Пишите все как на фото и перезагружайте плойку. Интернет с телефона раздайте и впн включите.</td><td>它的工作原理。 试试 把照片里的东西都写下来 然后重新开始自助餐 把手机给网路打开</td></tr><tr><td><a href='https://vk.com/wall-194535641_198394?reply=198606' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Как на пк победить это? Смена днс и прокси сервера не помогло</td><td>你怎么击败的? 更改 DNS 和代理服务器没有帮助</td></tr><tr><td><a href='https://vk.com/wall-194535641_198455?reply=198615' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Перепробовал все прокси, что были в чате, — не включается.</td><td>我尝试了所有在聊天中的代理——不包括.</td></tr><tr><td><a href='https://vk.com/wall-194535641_198573?reply=198620' target='_blank'>link</a></td><td>server_connection_failure, login_failure</td><td>0.36</td><td>Артем, это же колда, сервера лежат до сих пор вероятно, но я в варзону не могу зайти</td><td>Artem 是个女巫 服务器可能还在 但我不能去Varzon</td></tr><tr><td><a href='https://vk.com/wall-194535641_198573?reply=198609' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Подскажите как зайти в калду? Ни в какую не заходит Дайте по братски рабочий йа пи или днс</td><td>你能告诉我怎么进入卡尔达吗? 别去任何地方。 让我们兄弟般地工作吧</td></tr><tr><td><a href='https://vk.com/wall-194535641_198573?reply=198612' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Паша, тоже третий день не заходит,смена днс и раздача с телефона не помогают</td><td>帕夏,第三天也来不了了, 电话里的dns和分配的改变也帮不了你</td></tr></tbody></table><h3>Call of Duty（6）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-1171627_8398899?reply=8399261' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.46</td><td>Добрый день! Поделитесь прокси, пожалуйста. Оба вышеуказанные (в комментах) не работают 🤦🏼</td><td>午安,你好吗? 请共享代理 。 上述两项(在评论中)都行不通。</td></tr><tr><td><a href='https://vk.com/wall-1171627_8398899?reply=8399266' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Ребят, а есть у кого нибудь действующие прокси или днс, те что вверху показали - не работают ( калда просто не грузит дальше обновления..</td><td>伙计们,还有某个活跃的代理或DNS,那些在最上面显示的——不要工作(卡尔达只是不会在更新后加载. 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-1171627_8398899?reply=8399271' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Кароче с 5 раза зашло с прокси,что выше кидали. Ранее выбрасывало и вот на 5 раз законнктилось и обновилось</td><td>卡罗奇带着5次,带着一个代理,这是更高的投球. 以前丢弃,这里5次完成并更新</td></tr><tr><td><a href='https://vk.com/wall-1171627_8398899?reply=8399272' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Андрей, если не конектиться к этому прокси, пробуй раз 10, постоянно перезагрузив ебучую приставку, у меня так зашло, больше никак.</td><td>安德烈,如果你不结束 这个代理,尝试10次, 不断重启他妈的控制台, 我太累了,不再。</td></tr><tr><td><a href='https://vk.com/wall-1171627_8398899?reply=8399275' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Кирилл, как ахуенно жилось до 2022 года, не нужны были эти прокси, как все заебло</td><td>西里尔,像他妈的活到2022年, 不需要这些代理人, 如何搞砸了一切</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399086?reply=8399396' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Андрей, в стиме вообще 0 лагов</td><td>安德烈,刺激有0落后。</td></tr></tbody></table><h3>Escape from Tarkov（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-89771130_1712933?reply=1713397' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>А можно навсегда убрать ошибку потеряно соединение с сервером</td><td>您可以永久删除连接到服务器的错误</td></tr><tr><td><a href='https://vk.com/wall-89771130_1708904?reply=1713322' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.66</td><td>Local problems on POST Ошибка: 0 Произошла ошибка при отправке запроса. Ошибка: 0 Базовое соединение закрыто: Непредвиденная ошибка при приеме. Ошибка: 0 Не удается прочитать данные из транспортного соединения: Удален...</td><td>POST 上的局部问题 : 0 发送请求时出错 。 错误 : 0 基本连接已关闭 : 无法预见的接收错误 。 错误 : 0 无法读取传输连接的数据: 删除 。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-89771130_1713368?reply=1713381' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Павел, сервер мож сменить надо в лаунчере или в гирапе</td><td>Pavel, 服务器可以在发射器或GearUP中更改</td></tr></tbody></table><h3>STALZONE（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-2677092_1147108?reply=1147210' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>Пытаюсь связать твич и сталзон, идет бесконечная загрузка либо ничего для связи не показывает. Кто знает что делать? Впн пробовал</td><td>试图连接 twitch 和 Stalzon, 有无穷无尽的下载, 或者没有任何通信显示 。 谁知道该怎么做? Vpn尝试。</td></tr><tr><td><a href='https://vk.com/wall-2677092_1147108?reply=1147257' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Дмитрий, попробуй из телеги юзануть official_vpnbot, с ним должно норм прогрузиться</td><td>德米特里,尝试使用推车中的官方_vpnbot,它应该加载规范.</td></tr></tbody></table><h3>社区: r6club（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-111837455_1341971' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>■ КАК ВЕРНУТЬ ДЕНЬГИ ЗА ДОНАТ В RAINBOW SIX MOBILE ■ Покупки, совершённые с 8 сентября 2026 года через Google Play или официальный веб-магазин Rainbow Six Mobile, можно будет вернуть по запросу до 31 января 2027 года ...</td><td>^ 如何回溯您在 REINBOW 6MOBILE → 2026年9月8日以来通过 Google Play 或官方的 Rainbow Six Mobile website 商店的购买,可按要求回购至2027年1月31日.</td></tr><tr><td><a href='https://vk.com/wall-111837455_1341973' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>■ UBISOFT ЗАПУСТИЛИ ХЭЛЛОУИНСКИЙ КОНКУРС С ПРИЗАМИ ■ Ubisoft объявили творческий конкурс, в котором игроки могут выиграть паки события Doktor&#x27;s Curse. Для участия необходимо представить любимых оперативников, гаджеты ...</td><td>^ Ubisoft推出万圣节大赛有奖项 ^ Ubisoft宣布进行创意比赛,玩家可以在比赛中赢得多克托尔诅咒事件的包. 要参与,你需要介绍你最喜欢的操作员,装置...</td></tr></tbody></table><h3>FARTNITE | Сливы Fortnite | Новости Фортнайт（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-169653940_642041?reply=642139' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>Подскажите, год не играла, сейчас та же проблема с запуском игры в пати, что после каждой катки ошибка вылетает или нет? думаю вернуться</td><td>告诉我,一年没有玩, 现在同样的问题 在游戏的发布 在党内,</td></tr></tbody></table><h3>Throne and Liberty（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-234512887_90647?reply=90724' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Евгений, здравствуйте. Вам необходимо обратиться в поддержку игры: Специалисты изучат ваш случай и постараются помочь.</td><td>尤金,你好。 你需要支持游戏:专家会调查你的案子并尽力提供帮助.</td></tr></tbody></table><h3>VALORANT（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-192350539_1197408?reply=1197414' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Вы когда почините сервера свои последние две недели лагает</td><td>当你修复你的服务器 在过去两周,</td></tr></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>运行日志摘要</h2>
+      <pre># VK 全局游戏网络故障监控日报
+
+- 执行时间: 2026-10-19 03:38:18 BST
+- 报告输出时间: 2026-10-19 03:50:57 BST
+- 查询词数量: 185
+- 必查社群数量(配置): 21
+- 必查社群抓取帖子: 52
+- 必查社群抓取评论: 732
+- 全局查询词数量: 185
+- 全局抓取帖子数: 0
+- 合并帖子数: 52
+- 故障命中帖子: 2
+- 全局下钻评论数: 0
+- 合并评论数: 729
+- 故障命中评论: 31
+- 评论采集告警数(显示&gt;0但抓取=0): 0
+
+## 故障命中帖子
+- [https://vk.com/wall-111837455_1341971](https://vk.com/wall-111837455_1341971) | type=server_connection_failure | conf=0.3
+  - 摘要: ■ КАК ВЕРНУТЬ ДЕНЬГИ ЗА ДОНАТ В RAINBOW SIX MOBILE ■ Покупки, совершённые с 8 сентября 2026 года через Google Play или официальный веб-магазин Rainbow Six Mobile, можно будет вернуть по запросу до 31 января 2027 года ...
+  - 中文: ^ 如何回溯您在 REINBOW 6MOBILE → 2026年9月8日以来通过 Google Play 或官方的 Rainbow Six Mobile website 商店的购买,可按要求回购至2027年1月31日.
+- [https://vk.com/wall-111837455_1341973](https://vk.com/wall-111837455_1341973) | type=server_connection_failure | conf=0.3
+  - 摘要: ■ UBISOFT ЗАПУСТИЛИ ХЭЛЛОУИНСКИЙ КОНКУРС С ПРИЗАМИ ■ Ubisoft объявили творческий конкурс, в котором игроки могут выиграть паки события Doktor's Curse. Для участия необходимо представить любимых оперативников, гаджеты ...
+  - 中文: ^ Ubisoft推出万圣节大赛有奖项 ^ Ubisoft宣布进行创意比赛,玩家可以在比赛中赢得多克托尔诅咒事件的包. 要参与,你需要介绍你最喜欢的操作员,装置...
+
+## 故障命中评论
+- [https://vk.com/wall-89771130_1712933?reply=1713397](https://vk.com/wall-89771130_1712933?reply=1713397) | type=server_connection_failure | conf=0.99
+  - 摘要: А можно навсегда убрать ошибку потеряно соединение с сервером
+  - 中文: 您可以永久删除连接到服务器的错误
+- [https://vk.com/wall-148211806_900921?reply=901544](https://vk.com/wall-148211806_900921?reply=901544) | type=server_connection_failure | conf=0.98
+  - 摘要: Андрей, стример один известный сказал до конца года точно не починят, через впн работает
+  - 中文: 安德烈,一位著名流星手 说在年底前完全不会修复 通过VPN的作品。
+- [https://vk.com/wall-169653940_642041?reply=642139](https://vk.com/wall-169653940_642041?reply=642139) | type=server_connection_failure | conf=0.68
+  - 摘要: Подскажите, год не играла, сейчас та же проблема с запуском игры в пати, что после каждой катки ошибка вылетает или нет? думаю вернуться
+  - 中文: 告诉我,一年没有玩, 现在同样的问题 在游戏的发布 在党内,
+- [https://vk.com/wall-2677092_1147108?reply=1147210](https://vk.com/wall-2677092_1147108?reply=1147210) | type=server_connection_failure | conf=0.68
+  - 摘要: Пытаюсь связать твич и сталзон, идет бесконечная загрузка либо ничего для связи не показывает. Кто знает что делать? Впн пробовал
+  - 中文: 试图连接 twitch 和 Stalzon, 有无穷无尽的下载, 或者没有任何通信显示 。 谁知道该怎么做? Vpn尝试。
+- [https://vk.com/wall-89771130_1708904?reply=1713322](https://vk.com/wall-89771130_1708904?reply=1713322) | type=server_connection_failure | conf=0.66
+  - 摘要: Local problems on POST Ошибка: 0 Произошла ошибка при отправке запроса. Ошибка: 0 Базовое соединение закрыто: Непредвиденная ошибка при приеме. Ошибка: 0 Не удается прочитать данные из транспортного соединения: Удален...
+  - 中文: POST 上的局部问题 : 0 发送请求时出错 。 错误 : 0 基本连接已关闭 : 无法预见的接收错误 。 错误 : 0 无法读取传输连接的数据: 删除 。 。 。 。
+- [https://vk.com/wall-148211806_900921?reply=901508](https://vk.com/wall-148211806_900921?reply=901508) | type=server_connection_failure,login_failure | conf=0.64
+  - 摘要: Всем привет. Уже больше недели не могу зайти в катку. Может кто знает, как решить? В игру захожу, лобби, клан, магазин, мастерская и т.д. - все работает, везде пускает. Но стоит запустить любую катку, выдает ошибку та...
+  - 中文: 嘿,大家好,你们好。 我一个多星期没进冰球了 谁知道如何决定? 我进入了游戏,游说,氏族,商店,车间等——一切正常,随处可见. 但必须开始任何滑冰比赛,这会造成错误。 。 。 。
+- [https://vk.com/wall-148211806_900886?reply=901525](https://vk.com/wall-148211806_900886?reply=901525) | type=server_connection_failure | conf=0.5
+  - 摘要: Денис, выше всё написано, сервера работают, через герап бустер, на любых играть можно, не ждите чуда
+  - 中文: 丹尼斯,所有东西都在上面写,服务器工作, 通过GearUP助推器,你可以玩任何, 不要期待奇迹。
+- [https://vk.com/wall-148211806_901408?reply=901540](https://vk.com/wall-148211806_901408?reply=901540) | type=server_connection_failure | conf=0.5
+  - 摘要: Gear up решает . Но платить нужно
+  - 中文: 盖尔决定。 但你必须付出代价。
+- [https://vk.com/wall-89771130_1713368?reply=1713381](https://vk.com/wall-89771130_1713368?reply=1713381) | type=server_connection_failure | conf=0.5
+  - 摘要: Павел, сервер мож сменить надо в лаунчере или в гирапе
+  - 中文: Pavel, 服务器可以在发射器或GearUP中更改
+- [https://vk.com/wall-1171627_8398899?reply=8399261](https://vk.com/wall-1171627_8398899?reply=8399261) | type=server_connection_failure | conf=0.46
+  - 摘要: Добрый день! Поделитесь прокси, пожалуйста. Оба вышеуказанные (в комментах) не работают 🤦🏼
+  - 中文: 午安,你好吗? 请共享代理 。 上述两项(在评论中)都行不通。
+- [https://vk.com/wall-194535641_198573?reply=198632](https://vk.com/wall-194535641_198573?reply=198632) | type=server_connection_failure | conf=0.46
+  - 摘要: Артем, очень легко зайти, если на ноуте/пк запустить ускоритель Гир ап. Он прокинет скоростные прокси на консоль
+  - 中文: Artem 如果你用笔记本电脑操作Gir加速器 很容易进去 他会向控制台投放高速的代理.
+- [https://vk.com/wall-148211806_900886?reply=901538](https://vk.com/wall-148211806_900886?reply=901538) | type=server_connection_failure | conf=0.42
+  - 摘要: И Стим палка тоже не работает
+  - 中文: 和兴奋棒也不起作用。
+- [https://vk.com/wall-148211806_900921?reply=901488](https://vk.com/wall-148211806_900921?reply=901488) | type=server_connection_failure | conf=0.42
+  - 摘要: Что до сих пор не работает игра?есть новости когда починят?
+  - 中文: 游戏还有效吗? 你们有什么消息吗?
+- [https://vk.com/wall-148211806_901328?reply=901543](https://vk.com/wall-148211806_901328?reply=901543) | type=server_connection_failure | conf=0.42
+  - 摘要: Дима, не работает
+  - 中文: 帝玛不效.
+- [https://vk.com/wall-1171627_8398899?reply=8399266](https://vk.com/wall-1171627_8398899?reply=8399266) | type=server_connection_failure | conf=0.38
+  - 摘要: Ребят, а есть у кого нибудь действующие прокси или днс, те что вверху показали - не работают ( калда просто не грузит дальше обновления..
+  - 中文: 伙计们,还有某个活跃的代理或DNS,那些在最上面显示的——不要工作(卡尔达只是不会在更新后加载. 。 。 。
+- [https://vk.com/wall-1171627_8398899?reply=8399271](https://vk.com/wall-1171627_8398899?reply=8399271) | type=server_connection_failure | conf=0.38
+  - 摘要: Кароче с 5 раза зашло с прокси,что выше кидали. Ранее выбрасывало и вот на 5 раз законнктилось и обновилось
+  - 中文: 卡罗奇带着5次,带着一个代理,这是更高的投球. 以前丢弃,这里5次完成并更新
+- [https://vk.com/wall-1171627_8398899?reply=8399272](https://vk.com/wall-1171627_8398899?reply=8399272) | type=server_connection_failure | conf=0.38
+  - 摘要: Андрей, если не конектиться к этому прокси, пробуй раз 10, постоянно перезагрузив ебучую приставку, у меня так зашло, больше никак.
+  - 中文: 安德烈,如果你不结束 这个代理,尝试10次, 不断重启他妈的控制台, 我太累了,不再。
+- [https://vk.com/wall-1171627_8398899?reply=8399275](https://vk.com/wall-1171627_8398899?reply=8399275) | type=server_connection_failure | conf=0.38
+  - 摘要: Кирилл, как ахуенно жилось до 2022 года, не нужны были эти прокси, как все заебло
+  - 中文: 西里尔,像他妈的活到2022年, 不需要这些代理人, 如何搞砸了一切
+- [https://vk.com/wall-194535641_194242?reply=198607](https://vk.com/wall-194535641_194242?reply=198607) | type=server_connection_failure | conf=0.38
+  - 摘要: Так и она заходит по всем прокси, что в чате нашел.
+  - 中文: 所以她通过所有代理 她发现在聊天。
+- [https://vk.com/wall-194535641_194242?reply=198626](https://vk.com/wall-194535641_194242?reply=198626) | type=server_connection_failure | conf=0.38
+  - 摘要: Работает. Пробуйте. Пишите все как на фото и перезагружайте плойку. Интернет с телефона раздайте и впн включите.
+  - 中文: 它的工作原理。 试试 把照片里的东西都写下来 然后重新开始自助餐 把手机给网路打开
+- [https://vk.com/wall-194535641_198394?reply=198606](https://vk.com/wall-194535641_198394?reply=198606) | type=server_connection_failure | conf=0.38
+  - 摘要: Как на пк победить это? Смена днс и прокси сервера не помогло
+  - 中文: 你怎么击败的? 更改 DNS 和代理服务器没有帮助
+- [https://vk.com/wall-194535641_198455?reply=198615](https://vk.com/wall-194535641_198455?reply=198615) | type=server_connection_failure | conf=0.38
+  - 摘要: Перепробовал все прокси, что были в чате, — не включается.
+  - 中文: 我尝试了所有在聊天中的代理——不包括.
+- [https://vk.com/wall-148211806_900886?reply=901537](https://vk.com/wall-148211806_900886?reply=901537) | type=server_connection_failure | conf=0.36
+  - 摘要: Владимир, чё написанно сервак лежат
+  - 中文: 弗拉基米尔,什么是写 农奴说谎
+- [https://vk.com/wall-194535641_198573?reply=198620](https://vk.com/wall-194535641_198573?reply=198620) | type=server_connection_failure,login_failure | conf=0.36
+  - 摘要: Артем, это же колда, сервера лежат до сих пор вероятно, но я в варзону не могу зайти
+  - 中文: Artem 是个女巫 服务器可能还在 但我不能去Varzon
+- [https://vk.com/wall-148211806_901215?reply=901510](https://vk.com/wall-148211806_901215?reply=901510) | type=server_connection_failure | conf=0.3
+  - 摘要: Дима, это работает только через впнкастылем или просто состима?
+  - 中文: 迪玛,这只管穿刺或刺激?
+- [https://vk.com/wall-234512887_90647?reply=90724](https://vk.com/wall-234512887_90647?reply=90724) | type=server_connection_failure | conf=0.3
+  - 摘要: Евгений, здравствуйте. Вам необходимо обратиться в поддержку игры: Специалисты изучат ваш случай и постараются помочь.
+  - 中文: 尤金,你好。 你需要支持游戏:专家会调查你的案子并尽力提供帮助.
+- [https://vk.com/wall-2677092_1147108?reply=1147257](https://vk.com/wall-2677092_1147108?reply=1147257) | type=server_connection_failure | conf=0.3
+  - 摘要: Дмитрий, попробуй из телеги юзануть official_vpnbot, с ним должно норм прогрузиться
+  - 中文: 德米特里,尝试使用推车中的官方_vpnbot,它应该加载规范.
+- [https://vk.com/wall-1171627_8399086?reply=8399396](https://vk.com/wall-1171627_8399086?reply=8399396) | type=server_connection_failure | conf=0.26
+  - 摘要: Андрей, в стиме вообще 0 лагов
+  - 中文: 安德烈,刺激有0落后。
+- [https://vk.com/wall-192350539_1197408?reply=1197414](https://vk.com/wall-192350539_1197408?reply=1197414) | type=server_connection_failure | conf=0.26
+  - 摘要: Вы когда почините сервера свои последние две недели лагает
+  - 中文: 当你修复你的服务器 在过去两周,
+- [https://vk.com/wall-194535641_198573?reply=198609](https://vk.com/wall-194535641_198573?reply=198609) | type=server_connection_failure | conf=0.26
+  - 摘要: Подскажите как зайти в калду? Ни в какую не заходит Дайте по братски рабочий йа пи или днс
+  - 中文: 你能告诉我怎么进入卡尔达吗? 别去任何地方。 让我们兄弟般地工作吧
+- [https://vk.com/wall-194535641_198573?reply=198612](https://vk.com/wall-194535641_198573?reply=198612) | type=server_connection_failure | conf=0.26
+  - 摘要: Паша, тоже третий день не заходит,смена днс и раздача с телефона не помогают
+  - 中文: 帕夏,第三天也来不了了, 电话里的dns和分配的改变也帮不了你
+
+## 抓取样本（原文+中文）
+- [Post](https://vk.com/wall-111837455_1341958)
+  - 原文: Как вам Tachanka и Noor после патча? 👾 #Other@r6club
+  - 中文: 那塔昌卡和诺尔在补丁之后呢? # 其他@r6俱乐部
+- [Post](https://vk.com/wall-111837455_1341962)
+  - 原文: Кейкапы прекрасны 🤳 👾 #Other@r6club
+  - 中文: 盖子真漂亮 # 其他@r6俱乐部
+- [Post](https://vk.com/wall-111837455_1341963)
+  - 原文: ■ ПОДРОБНОСТИ ИЗМЕНЕНИЙ ОПЕРАТИВНИКА OSA ■ В межсезонном патче разработчики ослабили ограничения на установку щита у Осы, но подробности раскрыли не сразу Ограничение по вертикальному расстоянию сокращено с 6,25 до 0,...
+  - 中文: 在季外补丁中,开发者放宽了对Wasp上安装屏蔽的限制,但细节并没有立即揭示垂直距离限制从6.25降至0.
+- [Post](https://vk.com/wall-111837455_1341965)
+  - 原文: ■ ГРАФИКИ ПИКРЕЙТА И ВИНРЕЙТА НА ПК/КОНСОЛЯХ В Y11S3.1 ■ Предыдущие можно посмотреть [ 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: Y11S3.1的PC/Consoles上的缩写和缩写
+- [Post](https://vk.com/wall-111837455_1341966)
+  - 原文: ■ ГРАФИКИ БАНРЕЙТА НА ПК/КОНСОЛЯХ В Y11S3.1 ■ Предыдущие можно посмотреть [ 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ^ 银行在Y11S3.1中的PC/CONSOICS → 先前的可以查看[Я#SiegeNews@r6club|###News@r6club].
+- [Post](https://vk.com/wall-111837455_1341967)
+  - 原文: ■ ОСТАЛЬНЫЕ ИЗМЕНЕНИЯ В МЕЖСЕЗОННОМ ПАТЧЕЙ Y11S3 ■ Capitão: интервал между этапами распространения огня сокращён с 1 до 0,9 секунды Помимо этого, вы можете ознакомиться с исправленными багами 📰 #SiegeNews@r6club | 📰 #...
+  - 中文: ■ Y11S3季间补丁的其他变化 ^ Capitão:火传播阶段之间的间隔从1秒缩短到0.9秒.
+- [Post](https://vk.com/wall-111837455_1341968)
+  - 原文: ■ В РАЗДЕЛЕ «ОТЛИЧНЫЕ ПРЕДЛОЖЕНИЯ» ДОСТУПЕН ПОДАРОК ■ Помимо этого, все владельцы R6 Membership получили бонусный пакет 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ■ 在“出色提供”一节中, 此外,所有R6会员的拥有者都收到了一个奖金套件 ^ #SiegeNews@r6club → ##News@r6club
+- [Post](https://vk.com/wall-111837455_1341969)
+  - 原文: ■ НАБОР MEMENTO ЗА 100$ ПОЯВИЛСЯ В ЦИФРОВОМ МАГАЗИНЕ ■ Сет включает в себя 7200 кредитов R6, скин Memento (реколор) и бустер очков славы на 7 дней 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ^ Memento SQUIRE $100 出现在数字存储器中 ^ 包括7,200R6信用, Memento皮肤(彩色)和7天的名利推手#SiegeNews@r6club ##News@r6club
+- [Post](https://vk.com/wall-111837455_1341970)
+  - 原文: ■ АНИМАЦИИ ДВУХ СКИНОВ MEMENTO В ТЕКУЩЕМ ИВЕНТЕ ■ Синий скин можно получить в игре за кредиты R6, а красный — только за настоящие деньги 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: ^ 动画中当前事件的两个MEMENTO皮肤 ^ 蓝色皮肤可以在游戏中获取R6信用值,红色皮肤只为真钱 ^ #SiegeNews@r6club ####News@r6club
+- [Post](https://vk.com/wall-111837455_1341971)
+  - 原文: ■ КАК ВЕРНУТЬ ДЕНЬГИ ЗА ДОНАТ В RAINBOW SIX MOBILE ■ Покупки, совершённые с 8 сентября 2026 года через Google Play или официальный веб-магазин Rainbow Six Mobile, можно будет вернуть по запросу до 31 января 2027 года ...
+  - 中文: ^ 如何回溯您在 REINBOW 6MOBILE → 2026年9月8日以来通过 Google Play 或官方的 Rainbow Six Mobile website 商店的购买,可按要求回购至2027年1月31日.
+- [Post](https://vk.com/wall-111837455_1341973)
+  - 原文: ■ UBISOFT ЗАПУСТИЛИ ХЭЛЛОУИНСКИЙ КОНКУРС С ПРИЗАМИ ■ Ubisoft объявили творческий конкурс, в котором игроки могут выиграть паки события Doktor's Curse. Для участия необходимо представить любимых оперативников, гаджеты ...
+  - 中文: ^ Ubisoft推出万圣节大赛有奖项 ^ Ubisoft宣布进行创意比赛,玩家可以在比赛中赢得多克托尔诅咒事件的包. 要参与,你需要介绍你最喜欢的操作员,装置...
+- [Post](https://vk.com/wall-111837455_1341974)
+  - 原文: Бе бе бе с ба ба ба 👀 🎨 #Arts@r6club
+  - 中文: 为b、b、b、b、b#艺术@r6俱乐部
+- [Post](https://vk.com/wall-1171627_8399256)
+  - 原文: MW4 в Steam. Обстановка. «В основном положительные отзывы» 😳 КОГДА ПОСЛЕДНИЙ РАЗ ТАКОЕ БЫЛО ВООБЩЕ?
+  - 中文: MW4在Steam上发布. 设施。 “基本正面评论”何时是最后时刻?
+- [Post](https://vk.com/wall-1171627_8399280)
+  - 原文: Его глаза говорят за него
+  - 中文: 他的眼睛为他说话。
+- [Post](https://vk.com/wall-1171627_8399316)
+  - 原文: 💔💔💔
+  - 中文:  
+- [Post](https://vk.com/wall-1171627_8399363)
+  - 原文: Первый взгляд на Shipment и Shoot House в MW4 — На сей раз это вариант оригинальной карты из MW1 (2007) — SH на сей раз в северокорейском стиле #COD #ModernWarfare #ModernWarfare #MW4
+  - 中文: 首先看看MW4的货运和射击馆 这一次是MW1(2007年)的原版地图的一个变体——SH这一次朝鲜风格#COD#现代战法#现代战法#MW4
+- [Post](https://vk.com/wall-1171627_8399381)
+  - 原文: Мистер Бист готовит какой-то ролик по DMZ 19 октября 🔥🔥🔥 «Я выкупил Северную Корею, чтобы устроить там матч по DMZ с реальными людьми!»
+  - 中文: 野兽先生正为10月19日的DMZ准备一段视频:"我买下朝鲜玩DMZ与真人比赛!
+- [Post](https://vk.com/wall-1171627_8399382)
+  - 原文: Наш дорогой ауф-волчара Юлиан Костов поделился фотоками времен работы над MWIII 🔥
+  - 中文: 我们亲爱的狼朱利安・科斯托夫 分享了MWIII工作时间的照片
+- [Post](https://vk.com/wall-122458500_1406685)
+  - 原文: С нуля до профессии 3D-художника за 12 месяцев: Полный онлайн-курс с поддержкой наставника, в котором ты шаг за шагом освоишь ключевые навыки 3D-художника — от базового моделирования до финальных рендеров и стилизации...
+  - 中文: 12个月后从零到3D艺术家的职业: 一个完全的在线辅导员支持的课程,在这个课程中,你将逐步掌握3D艺术家的关键技能,从基本的模型制作到最终的渲染和造型. . . ..
+- [Post](https://vk.com/wall-148211806_901507)
+  - 原文: 🥇🔥 Стартовал финальный день PGS10! Сегодня будет известен первый чемпион четвертого круга! Приятного просмотра! 🍿 #PUBG #BATTLEGROUNDS #КиберспортPUBG #PGS
+  - 中文: PGS10的最后一天开始了! 今天将是第四轮的首个冠军! 玩得开心点! #PUBG #BATTLEGROUNDS #CybersportPUBG #PGS 互联网档案馆的存檔,存档日期2013-09-02.
+- [Post](https://vk.com/wall-148211806_901546)
+  - 原文: 🥇🎉 Virtus.Pro — победители PGS 10! 🎉🥇 #PUBG #BATTLEGROUNDS #КиберспортPUBG #PGS
+  - 中文: 维图斯. PGS 10的获胜者! #PUBG #BATTLEGROUNDS #CybersportPUBG #PGS 互联网档案馆的存檔,存档日期2013-09-02.
+- [Post](https://vk.com/wall-15413538_2938618)
+  - 原文: 🤩 Watson посоветовал лучших керри для поднятия рейтинга Самое время начать абузить, пока не вышел 7.42
+  - 中文: ^ Watson建议最好的Kerrys提高评分 是时候在7点42分前开始加速了
+- [Post](https://vk.com/wall-15413538_2938627)
+  - 原文: 🔥 Collapse готовится вернуться на про-сцену Менеджер Team Spirit рассказал о планах Магомеда, сначала отдохнуть, набраться сил и привести себя в форму, а затем снова разносить соперников Похоже, возвращение ещё впереди
+  - 中文: 折叠准备回到亲现场的团队精神经理 谈到马格迈德的计划, 首先休息, 获得力量和身体, 然后再次抹黑对手。
+- [Post](https://vk.com/wall-15413538_2938643)
+  - 原文: 😂 Rue и Larl получили необычные прозвища от тиммейтов Игроки Team Spirit называют Rue «Грязным Филом», а Larl — «Всемирным Рофлом» Похоже, внутри команды скучать не приходится
+  - 中文: Larl和Rue从队友Team Spirit的球员中获得了不寻常的昵称,叫Rue "Dirty Phil"和Larl - "World Roflom". 似乎不需要在团队内部感到无聊.
+- [Post](https://vk.com/wall-15413538_2938655)
+  - 原文: 🤨 Shadow Fiend проигрывает на всех рангах У СФ сейчас худший винрейт среди героев независимо от рейтинга игроков Как думаете, ему срочно нужны усиления?
+  - 中文: 暗影奇侠在全军覆没 SF现在无论球员的评分如何 英雄中最差的赢家 你觉得他急需增援吗?
+- [Post](https://vk.com/wall-15413538_2938667)
+  - 原文: обычная игра в турбо перед сном ))) __________________________ Ну полтора часа это не много, вот у меня турбо было на три часа... Такой ад пережили 😅 Делитесь скринами своих самых долгих игр! Ваша любимая рубрика: пос...
+  - 中文: 睡觉前常规涡轮游戏). _______________________________ 嗯,一个半小时并不多, 所以我有一个涡轮机三个小时。 分享您最长游戏的屏幕! 你最喜欢的台词是:
+- [Post](https://vk.com/wall-15413538_2938669)
+  - 原文: 😁 Cr1t после завершения карьеры дотера не отказался от игр Бывший саппорт Falcons начал играть в World of Warcraft. Датчанин зарегистрировался на PvP-турнир в WoW Forever с призовым фондом 100 тысяч долларов. Cr1t выб...
+  - 中文: 。 。 。 Cr1t在完成职业生涯后,多特并没有放弃游戏Former支持Falcons开始玩World of Warcraft. 丹乃以10万美元的奖金报名参加在WoW Forever举办的PVP锦标赛. Cr1t出来。 。 。 。
+- [Post](https://vk.com/wall-15413538_2938678)
+  - 原文: 😂 Минутка "черного" юмора
+  - 中文: 一分钟的黑色幽默。
+- [Post](https://vk.com/wall-15413538_2938681)
+  - 原文: 💪 Топиас Таавитсайнен номинирован на звание лучшего стримера в категории MOBA на The Streamers Awards 2026 Информация об этом появилась в соцсетях мероприятия. Конкуренцию Topson составляют Марк "Caedrel" Роберт Ламон...
+  - 中文: Topias Taavitsainen在2026年"流者奖"(The Streamers Awards)上获得MOBA类最佳流者提名. 托普森与马克·"凯德尔"·罗伯特·拉蒙特竞争. .
+- [Post](https://vk.com/wall-169653940_642134)
+  - 原文: ВК скоро может как Яндекс сдохнуть по той же причине ("движухи"), поэтому подписывайтесь на ТГ на всякий
+  - 中文: VK很快会像Yandex一样因为同样的原因("movuzhuhi")而死,因此订阅TG也因任何原因.
+- [Comment](https://vk.com/wall-111837455_1341780?reply=1341954)
+  - 原文: Тем временем
+  - 中文: 同时,
+- [Comment](https://vk.com/wall-111837455_1341780?reply=1341955)
+  - 原文: My heart and soul are not broken., тем временем в чате
+  - 中文: 与此同时,我的心和灵魂没有破裂。
+- [Comment](https://vk.com/wall-111837455_1341946?reply=1341956)
+  - 原文: Ну по факту все
+  - 中文: 嗯,事实上,一切。
+- [Comment](https://vk.com/wall-111837455_1341946?reply=1341957)
+  - 原文: Пuдopaсы потому что
+  - 中文: 因为
+- [Comment](https://vk.com/wall-111837455_1341946?reply=1341959)
+  - 原文: У юбисофт сама система монетизации забавна. Посмотрите на сюжетные(!) игры, в которые они запихнули внутриигровой магазин со скинами (кек, их покупали люди кстати :). Если Сидж перешёл на бесплатную модель, можно было...
+  - 中文: Yubisoft的货币化系统很有趣。 看看他们用皮肤推倒游戏商店的情节(! 如果Sidge换成了免费模特儿 你可以的 . . ..
+- [Comment](https://vk.com/wall-1171627_8398859?reply=8399330)
+  - 原文: Кал лютый мультиплеер в этой части был один из худших
+  - 中文: 这个角色中最伟大的多人扮演者是最差的之一.
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399261)
+  - 原文: Добрый день! Поделитесь прокси, пожалуйста. Оба вышеуказанные (в комментах) не работают 🤦🏼
+  - 中文: 午安,你好吗? 请共享代理 。 上述两项(在评论中)都行不通。
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399266)
+  - 原文: Ребят, а есть у кого нибудь действующие прокси или днс, те что вверху показали - не работают ( калда просто не грузит дальше обновления..
+  - 中文: 伙计们,还有某个活跃的代理或DNS,那些在最上面显示的——不要工作(卡尔达只是不会在更新后加载. 。 。 。
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399271)
+  - 原文: Кароче с 5 раза зашло с прокси,что выше кидали. Ранее выбрасывало и вот на 5 раз законнктилось и обновилось
+  - 中文: 卡罗奇带着5次,带着一个代理,这是更高的投球. 以前丢弃,这里5次完成并更新
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399272)
+  - 原文: Андрей, если не конектиться к этому прокси, пробуй раз 10, постоянно перезагрузив ебучую приставку, у меня так зашло, больше никак.
+  - 中文: 安德烈,如果你不结束 这个代理,尝试10次, 不断重启他妈的控制台, 我太累了,不再。
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399275)
+  - 原文: Кирилл, как ахуенно жилось до 2022 года, не нужны были эти прокси, как все заебло
+  - 中文: 西里尔,像他妈的活到2022年, 不需要这些代理人, 如何搞砸了一切
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399276)
+  - 原文: Vlad, да если бы это касалось игрушек,было бы пол беды…
+  - 中文: 弗拉德,如果它涉及到玩具, 它会是一半的麻烦。
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399279)
+  - 原文: Понял, спасибо
+  - 中文: 知道了,谢谢。
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399307)
+  - 原文: Кирилл, это я к тому, что пытаешься просто отбросить мысли от каждодневных событий, так они и там преследуют
+  - 中文: 基里尔,我的意思是,你只是想 抛弃你的思想 从日常的事件, 他们仍然困扰着你。
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399374)
+  - 原文: Дима, в бункер иди, там последний
+  - 中文: 迪玛,去地堡,还有最后一个
+- [Comment](https://vk.com/wall-1171627_8398952?reply=8399264)
+  - 原文: Богдан, а разве можно с мобилы раздать хап?
+  - 中文: 博格丹,有没有可能从手机上发一个信号?
+- [Comment](https://vk.com/wall-1171627_8399063?reply=8399313)
+  - 原文: Компания шикарная дошел до 6 миссии все миссии проработаны просто нечто лучшее что выходило
+  - 中文: 奇奇公司完成了6次任务 所有任务都想出了更好的办法
+- [Comment](https://vk.com/wall-1171627_8399086?reply=8399396)
+  - 原文: Андрей, в стиме вообще 0 лагов
+  - 中文: 安德烈,刺激有0落后。
+- [Comment](https://vk.com/wall-1171627_8399086?reply=8399397)
+  - 原文: Прайса жалко, не так всё должно было закончится
+  - 中文: 普莱斯很抱歉 这不是应该结束的
+- [Comment](https://vk.com/wall-1171627_8399086?reply=8399398)
+  - 原文: Антон, так у меня в стиме
+  - 中文: 安东,它在我的蒸汽。
+- [Comment](https://vk.com/wall-1171627_8399086?reply=8399400)
+  - 原文: Андрей, ну я сегодня всю компанию прошел, в видео стабильно 180 фпс плавный ролик, в игре 180, плавная картинка без единого разрыва
+  - 中文: 安德烈,今天我通过整个公司, 在视频稳定 180英尺平滑的视频, 在游戏180,平滑的图片 没有一次休息。
+- [Comment](https://vk.com/wall-1171627_8399143?reply=8399254)
+  - 原文: Андрей, все хорошо или плохо там?
+  - 中文: 安德鲁,一切都好吗?
+- [Comment](https://vk.com/wall-1171627_8399143?reply=8399255)
+  - 原文: Никита, ну мне очень понравилось)
+  - 中文: Nikita 我真的很喜欢
+- [Comment](https://vk.com/wall-1171627_8399143?reply=8399260)
+  - 原文: Соболезную!
+  - 中文: 对不起!
+- [Comment](https://vk.com/wall-1171627_8399143?reply=8399283)
+  - 原文: Шикарная компания лучшая из которых выходила после перезапуска серии
+  - 中文: 系列重启后最优秀的公司
+- [Comment](https://vk.com/wall-1171627_8399143?reply=8399319)
+  - 原文: Которого турнули из собственной компании 😏
+  - 中文: 谁被从自己的公司带走。
+- [Comment](https://vk.com/wall-1171627_8399147?reply=8399268)
+  - 原文: Илья, самый лучший сингл, в старой трилогии МВ. Эту я просто не мог установить никак, после отвязки от лаунчера
+  - 中文: 伊利亚,最佳单曲,在旧MV三部曲中. 我无法在发射装置后安装这个
+- [Comment](https://vk.com/wall-1171627_8399147?reply=8399346)
+  - 原文: За музыку в игре отдельное спасибо 🔥
+  - 中文: 游戏中的音乐,谢谢
+- [Comment](https://vk.com/wall-1171627_8399198?reply=8399257)
+  - 原文: Стас, Йоу ава класс
+  - 中文: 斯塔斯,约亚班。
+- [Comment](https://vk.com/wall-1171627_8399198?reply=8399259)
+  - 原文: Качну пожалуй, потом на распродаже куплю к нг для мультиплеера Интересно там опять вся игра пройдена?
+  - 中文: 我将购买纳克,</pre>
+    </div>
+  </div>
+</body>
+</html>
