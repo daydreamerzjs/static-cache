@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-10-20T02:52:04.196496+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-20/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1406714",
+      "url": "https://vk.com/wall-122458500_1406714",
+      "text": "#news@deadbydaylight_ru \n \nМы отмечаем 30-летие Tomb Raider! 🎉 \nПоздравляем Лару Крофт с тремя десятилетиями приключений: от древних гробниц до самых темных уголков Тумана.\n \n#DeadbyDaylight #DBD #TombRaider #LaraCroft",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-19 17:09:22+00:00",
+      "collected_at": "2026-10-20 02:37:36.604894+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1406710",
+      "url": "https://vk.com/wall-122458500_1406710",
+      "text": "#news@deadbydaylight_ru \n \nДобро пожаловать в Ад.\nЗавтра.\n \n#DeadbyDaylight #DBD #Diablo",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-19 16:13:07+00:00",
+      "collected_at": "2026-10-20 02:37:36.604894+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-20/community_deadbydaylight_ru/community_test.html"
+}
