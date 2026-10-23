@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VK 游戏网络故障监控汇报</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    body { margin: 0; font-family: "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(135deg, #0f766e, #0ea5a4); color: #fff; border-radius: 14px; padding: 20px; }
+    .meta { margin-top: 8px; color: #d1fae5; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+    .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .kpi .v { font-size: 24px; font-weight: 700; }
+    .kpi .k { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    h2 { margin: 4px 0 10px; font-size: 18px; }
+    h3 { margin: 16px 0 10px; font-size: 16px; }
+    pre { white-space: pre-wrap; font-size: 12px; color: #334155; }
+    .alert { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 10px; padding: 14px 16px; margin: 12px 0; color: #7f1d1d; }
+    .alert-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .alert-desc { font-size: 13px; color: #991b1b; margin-bottom: 6px; }
+    .alert ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    .alert a { color: #b91c1c; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>VK 游戏网络故障监控汇报</h1>
+      <div class="meta">生成时间：2026-10-23 03:37:39 BST</div>
+      <div class="meta">报告输出时间：2026-10-23 03:50:21 BST</div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="kpi"><div class="v">48</div><div class="k">总命中数</div></div>
+      <div class="kpi"><div class="v">10</div><div class="k">命中游戏数</div></div>
+      <div class="kpi"><div class="v">47</div><div class="k">服务器连接失败</div></div>
+      <div class="kpi"><div class="v">2</div><div class="k">匹配失败</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>游戏维度汇总</h2>
+      <table>
+        <thead><tr><th>游戏</th><th>总命中</th><th>登录失败</th><th>匹配失败</th><th>服务器连接失败</th></tr></thead>
+        <tbody><tr><td>Escape from Tarkov</td><td>11</td><td>1</td><td>1</td><td>11</td></tr><tr><td>PUBG: BATTLEGROUNDS</td><td>11</td><td>0</td><td>0</td><td>11</td></tr><tr><td>Call of Duty</td><td>8</td><td>0</td><td>1</td><td>8</td></tr><tr><td>STALZONE</td><td>4</td><td>0</td><td>0</td><td>4</td></tr><tr><td>Call of Duty: Warzone</td><td>3</td><td>0</td><td>0</td><td>3</td></tr><tr><td>League of Legends</td><td>3</td><td>1</td><td>0</td><td>2</td></tr><tr><td>社区: r6club</td><td>3</td><td>0</td><td>0</td><td>3</td></tr><tr><td>Escape from Tarkov: Arena</td><td>2</td><td>1</td><td>0</td><td>2</td></tr><tr><td>Throne and Liberty</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>Dead by Daylight</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>按游戏的故障明细（原文+中文）</h2>
+      <h3>Escape from Tarkov（12）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714463' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>ПВЕ. на все локации захожу спокойно, переход на ледокол ни как не пускает, пишет &quot;потеряно соединение с сервером&quot; нажимаю покинуть рейд, все вещи сохраняются</td><td>我平静地进入所有地点,向破冰机的过渡不允许,写出&quot;与服务器失去连接&quot;的媒体离开突袭,所有事情都得到拯救.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714483' target='_blank'>link</a></td><td>login_failure, server_connection_failure, matchmaking_failure</td><td>0.99</td><td>Не пускает</td><td>不会吧</td></tr><tr><td><a href='https://vk.com/wall-89771130_1708904?reply=1714480' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.66</td><td>Local problems on POST Ошибка: 0 Произошла ошибка при отправке запроса. Ошибка: 0 Базовое соединение закрыто: Непредвиденная ошибка при приеме. Ошибка: 0 Не удается прочитать данные из транспортного соединения: Удален...</td><td>POST 错误的本地问题 : 0 发送请求时出错 。 错误 : 0 基本连接已关闭 : 无法预见的接收错误 。 错误 : 0 无法从传输连接读取数据: 删除 。 。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714470' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.64</td><td>Подскажите как решить эту проблему? Уже второй день не пускает. ВПН отключена, но дальше даундчера не пускает…</td><td>你能告诉我怎么解决这个问题吗? 已来一日. VPN已禁用,但超越了哑弹者不会让.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1708904?reply=1714275' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Разрабы - повязка голова глаза не работает - дикий с вертушки зарядил 1 пулей в голова-челюсть</td><td>开发者 - 眼睛的头带不起作用 - 从头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头部</td></tr><tr><td><a href='https://vk.com/wall-89771130_1713368?reply=1714426' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>А че за тема ребят лаунчер в стиме не работает, уточняет хочу ли привязать аккаунт к стиму отвечаю да а он ошибку выдает</td><td>对兴奋剂中的家伙发射器的主题有什么不起作用的, 澄清我是否想要将账户与兴奋剂的答案联系起来 是的,他给出了一个错误</td></tr><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714363' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>стимовский тарок до сих пор не работает, держу в курсе</td><td>我仍然没有刺激,我知道。</td></tr><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714390' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Александр, решает вопрос с лаунчером. Игра всё ещё не работает нормально)</td><td>亚历山大,他处理的发射器。 游戏仍然不能正常工作.</td></tr><tr><td><a href='https://vk.com/wall-89771130_1708904?reply=1714455' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>что может быть, регион РУ и на сайте пишет ру, на пк впн нет...</td><td>RU所在的地区以及网站都写作ru, 。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714282' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.36</td><td>Алєѯандръ, как это нет? Ты спринты вспомни. Там постоянно сервера лежат, и колесо загрузки крутится не переставая!</td><td>阿莱坎德,怎么不是? 记得冲刺吗? 总是有服务器躺在那里, 下载轮不断旋转!</td></tr><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714313' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>Lori-R, да не работает у лесты ни чего нормально. Сервера так же на изоленте держатся как и у всех. Но у Александра все ок. И спринты и черный рынок, конструкторское бюро, и в принципе как и любая активность.</td><td>萝莉 -R不为恭维而工作. 服务器也和别人一样在录音带上。 但亚历山大没事 还有冲刺和黑市,设计局, 原则上,像任何活动。</td></tr><tr><td><a href='https://vk.com/wall-89771130_1714005?reply=1714365' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Парни есть способ сделать так чтобы не вылетало во время пати в пве? Каждый раз такое при загрузке и при в входе в игру</td><td>伙计们,有办法确保它不会在派对期间飞出吗? 每次下载并输入游戏.</td></tr></tbody></table><h3>PUBG: BATTLEGROUNDS（12）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-148211806_901636?reply=901966' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>Не работает😩</td><td>不工作吗?</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902001' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>Только через ВПН играю</td><td>仅通过VPN.</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902009' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.64</td><td>Все норм, зашло в катку в скваде, пинг 35</td><td>好吧,我去滑冰场 在四角,ping 35。</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=901998' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.58</td><td>Вчера смог зайти в матч сыграть даже 4-5 игр в Сквадах ( но потом опять началась вечная загузка в Матч и последующая ошибка 2610 FFFFFF</td><td>昨天我得以进入比赛,在Squads连打出4-5场比赛(但随后比赛中永恒的情节和随后的2610 FFFF出错再次开始).</td></tr><tr><td><a href='https://vk.com/wall-148211806_901812?reply=901967' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>У меня с герапом 40пинг,выше не подымается</td><td>我有40平与GearUP, 不走更高。</td></tr><tr><td><a href='https://vk.com/wall-148211806_901812?reply=901968' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Если в пачке постоянно играете, качаете гирап, подписка 299р,и тот человек который купил, все заходите к нему в пачку, и все будет работать</td><td>如果你一直打一个包, 摇滚GearUP,订阅299r, 和买它的人,都去他的包, 一切都会工作。</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902015' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Как не работало так и не работает,в лобби заходит а карту не грузит</td><td>由于它没有工作,也没有工作,在大厅里来了,地图也没有装入.</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902029' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>Стало выкидывать из-за античита теперь, при чем реконект не работает</td><td>现在因为发热而开始扔出去 重新装修没有用</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902000' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Ничего не изменилось, только с впн</td><td>没有什么变化,只有副总裁。</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902006' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Не грузит без впн</td><td>不载.</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902031' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Соло фпп не изменилось - ошибка подключения. Москва, МТС. Зато выпала Бугатти с бесплатного билета) Впервые что-то коллабное залутал</td><td>Solo fpp 尚未更改 - 一个连接错误 。 (原始内容存档于2018-09-21). Moscow, MTS. 但是布加蒂从免费票上掉下来了. 这是我第一次做一些事情。</td></tr><tr><td><a href='https://vk.com/wall-148211806_901996?reply=902014' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Не запускает в катку, только через запрет</td><td>它不会进入冰河,只能通过禁止。</td></tr></tbody></table><h3>Call of Duty（8）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-1171627_8399770?reply=8399779' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.68</td><td>Альберт, у кого-то входит без ВПН и прочих танцев с бубном, а кого-то только с gear up.</td><td>阿尔伯特,有人进去 没有VPN和其他舞蹈 与tombourine, 和一个人只有装备。</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399540?reply=8399662' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Артём, нормально все пришлось тока запускать на пс 5 через герап обучение прошел выключил проверил 3 катки вроде норм Ростелеком работает все</td><td>Artyom,通常所有通过GearUP训练 运行ps 5的电流 关闭检查 3 个 Rinks 像规范 Rostelecom 的工作全部</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399770?reply=8399771' target='_blank'>link</a></td><td>server_connection_failure, matchmaking_failure</td><td>0.5</td><td>На пс5 не находит игру, даже с gearup. Знает кто как можно решить проблему?</td><td>PS5没有找到游戏,即使有齿轮. 有人知道如何解决问题吗?</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399596?reply=8399665' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.46</td><td>Александр, работает без днс и прокси, провайдер РТ</td><td>Alexander, 工作没有 dns和代理, RT 供应商</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399704?reply=8399707' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>можно и без смены, тупо через ДМЗ, но быстрая игра пока не работает только актуальное</td><td>没有转会是可能的,愚蠢地通过DMZ,但快取游戏还不能只使用现在的一款.</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399704?reply=8399763' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Ребята, в мультиплеер кто уже зашёл, или зайдёт в будущем, напишите пожалуйста, в РФ на пс 5 к серверам подключается без прокси и тд?</td><td>请在PS 5上在俄罗斯写到服务器上连接而无需代理等等?</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399770?reply=8399774' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Владислав, все работает без впн</td><td>弗拉迪斯拉夫,没有副总裁,一切正常</td></tr><tr><td><a href='https://vk.com/wall-1171627_8399704?reply=8399741' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>Почему лагает на PS5 это как понять ?</td><td>你觉得PS5值多少钱?</td></tr></tbody></table><h3>社区: r6club（5）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-111837455_1342032?reply=1342055' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.88</td><td>Максим, запрет хуёво работает и пока ищет новый маршрут сидж успеет миллион раз выбить ошибку подключения, попробуй через warp или впн. Я с Германии/Нидерландов всегда играю на евро-север и никаких ошибок нету, а вот ...</td><td>Maxim,禁令很烂,在寻找新路线的同时,sidge会有时间将连接错误打出一百万次,尝试通过曲速或VPN. 我来自德国/荷兰,</td></tr><tr><td><a href='https://vk.com/wall-111837455_1342032?reply=1342056' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.73</td><td>Алексей, у меня с запретом сидж не работает, нужно его запускать только при входе, но без варпа не идёт поиск, а с варпом не работает сидж</td><td>阿列克谢,我有一个禁令西奇不起作用,你只需要在入口运行它,但没有曲速就没有搜索,而曲速不工作西奇.</td></tr><tr><td><a href='https://vk.com/wall-111837455_1342032?reply=1342053' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Максим, запрет/впн☺️</td><td>Maxim, 禁用/pn ️</td></tr><tr><td><a href='https://vk.com/wall-111837455_1342032?reply=1342061' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.32</td><td>Avery, ну я щас пофиксил, пришлось с запретом повозиться, но заработало</td><td>Avery,我刚修好,我不得不修补 禁令,但它奏效了。</td></tr><tr><td><a href='https://vk.com/wall-111837455_1342032?reply=1342057' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Максим, я так в сидж катаю через oflvpn из гугл плея, пока нормалёк грузится, он ес что бесплатный и серваки норм</td><td>Maxim 我在Google Play的 sidegey rolled through fromlvpn, 而正常的负载, 它是免费的和servaki规范。</td></tr></tbody></table><h3>STALZONE（4）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-2677092_1148161?reply=1148203' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>А что с игрой? они как тайник подгрузили 6й у меня игра глючить стала и вылетает по кд</td><td>那游戏呢? 他们就像第六局的货柜 我开始玩游戏 飞出CD</td></tr><tr><td><a href='https://vk.com/wall-2677092_1147820?reply=1148060' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Дмитрий, бегал вчера никаких вылетов не было за 5 часов игры, дай угадаю AMD?</td><td>迪米特里,昨天5小时没放假了 让我猜猜AMD吧?</td></tr><tr><td><a href='https://vk.com/wall-2677092_1148100?reply=1148152' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Алексей, и все же необходим брeлoк co шкeбeдe туaлeтaми гдe зив oтпрaвилcя вo всeлeннyю шкeбeдe туaлeтoв и пoбeдил мeгa шкeбeдe туaлeтa</td><td>阿列克谢,你需要一个有厕所的钥匙链 在那里,他去 通用的厕所疮 并击败了大skebede的厕所。</td></tr><tr><td><a href='https://vk.com/wall-2677092_1148123?reply=1148166' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>нет</td><td>没有</td></tr></tbody></table><h3>Call of Duty: Warzone（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-194535641_198884?reply=198962' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Игорь, подскажи, а если захожу с гирапом, процесс обновления проходит, заходит в меню, выбираешь dmz и просто не начинает матч, как будто вечно ищет его</td><td>Igor 告诉我 如果我跟GearUP走 更新过程就会通过 进入菜单 选择dmz 而不是开始比赛 就像他一直在寻找他一样</td></tr><tr><td><a href='https://vk.com/wall-194535641_198884?reply=198957' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Владислав, никак ,уже давно после обновлений замирает на строке проверка обновлений ,помогает тока включить впн,строка обновления пройдет и больше он не нужен. Короче есть бесплатная версия в Майкрософт впн ciphra ,по...</td><td>Vladislav,不,在更新冻结了线上检查更新之后很久,帮助当前打开VPN,更新行会通过,不再需要了. 简言之,微软VPN ciphra中有免费版本.</td></tr><tr><td><a href='https://vk.com/wall-194535641_198884?reply=198976' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Виктор, не заметил читаков. Сервак пару раз вылетал. Баланс отличный.</td><td>维克多,没有注意到读者。 Servac起飞了几次. 平衡是伟大的。</td></tr></tbody></table><h3>Escape from Tarkov: Arena（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-218983927_54897?reply=54920' target='_blank'>link</a></td><td>server_connection_failure, login_failure</td><td>0.84</td><td>Со вчера (вечера) не могу зайти в игру, даже в лаунчер не пускает. Ошибка при синхронизации покупок Ошибка: 117001 Неверные учетные данные Ошибка: 201001</td><td>从昨天(晚上)起,我不能进入游戏,即使是在发射台上也不能允许. 同步购买时出错 错误:117001 证书错误 错误:201001</td></tr><tr><td><a href='https://vk.com/wall-218983927_54897?reply=54921' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Поддержка недоступна , аккаунт отвязался от стима и при попытке привязать обратно пишет что такой уже существует , ранее просто вылетало на ошибке при попытках запустить игру.С КАКОГО Х ПОДДЕРЖКА ВОЕМЕННО НЕДОСТУПНА?</td><td>支持不可用,账户已经从Steam解开,当试图链接回时写道,这种已经存在,之前在尝试推出游戏时只是因出错而飞出. S. 军事上无法提供哪些支助?</td></tr><tr><td><a href='https://vk.com/wall-218983927_54897?reply=54923' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>При попытках отправить письмо просто крашит и выдаёт 403 ошибку</td><td>当你试图发送一封信时,它只是画出并产生一个403个错误.</td></tr></tbody></table><h3>League of Legends（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-49423435_2961394?reply=2961773' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Мда, без впн теперь даже в лол не зайти...</td><td>是啊,你甚至不能去 卢尔现在。 . . ..</td></tr><tr><td><a href='https://vk.com/wall-49423435_2961629?reply=2961663' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Юлия, стим да, а вот игры, увы. У меня дарктайд, сквад и тд. тока через впн.</td><td>尤丽娅,是的,但这里是游戏。 我有一个黑暗面,小队等 通过VPN。</td></tr><tr><td><a href='https://vk.com/wall-49423435_2961394?reply=2961758' target='_blank'>link</a></td><td>login_failure</td><td>0.3</td><td>В игру не заходит. UPD: Смог на регионе Германия зайти</td><td>不相出戏. UPD:德国地区进入的烟雾</td></tr></tbody></table><h3>Throne and Liberty（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-234512887_90210?reply=91050' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.98</td><td>Всем вечер добрый дамы и господа!) Прошу, помогите мне! На этом месяце я с женой скачали игру и каждый раз захожу в игру и каждые от 1 до 10 минут игра вылетает и выдает ошибку (ошибка на фотографии). Не припомню, что...</td><td>晚上好,女士们先生们! 请帮帮我! 这个月,我和我妻子下载了游戏,我每次都登录,每1到10分钟,游戏就会出场并给出出错. 我不记得了 。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-234512887_90979?reply=91016' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Сервера ближе к Сибири везите. Пинг 140 мс, о каком пвп можно вообще говорить)))</td><td>把服务器带去西伯利亚 Ping 140 ms, 什么样的pvp我们甚至可以谈论?</td></tr></tbody></table><h3>Dead by Daylight（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-122458500_1406745?reply=1406809' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Мужики, скачайте просто warp by bush , как расширение для запрета. Вчера 4 часа сидел коды, .bat-ы писал на пару с гемини. По итогу на варпе от буша пинг в катках 90, если отрубить в лобаке - у меня в спб пинг 50 стан...</td><td>以树丛方式下载曲速作为禁令的扩展. 昨天4小时的密码, ...bat -y写在一对夫妇与双子座。 因此,在花花公子上 从花花公子上跳出 花花公子90, 如果你割出前额—— 我在圣彼得堡打出50个斯坦。 。 。 。 。</td></tr></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>运行日志摘要</h2>
+      <pre># VK 全局游戏网络故障监控日报
+
+- 执行时间: 2026-10-23 03:37:39 BST
+- 报告输出时间: 2026-10-23 03:50:21 BST
+- 查询词数量: 185
+- 必查社群数量(配置): 21
+- 必查社群抓取帖子: 59
+- 必查社群抓取评论: 888
+- 全局查询词数量: 185
+- 全局抓取帖子数: 0
+- 合并帖子数: 59
+- 故障命中帖子: 0
+- 全局下钻评论数: 0
+- 合并评论数: 882
+- 故障命中评论: 53
+- 评论采集告警数(显示&gt;0但抓取=0): 0
+
+## 故障命中帖子
+
+## 故障命中评论
+- [https://vk.com/wall-148211806_901636?reply=901966](https://vk.com/wall-148211806_901636?reply=901966) | type=server_connection_failure | conf=0.99
+  - 摘要: Не работает😩
+  - 中文: 不工作吗?
+- [https://vk.com/wall-89771130_1714005?reply=1714463](https://vk.com/wall-89771130_1714005?reply=1714463) | type=server_connection_failure | conf=0.99
+  - 摘要: ПВЕ. на все локации захожу спокойно, переход на ледокол ни как не пускает, пишет "потеряно соединение с сервером" нажимаю покинуть рейд, все вещи сохраняются
+  - 中文: 我平静地进入所有地点,向破冰机的过渡不允许,写出"与服务器失去连接"的媒体离开突袭,所有事情都得到拯救.
+- [https://vk.com/wall-89771130_1714005?reply=1714483](https://vk.com/wall-89771130_1714005?reply=1714483) | type=login_failure,server_connection_failure,matchmaking_failure | conf=0.99
+  - 摘要: Не пускает
+  - 中文: 不会吧
+- [https://vk.com/wall-234512887_90210?reply=91050](https://vk.com/wall-234512887_90210?reply=91050) | type=server_connection_failure | conf=0.98
+  - 摘要: Всем вечер добрый дамы и господа!) Прошу, помогите мне! На этом месяце я с женой скачали игру и каждый раз захожу в игру и каждые от 1 до 10 минут игра вылетает и выдает ошибку (ошибка на фотографии). Не припомню, что...
+  - 中文: 晚上好,女士们先生们! 请帮帮我! 这个月,我和我妻子下载了游戏,我每次都登录,每1到10分钟,游戏就会出场并给出出错. 我不记得了 。 。 。 。
+- [https://vk.com/wall-111837455_1342032?reply=1342055](https://vk.com/wall-111837455_1342032?reply=1342055) | type=server_connection_failure | conf=0.88
+  - 摘要: Максим, запрет хуёво работает и пока ищет новый маршрут сидж успеет миллион раз выбить ошибку подключения, попробуй через warp или впн. Я с Германии/Нидерландов всегда играю на евро-север и никаких ошибок нету, а вот ...
+  - 中文: Maxim,禁令很烂,在寻找新路线的同时,sidge会有时间将连接错误打出一百万次,尝试通过曲速或VPN. 我来自德国/荷兰,
+- [https://vk.com/wall-218983927_54897?reply=54920](https://vk.com/wall-218983927_54897?reply=54920) | type=server_connection_failure,login_failure | conf=0.84
+  - 摘要: Со вчера (вечера) не могу зайти в игру, даже в лаунчер не пускает. Ошибка при синхронизации покупок Ошибка: 117001 Неверные учетные данные Ошибка: 201001
+  - 中文: 从昨天(晚上)起,我不能进入游戏,即使是在发射台上也不能允许. 同步购买时出错 错误:117001 证书错误 错误:201001
+- [https://vk.com/wall-111837455_1342032?reply=1342056](https://vk.com/wall-111837455_1342032?reply=1342056) | type=server_connection_failure | conf=0.73
+  - 摘要: Алексей, у меня с запретом сидж не работает, нужно его запускать только при входе, но без варпа не идёт поиск, а с варпом не работает сидж
+  - 中文: 阿列克谢,我有一个禁令西奇不起作用,你只需要在入口运行它,但没有曲速就没有搜索,而曲速不工作西奇.
+- [https://vk.com/wall-1171627_8399770?reply=8399779](https://vk.com/wall-1171627_8399770?reply=8399779) | type=server_connection_failure | conf=0.68
+  - 摘要: Альберт, у кого-то входит без ВПН и прочих танцев с бубном, а кого-то только с gear up.
+  - 中文: 阿尔伯特,有人进去 没有VPN和其他舞蹈 与tombourine, 和一个人只有装备。
+- [https://vk.com/wall-148211806_901996?reply=902001](https://vk.com/wall-148211806_901996?reply=902001) | type=server_connection_failure | conf=0.68
+  - 摘要: Только через ВПН играю
+  - 中文: 仅通过VPN.
+- [https://vk.com/wall-89771130_1708904?reply=1714480](https://vk.com/wall-89771130_1708904?reply=1714480) | type=server_connection_failure | conf=0.66
+  - 摘要: Local problems on POST Ошибка: 0 Произошла ошибка при отправке запроса. Ошибка: 0 Базовое соединение закрыто: Непредвиденная ошибка при приеме. Ошибка: 0 Не удается прочитать данные из транспортного соединения: Удален...
+  - 中文: POST 错误的本地问题 : 0 发送请求时出错 。 错误 : 0 基本连接已关闭 : 无法预见的接收错误 。 错误 : 0 无法从传输连接读取数据: 删除 。 。 。 。 。
+- [https://vk.com/wall-148211806_901996?reply=902009](https://vk.com/wall-148211806_901996?reply=902009) | type=server_connection_failure | conf=0.64
+  - 摘要: Все норм, зашло в катку в скваде, пинг 35
+  - 中文: 好吧,我去滑冰场 在四角,ping 35。
+- [https://vk.com/wall-89771130_1714005?reply=1714470](https://vk.com/wall-89771130_1714005?reply=1714470) | type=server_connection_failure | conf=0.64
+  - 摘要: Подскажите как решить эту проблему? Уже второй день не пускает. ВПН отключена, но дальше даундчера не пускает…
+  - 中文: 你能告诉我怎么解决这个问题吗? 已来一日. VPN已禁用,但超越了哑弹者不会让.
+- [https://vk.com/wall-2677092_1148161?reply=1148203](https://vk.com/wall-2677092_1148161?reply=1148203) | type=server_connection_failure | conf=0.6
+  - 摘要: А что с игрой? они как тайник подгрузили 6й у меня игра глючить стала и вылетает по кд
+  - 中文: 那游戏呢? 他们就像第六局的货柜 我开始玩游戏 飞出CD
+- [https://vk.com/wall-148211806_901996?reply=901998](https://vk.com/wall-148211806_901996?reply=901998) | type=server_connection_failure | conf=0.58
+  - 摘要: Вчера смог зайти в матч сыграть даже 4-5 игр в Сквадах ( но потом опять началась вечная загузка в Матч и последующая ошибка 2610 FFFFFF
+  - 中文: 昨天我得以进入比赛,在Squads连打出4-5场比赛(但随后比赛中永恒的情节和随后的2610 FFFF出错再次开始).
+- [https://vk.com/wall-1171627_8399540?reply=8399662](https://vk.com/wall-1171627_8399540?reply=8399662) | type=server_connection_failure | conf=0.5
+  - 摘要: Артём, нормально все пришлось тока запускать на пс 5 через герап обучение прошел выключил проверил 3 катки вроде норм Ростелеком работает все
+  - 中文: Artyom,通常所有通过GearUP训练 运行ps 5的电流 关闭检查 3 个 Rinks 像规范 Rostelecom 的工作全部
+- [https://vk.com/wall-1171627_8399770?reply=8399771](https://vk.com/wall-1171627_8399770?reply=8399771) | type=server_connection_failure,matchmaking_failure | conf=0.5
+  - 摘要: На пс5 не находит игру, даже с gearup. Знает кто как можно решить проблему?
+  - 中文: PS5没有找到游戏,即使有齿轮. 有人知道如何解决问题吗?
+- [https://vk.com/wall-148211806_901812?reply=901967](https://vk.com/wall-148211806_901812?reply=901967) | type=server_connection_failure | conf=0.5
+  - 摘要: У меня с герапом 40пинг,выше не подымается
+  - 中文: 我有40平与GearUP, 不走更高。
+- [https://vk.com/wall-148211806_901812?reply=901968](https://vk.com/wall-148211806_901812?reply=901968) | type=server_connection_failure | conf=0.5
+  - 摘要: Если в пачке постоянно играете, качаете гирап, подписка 299р,и тот человек который купил, все заходите к нему в пачку, и все будет работать
+  - 中文: 如果你一直打一个包, 摇滚GearUP,订阅299r, 和买它的人,都去他的包, 一切都会工作。
+- [https://vk.com/wall-194535641_198884?reply=198962](https://vk.com/wall-194535641_198884?reply=198962) | type=server_connection_failure | conf=0.5
+  - 摘要: Игорь, подскажи, а если захожу с гирапом, процесс обновления проходит, заходит в меню, выбираешь dmz и просто не начинает матч, как будто вечно ищет его
+  - 中文: Igor 告诉我 如果我跟GearUP走 更新过程就会通过 进入菜单 选择dmz 而不是开始比赛 就像他一直在寻找他一样
+- [https://vk.com/wall-1171627_8399596?reply=8399665](https://vk.com/wall-1171627_8399596?reply=8399665) | type=server_connection_failure | conf=0.46
+  - 摘要: Александр, работает без днс и прокси, провайдер РТ
+  - 中文: Alexander, 工作没有 dns和代理, RT 供应商
+- [https://vk.com/wall-1171627_8399704?reply=8399707](https://vk.com/wall-1171627_8399704?reply=8399707) | type=server_connection_failure | conf=0.42
+  - 摘要: можно и без смены, тупо через ДМЗ, но быстрая игра пока не работает только актуальное
+  - 中文: 没有转会是可能的,愚蠢地通过DMZ,但快取游戏还不能只使用现在的一款.
+- [https://vk.com/wall-148211806_901996?reply=902015](https://vk.com/wall-148211806_901996?reply=902015) | type=server_connection_failure | conf=0.42
+  - 摘要: Как не работало так и не работает,в лобби заходит а карту не грузит
+  - 中文: 由于它没有工作,也没有工作,在大厅里来了,地图也没有装入.
+- [https://vk.com/wall-148211806_901996?reply=902029](https://vk.com/wall-148211806_901996?reply=902029) | type=server_connection_failure | conf=0.42
+  - 摘要: Стало выкидывать из-за античита теперь, при чем реконект не работает
+  - 中文: 现在因为发热而开始扔出去 重新装修没有用
+- [https://vk.com/wall-89771130_1708904?reply=1714275](https://vk.com/wall-89771130_1708904?reply=1714275) | type=server_connection_failure | conf=0.42
+  - 摘要: Разрабы - повязка голова глаза не работает - дикий с вертушки зарядил 1 пулей в голова-челюсть
+  - 中文: 开发者 - 眼睛的头带不起作用 - 从头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头-头部
+- [https://vk.com/wall-89771130_1713368?reply=1714426](https://vk.com/wall-89771130_1713368?reply=1714426) | type=server_connection_failure | conf=0.42
+  - 摘要: А че за тема ребят лаунчер в стиме не работает, уточняет хочу ли привязать аккаунт к стиму отвечаю да а он ошибку выдает
+  - 中文: 对兴奋剂中的家伙发射器的主题有什么不起作用的, 澄清我是否想要将账户与兴奋剂的答案联系起来 是的,他给出了一个错误
+- [https://vk.com/wall-89771130_1714005?reply=1714363](https://vk.com/wall-89771130_1714005?reply=1714363) | type=server_connection_failure | conf=0.42
+  - 摘要: стимовский тарок до сих пор не работает, держу в курсе
+  - 中文: 我仍然没有刺激,我知道。
+- [https://vk.com/wall-89771130_1714005?reply=1714390](https://vk.com/wall-89771130_1714005?reply=1714390) | type=server_connection_failure | conf=0.42
+  - 摘要: Александр, решает вопрос с лаунчером. Игра всё ещё не работает нормально)
+  - 中文: 亚历山大,他处理的发射器。 游戏仍然不能正常工作.
+- [https://vk.com/wall-111837455_1342032?reply=1342053](https://vk.com/wall-111837455_1342032?reply=1342053) | type=server_connection_failure | conf=0.38
+  - 摘要: Максим, запрет/впн☺️
+  - 中文: Maxim, 禁用/pn ️
+- [https://vk.com/wall-1171627_8399704?reply=8399763](https://vk.com/wall-1171627_8399704?reply=8399763) | type=server_connection_failure | conf=0.38
+  - 摘要: Ребята, в мультиплеер кто уже зашёл, или зайдёт в будущем, напишите пожалуйста, в РФ на пс 5 к серверам подключается без прокси и тд?
+  - 中文: 请在PS 5上在俄罗斯写到服务器上连接而无需代理等等?
+- [https://vk.com/wall-1171627_8399770?reply=8399774](https://vk.com/wall-1171627_8399770?reply=8399774) | type=server_connection_failure | conf=0.38
+  - 摘要: Владислав, все работает без впн
+  - 中文: 弗拉迪斯拉夫,没有副总裁,一切正常
+- [https://vk.com/wall-122458500_1406745?reply=1406809](https://vk.com/wall-122458500_1406745?reply=1406809) | type=server_connection_failure | conf=0.38
+  - 摘要: Мужики, скачайте просто warp by bush , как расширение для запрета. Вчера 4 часа сидел коды, .bat-ы писал на пару с гемини. По итогу на варпе от буша пинг в катках 90, если отрубить в лобаке - у меня в спб пинг 50 стан...
+  - 中文: 以树丛方式下载曲速作为禁令的扩展. 昨天4小时的密码, ...bat -y写在一对夫妇与双子座。 因此,在花花公子上 从花花公子上跳出 花花公子90, 如果你割出前额—— 我在圣彼得堡打出50个斯坦。 。 。 。 。
+- [https://vk.com/wall-148211806_901996?reply=902000](https://vk.com/wall-148211806_901996?reply=902000) | type=server_connection_failure | conf=0.38
+  - 摘要: Ничего не изменилось, только с впн
+  - 中文: 没有什么变化,只有副总裁。
+- [https://vk.com/wall-148211806_901996?reply=902006](https://vk.com/wall-148211806_901996?reply=902006) | type=server_connection_failure | conf=0.38
+  - 摘要: Не грузит без впн
+  - 中文: 不载.
+- [https://vk.com/wall-148211806_901996?reply=902031](https://vk.com/wall-148211806_901996?reply=902031) | type=server_connection_failure | conf=0.38
+  - 摘要: Соло фпп не изменилось - ошибка подключения. Москва, МТС. Зато выпала Бугатти с бесплатного билета) Впервые что-то коллабное залутал
+  - 中文: Solo fpp 尚未更改 - 一个连接错误 。 (原始内容存档于2018-09-21). Moscow, MTS. 但是布加蒂从免费票上掉下来了. 这是我第一次做一些事情。
+- [https://vk.com/wall-194535641_198884?reply=198957](https://vk.com/wall-194535641_198884?reply=198957) | type=server_connection_failure | conf=0.38
+  - 摘要: Владислав, никак ,уже давно после обновлений замирает на строке проверка обновлений ,помогает тока включить впн,строка обновления пройдет и больше он не нужен. Короче есть бесплатная версия в Майкрософт впн ciphra ,по...
+  - 中文: Vladislav,不,在更新冻结了线上检查更新之后很久,帮助当前打开VPN,更新行会通过,不再需要了. 简言之,微软VPN ciphra中有免费版本.
+- [https://vk.com/wall-218983927_54897?reply=54921](https://vk.com/wall-218983927_54897?reply=54921) | type=server_connection_failure | conf=0.38
+  - 摘要: Поддержка недоступна , аккаунт отвязался от стима и при попытке привязать обратно пишет что такой уже существует , ранее просто вылетало на ошибке при попытках запустить игру.С КАКОГО Х ПОДДЕРЖКА ВОЕМЕННО НЕДОСТУПНА?
+  - 中文: 支持不可用,账户已经从Steam解开,当试图链接回时写道,这种已经存在,之前在尝试推出游戏时只是因出错而飞出. S. 军事上无法提供哪些支助?
+- [https://vk.com/wall-234512887_90979?reply=91016](https://vk.com/wall-234512887_90979?reply=91016) | type=server_connection_failure | conf=0.38
+  - 摘要: Сервера ближе к Сибири везите. Пинг 140 мс, о каком пвп можно вообще говорить)))
+  - 中文: 把服务器带去西伯利亚 Ping 140 ms, 什么样的pvp我们甚至可以谈论?
+- [https://vk.com/wall-49423435_2961394?reply=2961773](https://vk.com/wall-49423435_2961394?reply=2961773) | type=server_connection_failure | conf=0.38
+  - 摘要: Мда, без впн теперь даже в лол не зайти...
+  - 中文: 是啊,你甚至不能去 卢尔现在。 . . ..
+- [https://vk.com/wall-49423435_2961629?reply=2961663](https://vk.com/wall-49423435_2961629?reply=2961663) | type=server_connection_failure | conf=0.38
+  - 摘要: Юлия, стим да, а вот игры, увы. У меня дарктайд, сквад и тд. тока через впн.
+  - 中文: 尤丽娅,是的,但这里是游戏。 我有一个黑暗面,小队等 通过VPN。
+- [https://vk.com/wall-89771130_1708904?reply=1714455](https://vk.com/wall-89771130_1708904?reply=1714455) | type=server_connection_failure | conf=0.38
+  - 摘要: что может быть, регион РУ и на сайте пишет ру, на пк впн нет...
+  - 中文: RU所在的地区以及网站都写作ru, 。 。 。 。
+- [https://vk.com/wall-89771130_1714005?reply=1714282](https://vk.com/wall-89771130_1714005?reply=1714282) | type=server_connection_failure | conf=0.36
+  - 摘要: Алєѯандръ, как это нет? Ты спринты вспомни. Там постоянно сервера лежат, и колесо загрузки крутится не переставая!
+  - 中文: 阿莱坎德,怎么不是? 记得冲刺吗? 总是有服务器躺在那里, 下载轮不断旋转!
+- [https://vk.com/wall-89771130_1714005?reply=1714313](https://vk.com/wall-89771130_1714005?reply=1714313) | type=server_connection_failure | conf=0.34
+  - 摘要: Lori-R, да не работает у лесты ни чего нормально. Сервера так же на изоленте держатся как и у всех. Но у Александра все ок. И спринты и черный рынок, конструкторское бюро, и в принципе как и любая активность.
+  - 中文: 萝莉 -R不为恭维而工作. 服务器也和别人一样在录音带上。 但亚历山大没事 还有冲刺和黑市,设计局, 原则上,像任何活动。
+- [https://vk.com/wall-111837455_1342032?reply=1342061](https://vk.com/wall-111837455_1342032?reply=1342061) | type=server_connection_failure | conf=0.32
+  - 摘要: Avery, ну я щас пофиксил, пришлось с запретом повозиться, но заработало
+  - 中文: Avery,我刚修好,我不得不修补 禁令,但它奏效了。
+- [https://vk.com/wall-111837455_1342032?reply=1342057](https://vk.com/wall-111837455_1342032?reply=1342057) | type=server_connection_failure | conf=0.3
+  - 摘要: Максим, я так в сидж катаю через oflvpn из гугл плея, пока нормалёк грузится, он ес что бесплатный и серваки норм
+  - 中文: Maxim 我在Google Play的 sidegey rolled through fromlvpn, 而正常的负载, 它是免费的和servaki规范。
+- [https://vk.com/wall-148211806_901996?reply=902014](https://vk.com/wall-148211806_901996?reply=902014) | type=server_connection_failure | conf=0.3
+  - 摘要: Не запускает в катку, только через запрет
+  - 中文: 它不会进入冰河,只能通过禁止。
+- [https://vk.com/wall-194535641_198884?reply=198976](https://vk.com/wall-194535641_198884?reply=198976) | type=server_connection_failure | conf=0.3
+  - 摘要: Виктор, не заметил читаков. Сервак пару раз вылетал. Баланс отличный.
+  - 中文: 维克多,没有注意到读者。 Servac起飞了几次. 平衡是伟大的。
+- [https://vk.com/wall-218983927_54897?reply=54923](https://vk.com/wall-218983927_54897?reply=54923) | type=server_connection_failure | conf=0.3
+  - 摘要: При попытках отправить письмо просто крашит и выдаёт 403 ошибку
+  - 中文: 当你试图发送一封信时,它只是画出并产生一个403个错误.
+- [https://vk.com/wall-2677092_1147820?reply=1148060](https://vk.com/wall-2677092_1147820?reply=1148060) | type=server_connection_failure | conf=0.3
+  - 摘要: Дмитрий, бегал вчера никаких вылетов не было за 5 часов игры, дай угадаю AMD?
+  - 中文: 迪米特里,昨天5小时没放假了 让我猜猜AMD吧?
+- [https://vk.com/wall-2677092_1148100?reply=1148152](https://vk.com/wall-2677092_1148100?reply=1148152) | type=server_connection_failure | conf=0.3
+  - 摘要: Алексей, и все же необходим брeлoк co шкeбeдe туaлeтaми гдe зив oтпрaвилcя вo всeлeннyю шкeбeдe туaлeтoв и пoбeдил мeгa шкeбeдe туaлeтa
+  - 中文: 阿列克谢,你需要一个有厕所的钥匙链 在那里,他去 通用的厕所疮 并击败了大skebede的厕所。
+- [https://vk.com/wall-49423435_2961394?reply=2961758](https://vk.com/wall-49423435_2961394?reply=2961758) | type=login_failure | conf=0.3
+  - 摘要: В игру не заходит. UPD: Смог на регионе Германия зайти
+  - 中文: 不相出戏. UPD:德国地区进入的烟雾
+- [https://vk.com/wall-89771130_1714005?reply=1714365](https://vk.com/wall-89771130_1714005?reply=1714365) | type=server_connection_failure | conf=0.3
+  - 摘要: Парни есть способ сделать так чтобы не вылетало во время пати в пве? Каждый раз такое при загрузке и при в входе в игру
+  - 中文: 伙计们,有办法确保它不会在派对期间飞出吗? 每次下载并输入游戏.
+- [https://vk.com/wall-1171627_8399704?reply=8399741](https://vk.com/wall-1171627_8399704?reply=8399741) | type=server_connection_failure | conf=0.26
+  - 摘要: Почему лагает на PS5 это как понять ?
+  - 中文: 你觉得PS5值多少钱?
+- [https://vk.com/wall-2677092_1148123?reply=1148166](https://vk.com/wall-2677092_1148123?reply=1148166) | type=server_connection_failure | conf=0.26
+  - 摘要: нет
+  - 中文: 没有
+
+## 抓取样本（原文+中文）
+- [Post](https://vk.com/wall-111837455_1342048)
+  - 原文: Через нас можно купить кредиты R6, подписку R6 Membership, Discord Nitro, отвязать забаненный аккаунт Xbox, привязать номер телефона к Ubisoft или приобрести другие цифровые наборы в Siege и не только 🖤 Подходит для л...
+  - 中文: 通过我们,你可以购买R6信用,R6会员订阅,Discord Nitro,解开一个被禁的Xbox账户,将一个电话号码与Ubisoft连接,或者在Siege购买其他数字集,而不仅仅是‘适合我...
+- [Post](https://vk.com/wall-111837455_1342051)
+  - 原文: ■ МСК ДЛЯ SIEGE ВЫЙДЕТ ХОТФИКС ■ С выходом обновления эксплойт у Осы будет устранён, а оперативник снова станет доступен Сервера уйдут на технические работы с 16:00 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: 给Siege的迷幻药会很痛快的 随着更新的发布,来自Wasp的开发将被消除,操作器将再次可用 服务器将从 16:00 开始从事技术工作 #SiegeNews@r6club ##News@r6club
+- [Post](https://vk.com/wall-111837455_1342062)
+  - 原文: С увеличением урона до 80 единиц гаджет Noor фактически превратился в карманный BOSG 👾 #Other@r6club
+  - 中文: 已经损坏了80个单位, 诺尔设备实际上变成了一个口袋 BOSG а # 其他@r6club
+- [Post](https://vk.com/wall-111837455_1342063)
+  - 原文: За идею! 🫡 🎩 #Cosplay@r6club
+  - 中文: 为了这个想法! {\fn方正黑体简体\fs18\b1\bord1\shad1\3cH2F2F2F}美国足球俱乐部
+- [Post](https://vk.com/wall-111837455_1342064)
+  - 原文: ■ СТАРЫЕ СКИНЫ ИЗ DOKTOR'S CURSE ПОЯВИЛИСЬ В МАГАЗИНЕ ■ Некоторые старые сеты доступны только за кредиты R6, хотя разработчики обещали продавать их и за очки славы Реколор Frost: 1920 кредитов R6 без BP / 1728 кредито...
+  - 中文: * * * * * * * * DOKTOR's S CURSE的老外皮出现在了商店中 ^ 一些旧相机只可用于R6信用,虽然开发者承诺为名人点再出名:1920 R6信用没有BP / 1728信用. .
+- [Post](https://vk.com/wall-111837455_1342065)
+  - 原文: ■ ОЧЕРЕДНОЕ ОБНОВЛЕНИЕ СКИНОВ В МАГАЗИНЕ SIEGE ■ ⚙ НАБОРЫ, ДОСТУПНЫЕ ДО 27 ОКТЯБРЯ 17:00 МСК: Набор элиток для Clash и Goyo со скидкой 10%: 3240 кредитов R6 без BP / 2916 кредитов R6 с BP Скин Crossfader: 1920 кредито...
+  - 中文: ■ 相关系统在SIEGE MAGAZIN的更新 Clash和Goyo的精英组合,折扣为10%:3240 R6信贷,没有BP / 2916 R6信贷与BP SKIN Crossfader:1920信贷. .
+- [Post](https://vk.com/wall-111837455_1342068)
+  - 原文: Интересная ситуация 👀 🎨 #Arts@r6club
+  - 中文: #艺术#r6club
+- [Post](https://vk.com/wall-1171627_8399666)
+  - 原文: До обеда: раздача автографов После обеда: захват Европы
+  - 中文: 午餐前:午餐后自动绘图:欧洲的接管
+- [Post](https://vk.com/wall-1171627_8399690)
+  - 原文: Прайс, когда Гоуст затирает ему про какие-то линии
+  - 中文: 普莱斯,当古斯特为他磨行时
+- [Post](https://vk.com/wall-1171627_8399704)
+  - 原文: В НОВОЙ ЗЕЛАНДИИ запустили мультиплеер! Меняйте регион и качайтесь!
+  - 中文: 新西兰推出多人游戏! 改变区域,摆动!
+- [Post](https://vk.com/wall-1171627_8399751)
+  - 原文: Приветствую друзья если вас интересует Баги и Глитчи MW4 - DMZ то вам сюда 👉
+  - 中文: 朋友们,如果你对Bugs和Glitchi MW4有兴趣... ...DMZ... ...那么你们就在这里
+- [Post](https://vk.com/wall-1171627_8399757)
+  - 原文: Кстати никаких «открытых плейлистов» на старте, только «стандарт» из беты Говорят, что SBMM выкручен на максимум 🫣
+  - 中文: 顺便说一句,一开始没有“开放播放列表”,只有β的“标准” 他们说SBMM被扭曲到极限
+- [Post](https://vk.com/wall-1171627_8399765)
+  - 原文: GTA6 на втором месте по предзаказам, пока что
+  - 中文: 到目前为止,GTA6在订单前排第二
+- [Post](https://vk.com/wall-1171627_8399770)
+  - 原文: Главный новостной портал по Call of Duty о мультиплеере MW4
+  - 中文: 关于MW4多人游戏的主要新闻门户
+- [Post](https://vk.com/wall-122458500_1406813)
+  - 原文: #news@deadbydaylight_ru #stream@deadbydaylight_ru Мы возвращаемся с новостями из Тумана, а также обновлениями геймплея! 📅 Четверг, 22 октября ⏰ 20:00 МСК 🔗 Twitch + YouTube Подключайтесь к нашему Коммьюнити стриму, чт...
+  - 中文: #新闻@ deadbydaylight_ru #流出#deadbydaylight_ru 我们又收到"雾"的消息了 还有游戏剧情的最新消息 [永久失效連結] QQ 星期四,10月22日 ~ 20:00 MSK → Twitch + YouTube 连接我们社区流,读取.
+- [Post](https://vk.com/wall-122458500_1406817)
+  - 原文: #news@deadbydaylight_ru #video@deadbydaylight_ru Новое зло проникает во владения Сущности. Лилит распространяет свою любовь в Тумане в Нутряном образе для Художницы, в то время как ее отец, Мефистофель, и Владыка Лжи,...
+  - 中文: #新闻@ deadbydaylight_ru #video @deadbydaylight_ru #新闻#新闻#死-日光_鲁 新作恶入以斯人所取之所. 莉莉丝在"养分相"中的"雾"中为艺术家传播出她的爱,而她的父亲梅菲斯托菲斯和"谎言之王"则相继相传. .
+- [Post](https://vk.com/wall-122458500_1406820)
+  - 原文: #news@deadbydaylight_ru На Коммьюнити стриме Мэнди подтвердила, что они продолжают отслеживать и улучшать MMR-систему для более точного подбора игроков. Уже заметили изменения? #DeadbyDaylight #DBD
+  - 中文: #新闻 @ deadbydaylight_ru 在社区流"曼迪"上证实,他们继续监测和改进MMR系统,以更准确地匹配玩家. 你注意到变化了吗? {\fn方正粗倩简体\fs12\an8\1cHFFFF00\b0}日出日出
+- [Post](https://vk.com/wall-122458500_1406821)
+  - 原文: #news@deadbydaylight_ru Все Мементо Мори в игре будут разделены на короткие, длинные и Мори с помощью умений Убийцы. Старые Убийцы получат новые короткие версии Мори. Длинная версия будет срабатывать только в конце ма...
+  - 中文: #新闻 @ deadbydaylight_ru 游戏中所有的Memento Mori会被分为短,长和Mori使用"杀手"的技能. "老刺客"将获得"森"的新短版本. 长相版只在MA后行. 。 。 。 。
+- [Post](https://vk.com/wall-122458500_1406822)
+  - 原文: #news@deadbydaylight_ru Небольшие изменения в игре будут происходить чаще и быстрее без загрузки патчей. Обновления будут загружаться в реальном времени. Кроме того, в ПБТ смогут участвовать не только игроки Steam. #D...
+  - 中文: #新闻 @ deadbydaylight_ru 游戏中小的改变会更频繁地发生,并且更快地不下载补丁. 更新将实时下载。 此外,PBT将不仅能够参与Steam的玩家. #D. (英语).
+- [Post](https://vk.com/wall-122458500_1406823)
+  - 原文: #news@deadbydaylight_ru Тизер Обновления 10.4.0, которое выйдет в январе следующего года. #DeadbyDaylight #DBD
+  - 中文: #新闻 @ deadbydaylight_ru 茶瑟更新10.4.0,将于明年一月上映. {\fn方正粗倩简体\fs12\an8\1cHFFFF00\b0}日出日出
+- [Post](https://vk.com/wall-122458500_1406827)
+  - 原文: #news@deadbydaylight_ru Он сгорает от желания встретиться с вами. ПБТ 27.10.26. #DeadbyDaylight #DBD #Terrifier #ArttheClown
+  - 中文: #新闻 @ deadbydaylight_ru 他渴望见见你 PBT 27.10.26 (英语). # 日光降临# DBD # 变质人 #
+- [Post](https://vk.com/wall-148211806_901978)
+  - 原文: 🏅1️⃣1️⃣Старует PGS 11! Сегодня играется стадия победителей. 🎙️В студии уже привычное трио — odesskin, Yarrmosh и Bestoloch! #PUBG #BATTLEGROUNDS #КиберспортPUBG #PGS
+  - 中文: 11岁! 取胜的舞台今天正在播放. 工作室已经有一个熟悉的 三重奏 - odeskin,Yarrmosh和Bestoloch! #PUBG #BATTLEGROUNDS #CybersportPUBG #PGS
+- [Post](https://vk.com/wall-148211806_901995)
+  - 原文: 💥🎁 Наши друзья из SKA League запускают розыгрыш. Принять участие сможет каждый. Переходите по ссылке и участвуйте! 🤩
+  - 中文: ? 吗? 我们SKA联盟的朋友正在发起一场恶作剧 每个人都可以参加。 跟着链接,参与!
+- [Post](https://vk.com/wall-148211806_901996)
+  - 原文: 💥🛠️ Друзья, вчера, 21 октября, был сделан очередной шаг на пути решения проблемы доступности игровых серверов. Пожалуйста, если вы заметили изменения, дайте нам знать в ях. 🙏
+  - 中文: 昨天,10月21日,为解决游戏服务器的可用性问题又采取了又一步骤. 如果你发现有变化 请通知我们
+- [Post](https://vk.com/wall-15413538_2939215)
+  - 原文: 😍 МИЛОТЫ ВАМ В ЛЕНТУ Котенок игрока Станислава Поторака случайно поставил паузу во время матча На 21-й минуте игры на веб-камере Malr1ne можно увидеть, как к нему по столу подходит маленький рыжий кот. Животное не ста...
+  - 中文: 踢球员 Stanislav Potorak 在比赛中意外暂停 在Malr1ne网络相机的比赛第21分钟,你可以看到一只小红猫是如何在桌上接近他的. 不是一百个动物。 。 。 。 。
+- [Post](https://vk.com/wall-15413538_2939229)
+  - 原文: 😁 Бывший киберспортсмен Илья Ильюк стал малым предпринимателем Он открыл кондитерскую в столице Сербии Белграде. По словам Ильюка, его бизнес использует только «лучшие продукты, которые можно найти в стране». У него т...
+  - 中文: 前体育家伊利亚 伊留克成为了一个小企业家 他在塞尔维亚首都贝尔格莱德开设了一家糕点店. 根据伊留克的说法,他的业务只使用"能在国内找到的最佳产品". 他有一个T...
+- [Post](https://vk.com/wall-15413538_2939248)
+  - 原文: 3 арканы(Джагер,Венга и Пудж) за 10 прокрутов, до этого 3 раза аркана на СФа и фантомка(она уже была), ощущение, что всю удачу на дальнейшую жизнь потратил __________________________ Именно, больше ништяков тебе не на...
+  - 中文: 3个拉索(Jager,Venga和Puj),为10个卷轴,之前在"斯法"上3个弧卡纳和1个幽灵(她已经是),一种感觉,未来生命的所有运气都花光了 __________________________________________________________________________________________________________________________________________ 是的,你不需要更多的东西。 。 。 。 。
+- [Post](https://vk.com/wall-15413538_2939272)
+  - 原文: 😂 А вот и базовый саппорт твоей команды
+  - 中文: 这是你们队的基地支援
+- [Post](https://vk.com/wall-15413538_2939282)
+  - 原文: 😈 Dawnbreaker может получить жуткий сет Фанаты показали в мастерской Steam новый образ для DB Valve, пора добавлять такое в игру?
+  - 中文: QQ Dawnbreaker可以在Steam工作室里看到一出令人毛骨悚然的"粉丝"(Fans),DB Valve的新画面,现在是游戏中加入这个内容的时候了吗?
+- [Post](https://vk.com/wall-15413538_2939289)
+  - 原文: 🤔 Valve добавили странную табличку в список доджа После ночного обновления в Dota 2 появилась надпись с количеством купленных слотов в додж-листе Зачем она нужна — пока непонятно. Информация просто повторяет ту, что у...
+  - 中文: 在Dota 2的晚间更新之后,有一个铭文,上面有躲避列表中购买的插槽的数量 为何需要它? 信息只是重复...
+- [Comment](https://vk.com/wall-111837455_1342032?reply=1342053)
+  - 原文: Максим, запрет/впн☺️
+  - 中文: Maxim, 禁用/pn ️
+- [Comment](https://vk.com/wall-111837455_1342032?reply=1342054)
+  - 原文: Алексей, это давно уже, ещё с 2024 года
+  - 中文: 阿列克谢,这已经很久了,从2024年开始。
+- [Comment](https://vk.com/wall-111837455_1342032?reply=1342055)
+  - 原文: Максим, запрет хуёво работает и пока ищет новый маршрут сидж успеет миллион раз выбить ошибку подключения, попробуй через warp или впн. Я с Германии/Нидерландов всегда играю на евро-север и никаких ошибок нету, а вот ...
+  - 中文: Maxim,禁令很烂,在寻找新路线的同时,sidge会有时间将连接错误打出一百万次,尝试通过曲速或VPN. 我来自德国/荷兰,
+- [Comment](https://vk.com/wall-111837455_1342032?reply=1342056)
+  - 原文: Алексей, у меня с запретом сидж не работает, нужно его запускать только при входе, но без варпа не идёт поиск, а с варпом не работает сидж
+  - 中文: 阿列克谢,我有一个禁令西奇不起作用,你只需要在入口运行它,但没有曲速就没有搜索,而曲速不工作西奇.
+- [Comment](https://vk.com/wall-111837455_1342032?reply=1342057)
+  - 原文: Максим, я так в сидж катаю через oflvpn из гугл плея, пока нормалёк грузится, он ес что бесплатный и серваки норм
+  - 中文: Maxim 我在Google Play的 sidegey rolled through fromlvpn, 而正常的负载, 它是免费的和servaki规范。
+- [Comment](https://vk.com/wall-111837455_1342032?reply=1342061)
+  - 原文: Avery, ну я щас пофиксил, пришлось с запретом повозиться, но заработало
+  - 中文: Avery,我刚修好,我不得不修补 禁令,但它奏效了。
+- [Comment](https://vk.com/wall-111837455_1342044?reply=1342050)
+  - 原文: Дали два пакета, никакого скина на автомат
+  - 中文: 两个袋子,机器上没有皮肤。
+- [Comment](https://vk.com/wall-111837455_1342051?reply=1342058)
+  - 原文: по состоянию на 20:00 МСК техработы завершены
+  - 中文: 截至格林尼治平时20:00完成技术工作
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399727)
+  - 原文: Cure, уже открыли дмз, сюжетку можно не проходить
+  - 中文: Cure,已经打开了DMZ,故事不能通过
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399729)
+  - 原文: Виктор, у мен тоже Турция. Норм установилось без баяна. Но в дмз обрыв сервера постоянно. Пробуй удалить и поставить ещё.
+  - 中文: 维克多,我还有土耳其 诺姆是在没有美洲狮的情况下建立的. 但是在DMZ,服务器总是会中断. 试着去掉和放更多。
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399732)
+  - 原文: Сергей, все равно не пашет
+  - 中文: 谢尔盖 反正他不工作了
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399733)
+  - 原文: Эдуард, у всех заработало, жди завтра когда официально релизнется, может изменится
+  - 中文: Eduard,每个人都在工作,等到明天正式发行,也许会改变.
+- [Comment](https://vk.com/wall-1171627_8398899?reply=8399744)
+  - 原文: Cure, дмз с 20 числа уже можно играть! С подключением🤣
+  - 中文: Cure,DMZ可以从20出道. 与连通
+- [Comment](https://vk.com/wall-1171627_8399165?reply=8399695)
+  - 原文: купите нашу калду типо? покормите пацанов?
+  - 中文: 你想买我们的卡达吗?
+- [Comment](https://vk.com/wall-1171627_8399407?reply=8399786)
+  - 原文: Блин вот клаву Яб такую точно взял
+  - 中文: 这正是雅布拿的。
+- [Comment](https://vk.com/wall-1171627_8399469?reply=8399661)
+  - 原文: Dead, так было лет 10 минимум уже 🤣
+  - 中文: 死了,就像十年前一样
+- [Comment](https://vk.com/wall-1171627_8399469?reply=8399670)
+  - 原文: Алексей, нет
+  - 中文: 阿列克谢,不。
+- [Comment](https://vk.com/wall-1171627_8399469?reply=8399677)
+  - 原文: Dead, блэкопсы все последние: колд вар, 6,7 (хоть он и кал)
+  - 中文: 死亡,黑警队所有最新消息: Cold Var, 6.7 (虽然他是一个粪便)
+- [Comment](https://vk.com/wall-1171627_8399469?reply=8399688)
+  - 原文: Алексей, в бокв за каждый новый престиж тебе не давали скин на опера и там был выбор что ты получаешь за престиж(вроде бы) в 6 я не помню новых оперов за каждый престиж
+  - 中文: 阿列克谢,每一次新的声望,你都没有被授予歌剧的外表,而且你还有选择权,在6岁的时候,我不记得每一次的声望都有新的歌剧。
+- [Comment](https://vk.com/wall-1171627_8399540?reply=8399662)
+  - 原文: Артём, нормально все пришлось тока запускать на пс 5 через герап обучение прошел выключил проверил 3 катки вроде норм Ростелеком работает все
+  - 中文: Artyom,通常所有通过GearUP训练 运行ps 5的电流 关闭检查 3 个 Rinks 像规范 Rostelecom 的工作全部
+- [Comment](https://vk.com/wall-1171627_8399540?reply=8399664)
+  - 原文: Артём, хотя странно было что ошибку изначально выдавала подбора игроков когда как варзона летает все работает и сервера дмз что варзон тоже самые
+  - 中文: Artem,虽然奇怪的是,当Varzon飞出万事皆效的DMZ服务器时,错误一开始会选择玩家。
+- [Comment](https://vk.com/wall-1171627_8399540?reply=8399667)
+  - 原文: Ок понял, попробую на xbox запустить😂
+  - 中文: 好吧,我会试着运行xbox。
+- [Comment](https://vk.com/wall-1171627_8399540?reply=8399689)
+  - 原文: Жду только мультиплеер
+  - 中文: 我只是在等待多人游戏
+- [Comment](https://vk.com/wall-1171627_8399596?reply=8399665)
+  - 原文: Александр, работает без днс и прокси, провайдер РТ
+  - 中文: Alexander, 工作没有 dns和代理, RT 供应商
+- [Comment](https://vk.com/wall-1171627_8399624?reply=8399687)
+  - 原文: Александр, если бы не грохнули бы Мейсона и он бы в политику ушел, то могла бы получится встреча Макарова-страшего(уже был Захаев в Black Ops) и Мейсона в Анкоридже.
+  - 中文: 亚历山大,如果梅森没有被杀死并进入政界,那可能是稻草人马卡罗夫(Zakhaev已经出现在"黑色行动"中)和梅森在安克雷奇的会面.
+- [Comment](https://vk.com/wall-1171627_8399632?reply=8399692)
+  - 原文: У них всё хорошо закончилось и я зря слёзы лил?)
+  - 中文: 他们的结局很好 而我却一无所获
+- [Comment](https://vk.com/wall-1171627_8399645?reply=8399682)
+  - 原文: Вячеслав, самая лучшая из ребутов уж точно, ну до оригинала не не дотягивает
+  - 中文: Vyacheslav, 最优秀的复习者, 肯定,嗯, 到原始没有达到
+- [Comment](https://vk.com/wall-1171627_8399645?reply=8399683)
+  - 原文: Андрей, Чем она лучше то? Много людей нахваливает но я не понимаю, чем? Из-за дерганых драк от первого лица? Из-за того что всех подряд персонажей сливают?
+  - 中文: 安德鲁,还有什么比这更好的? 很多人赞美,但我不明白什么? 因为第一人称战斗? 因为所有的角色都被泄露了吗?
+- [Comment](https://vk.com/wall-1171627_8399645?reply=8399685)
+  - 原文: Вячеслав, сливают и правильно делают, ибо в предыдущих ребутах на них насрать было, да и это заключительная часть мв ребута, вспомните оригинал мв 3 2011,сколько там персов сливали...драки согласен дерганное дерьмо, н...
+  - 中文: Vyacheslav,他们合并并正确进行,因为在之前的反驳中,他们给了他们一个狗屎,这是反驳的最后一部分,记住原作的MV 3 2011,有多少波斯人被泄露. 战斗同意的混蛋狗屎,n.
+- [Comment](https://vk.com/wall-1171627_8399645?reply=8399700)
+  - 原文: Реми, Он кстати довольно сдержанно оценил
+  - 中文: 雷米,顺便说一句,他相当保留。</pre>
+    </div>
+  </div>
+</body>
+</html>
