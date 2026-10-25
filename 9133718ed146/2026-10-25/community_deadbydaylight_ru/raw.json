@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-10-25T02:52:53.232439+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-25/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407004",
+      "url": "https://vk.com/wall-122458500_1407004",
+      "text": "",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-24 18:30:55+00:00",
+      "collected_at": "2026-10-25 02:38:18.809718+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407001",
+      "url": "https://vk.com/wall-122458500_1407001",
+      "text": "#news@deadbydaylight_ru \n \nУспейте погасить код до 25 ноября, чтобы получить Значок и Баннер! \n \n😈 DIABLO \n \n#DeadbyDaylight #DBD #Diablo",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-24 17:19:38+00:00",
+      "collected_at": "2026-10-25 02:38:18.809718+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-25/community_deadbydaylight_ru/community_test.html"
+}
