@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-10-26T02:51:52.694531+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-26/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407036",
+      "url": "https://vk.com/wall-122458500_1407036",
+      "text": "#news@deadbydaylight_ru \n \nЭто будет убийственный панчлайн.\nПБТ 27.10.26. \n \n#DeadbyDaylight #DBD #Terrifier #ArttheClown",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-25 15:05:54+00:00",
+      "collected_at": "2026-10-26 02:38:14.912177+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-26/community_deadbydaylight_ru/community_test.html"
+}
