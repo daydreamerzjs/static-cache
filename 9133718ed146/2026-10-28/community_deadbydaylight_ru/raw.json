@@ -1,0 +1,41 @@
+{
+  "run_at": "2026-10-28T02:52:27.523002+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-28/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407195",
+      "url": "https://vk.com/wall-122458500_1407195",
+      "text": "#news@deadbydaylight_ru \n \nЕму надоело играть по правилам.\nПБТ завтра, 18:00 МСК.\n \n#DeadbyDaylight #DBD #Terrifier #ArttheClown",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-27 15:19:24+00:00",
+      "collected_at": "2026-10-28 02:38:09.234851+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407154",
+      "url": "https://vk.com/wall-122458500_1407154",
+      "text": "#news@deadbydaylight_ru \n \n📢 Мы готовим много всего интересного для этого ПБТ, поэтому нам нужно немного больше времени, чтобы убедиться, что все готово. ПБТ 10.3.0 стартует 28 октября в 18:00 МСК. Спасибо за ваше терпение! Мы с нетерпением ждем, когда вы сможете опробовать новый контент.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-27 09:00:12+00:00",
+      "collected_at": "2026-10-28 02:38:09.234851+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407147",
+      "url": "https://vk.com/wall-122458500_1407147",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nП О К У П А Т Е Л И : Н Е О Б Р А Щ А Й Т Е В Н И М А Н И Я Н А Н Е С О О Т В Е Т С Т В И Я \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-27 07:29:15+00:00",
+      "collected_at": "2026-10-28 02:38:09.234851+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-28/community_deadbydaylight_ru/community_test.html"
+}
