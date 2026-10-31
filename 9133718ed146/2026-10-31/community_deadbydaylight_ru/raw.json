@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-10-31T02:52:34.719951+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-10-31/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407368",
+      "url": "https://vk.com/wall-122458500_1407368",
+      "text": "#news@deadbydaylight_ru \n \nПочтите память умерших. Вы присоединитесь к ним раньше, чем думаете. \nОтпразднуйте День мертвых (Día de los Muertos) с новым очень редким костюмом для Гоуст Фейса. \n \nКоллекция «Ноябрьские деньки» уже в продаже.\n \n#DeadbyDaylight #DBD #Ghostface",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-30 17:21:32+00:00",
+      "collected_at": "2026-10-31 02:38:19.041687+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407360",
+      "url": "https://vk.com/wall-122458500_1407360",
+      "text": "#news@deadbydaylight_ru \n \nЕсли зло не отступает, то и Сиенна тоже. \n \n#DeadbyDaylight #DBD #Terrifier #SiennaShaw",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-30 15:15:35+00:00",
+      "collected_at": "2026-10-31 02:38:19.041687+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-10-31/community_deadbydaylight_ru/community_test.html"
+}
