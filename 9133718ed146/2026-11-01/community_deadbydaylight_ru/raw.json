@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-11-01T02:52:14.241795+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-01/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407389",
+      "url": "https://vk.com/wall-122458500_1407389",
+      "text": "#news@deadbydaylight_ru \n \nУспейте погасить коды, чтобы получить 600 000 Очков крови! \n \n❤ DBDDY \n❤ DBDXHH \n❤ DBDXHS\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-31 17:00:03+00:00",
+      "collected_at": "2026-11-01 02:37:59.417338+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407386",
+      "url": "https://vk.com/wall-122458500_1407386",
+      "text": "#artwork@deadbydaylight_ru \n \nРисунок Охотницы от подписчика 🖤\n \n#DeadbyDaylight #DBD #TheHuntress",
+      "author": "Dead by Daylight",
+      "published_at": "2026-10-31 16:50:35+00:00",
+      "collected_at": "2026-11-01 02:37:59.417338+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-01/community_deadbydaylight_ru/community_test.html"
+}
