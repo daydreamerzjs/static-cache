@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-11-07T02:52:33.002618+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-07/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407578",
+      "url": "https://vk.com/wall-122458500_1407578",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nРетро-хит, который никогда не разочарует.\n \nВернитесь в Изнанку в этот День Очень странных дел с очень редкими нарядами для Векны, Стива Харрингтона и Нэнси Уилер.\n \n#DeadbyDaylight #DBD #StrangerThings",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-06 18:09:06+00:00",
+      "collected_at": "2026-11-07 02:37:37.753644+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407577",
+      "url": "https://vk.com/wall-122458500_1407577",
+      "text": "#news@deadbydaylight_ru \n \nУспейте погасить код до 6 декабря, чтобы получить Амулет! \n \n🚲 NOTTODAY\n \n#DeadbyDaylight #DBD #StrangerThings",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-06 16:49:35+00:00",
+      "collected_at": "2026-11-07 02:37:37.753644+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-07/community_deadbydaylight_ru/community_test.html"
+}
