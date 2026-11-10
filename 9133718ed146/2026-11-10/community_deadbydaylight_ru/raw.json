@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-11-10T02:53:31.929437+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-10/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407640",
+      "url": "https://vk.com/wall-122458500_1407640",
+      "text": "#news@deadbydaylight_ru \n \nВаш лучший друг до конца. \nКонтент с Чаки будет удален из внутриигрового и фирменных магазинов 24 ноября. Разблокируйте Чаки и связанные с ним косметические предметы сейчас по сниженной цене, чтобы продолжить использовать контент после этой даты.\n \n#DeadbyDaylight #DBD #Chucky #ChildsPlay",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-09 18:14:15+00:00",
+      "collected_at": "2026-11-10 02:37:27.059678+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-10/community_deadbydaylight_ru/community_test.html"
+}
