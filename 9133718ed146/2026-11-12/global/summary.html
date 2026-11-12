@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VK 游戏网络故障监控汇报</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --accent: #0f766e;
+    }
+    body { margin: 0; font-family: "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(135deg, #0f766e, #0ea5a4); color: #fff; border-radius: 14px; padding: 20px; }
+    .meta { margin-top: 8px; color: #d1fae5; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+    .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .kpi .v { font-size: 24px; font-weight: 700; }
+    .kpi .k { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    h2 { margin: 4px 0 10px; font-size: 18px; }
+    h3 { margin: 16px 0 10px; font-size: 16px; }
+    pre { white-space: pre-wrap; font-size: 12px; color: #334155; }
+    .alert { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #dc2626; border-radius: 10px; padding: 14px 16px; margin: 12px 0; color: #7f1d1d; }
+    .alert-title { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .alert-desc { font-size: 13px; color: #991b1b; margin-bottom: 6px; }
+    .alert ul { margin: 6px 0 0 18px; padding: 0; font-size: 13px; }
+    .alert a { color: #b91c1c; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>VK 游戏网络故障监控汇报</h1>
+      <div class="meta">生成时间：2026-11-12 02:37:48 GMT</div>
+      <div class="meta">报告输出时间：2026-11-12 02:52:32 GMT</div>
+    </div>
+    
+
+    <div class="grid">
+      <div class="kpi"><div class="v">22</div><div class="k">总命中数</div></div>
+      <div class="kpi"><div class="v">9</div><div class="k">命中游戏数</div></div>
+      <div class="kpi"><div class="v">21</div><div class="k">服务器连接失败</div></div>
+      <div class="kpi"><div class="v">1</div><div class="k">匹配失败</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>游戏维度汇总</h2>
+      <table>
+        <thead><tr><th>游戏</th><th>总命中</th><th>登录失败</th><th>匹配失败</th><th>服务器连接失败</th></tr></thead>
+        <tbody><tr><td>Call of Duty</td><td>7</td><td>0</td><td>0</td><td>7</td></tr><tr><td>Call of Duty: Warzone</td><td>5</td><td>1</td><td>0</td><td>5</td></tr><tr><td>Escape from Tarkov</td><td>3</td><td>1</td><td>1</td><td>2</td></tr><tr><td>Throne and Liberty</td><td>2</td><td>0</td><td>0</td><td>2</td></tr><tr><td>Dota 2</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>FC27 | Карьера | Перспективные футболисты</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>STALZONE</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Steam</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>社区: r6club</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>按游戏的故障明细（原文+中文）</h2>
+      <h3>Call of Duty（9）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-1171627_8400294?reply=8401444' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>Вышло обновление и вместе с ним бесконечная загрузка обновлений на PS5. Нашёл ли кто-то уже решение, какой DNS или Прокси указать в доп. настройках подключения?</td><td>更新出炉,并随即无休止地下载了PS5上的更新. 是否有人找到在附加连接设置中指定 DNS 或代理服务器的解决方案 ?</td></tr><tr><td><a href='https://vk.com/wall-1171627_8401334?reply=8401412' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.84</td><td>Да все! Вопрос закрыт, кому интересно. Дело было в том, что я использовал бустер Lagofast, а у него встроенная штука чтоб SBMM обманывать, так вот после обновы рикошет его блочить стал. Попробовал gearUP с ним все чет...</td><td>就这样! 问题已经解决了,谁感兴趣。 事实是,我用了一个Lagofast助推器,它有一个内置的东西给SBMM作弊,所以在更新后,我开始屏蔽它. 我和他一起试过齿轮装置 。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-1171627_8401373?reply=8401390' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Илья, попробуй без запрета(в том числе ребутнуть ПК, и после ребута запрет не запускать) и без него запустить игру. Если дело в запрете, то на гит репо запрета есть файлы, что его скрывают от игры и дают с ним запусти...</td><td>Ilya,在没有被禁的情况下尝试(包括重放PC,再启动被禁后不跑),没有被禁开始游戏. 如果是被禁的话,那么在Repo出道时会有将它从游戏中隐藏起来并让它随同出道的文件. . . ..</td></tr><tr><td><a href='https://vk.com/wall-1171627_8401441?reply=8401485' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.5</td><td>Юрий, проще гирап купить и вообще никогда не париться</td><td>尤里,买起GearUP就容易了 从不麻烦</td></tr><tr><td><a href='https://vk.com/wall-1171627_8401441?reply=8401443' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>На ps 5 подскажите хороший днс пожалуйста,у меня старый не работает</td><td>在ps 5,请告诉我 我的旧的不工作。</td></tr><tr><td><a href='https://vk.com/wall-1171627_8400294?reply=8401447' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Данила, да, прокси 176.111.37.216 порт 39811</td><td>达尼拉,是的,代理176.111.37.216 港口 39811</td></tr><tr><td><a href='https://vk.com/wall-1171627_8400294?reply=8401452' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Дмитрий, а где ты берешь прокси ?</td><td>迪米特里,你从哪里得到代理?</td></tr><tr><td><a href='https://vk.com/wall-1171627_8400294?reply=8401470' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Андрей, в этой группе :) конкретно этот прокси и порт повезло найти в более ранних постах и ях к ним.</td><td>Andrey, 在这个团体中:)这个特定的代理和港口幸运地在以前的岗位上找到,</td></tr><tr><td><a href='https://vk.com/wall-1171627_8401373?reply=8401399' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.34</td><td>Арслан, ексит лаг где покупал ?</td><td>阿斯兰,你在哪里买的退后?</td></tr></tbody></table><h3>Call of Duty: Warzone（6）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-194535641_199806?reply=199849' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.74</td><td>Либо ждать, либо я уже не знаю, или серваки легли, хотя на сайте пишут, что всё ок везде на всех платформах, либо ркн что-то замутил опять</td><td>或等待, 或我不知道, 或服务器倒下, 虽然网站说,</td></tr><tr><td><a href='https://vk.com/wall-194535641_199557?reply=199829' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.64</td><td>Скачал спустя 3 года новую калду. 4к 5080 7800х3д 120 фпс на киберспортивных настройках с длсс качество модель трансформер, в нвидиа аппе не пробовал прессет К, поставил мфг х3 стало 240 фпс как 4к 240гц моник, инпута...</td><td>三年后我下载了一个新的卡达 4k 5080 7800x3d 120 fps 在有 dlss 质量模型变压器的 eSports 设置上,nvidia appe 没有尝试压电K, put mfg x3 成为240 fps 作为 4k 240hz monics, introductiona. 。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-194535641_199806?reply=199846' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.6</td><td>David, такая же история. Что только не перепробовал. Бесконечная загрузка обновлений, PS 5</td><td>大卫,同样的故事。 我什么都没试过 更新的无限下载, PS 5</td></tr><tr><td><a href='https://vk.com/wall-194535641_199557?reply=199837' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.38</td><td>Нет. Кучу прокси перебрал</td><td>没有 很多代理产品。</td></tr><tr><td><a href='https://vk.com/wall-194535641_199806?reply=199844' target='_blank'>link</a></td><td>server_connection_failure, login_failure</td><td>0.38</td><td>David, на Пс 5 тоже не могу зайти, уже дохуя прокси перетыкал</td><td>大卫,我不能去Ps 5,我有他妈的代理。</td></tr><tr><td><a href='https://vk.com/wall-194535641_199806?reply=199840' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>почему не заходит в варзон?</td><td>为什么他不进来?</td></tr></tbody></table><h3>Escape from Tarkov（3）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-89771130_1719251?reply=1719340' target='_blank'>link</a></td><td>server_connection_failure, matchmaking_failure</td><td>0.98</td><td>Оон?</td><td>欧文?</td></tr><tr><td><a href='https://vk.com/wall-89771130_1719385?reply=1719399' target='_blank'>link</a></td><td>login_failure</td><td>0.44</td><td>Опа</td><td>奥帕</td></tr><tr><td><a href='https://vk.com/wall-89771130_1719385?reply=1719453' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>когда там будет примерно новый патч.....подготовиться бы надо к вылетам</td><td>当有一个新的补丁。 应备出行.</td></tr></tbody></table><h3>Throne and Liberty（2）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-234512887_93309?reply=93402' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.99</td><td>Михаил, для особо одаренных-ошибка 100199 связана с глобальными провайдерами рф (транстелеком, ростелеком и другие), блокировками роскомнадзора (всякие прокси, впн и иже с ними), или сбоями в днс серверах, в т.ч. наст...</td><td>Mikhail,对于特别有天赋的人来说,错误100199与俄罗斯的全球供应商(transtelecom,rostelecom等)有关,屏蔽了Roskomnadzor(各种代理,VPN等),或DNS服务器出故障,包括鼻. 。 。 。 。</td></tr><tr><td><a href='https://vk.com/wall-234512887_93309?reply=93382' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.54</td><td>Чат обычно перестаёт отображаться после дисконекта .</td><td>聊天通常在打折后停止显示.</td></tr></tbody></table><h3>Dota 2（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-15413538_2941302?reply=2941863' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>НЕТ</td><td>没有</td></tr></tbody></table><h3>FC27 | Карьера | Перспективные футболисты（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-31685665_1037134?reply=1037455' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Антон, кто тебе сказал, что если в реальности поставить латераля на цз, то он будет все выполнять как цз? Никто, не когда, не ставит крайков в центр защиты в реальности. Если уже нет цз, то ставят цоп, цп. Да, есть ис...</td><td>安东,谁告诉你,如果你真的给TZ做一个平面, 他会做所有像TZ一样的事情? 没有人,没有时间,在现实中把边缘放在防御的中心. 如果你还没有Tsz, 那就把tsp。 是的,还有。 。 。 。 。</td></tr></tbody></table><h3>STALZONE（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-2677092_1152104?reply=1152182' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.26</td><td>а что промокодиков не будет?(( можно не заходить(</td><td>那不用进去怎么办?</td></tr></tbody></table><h3>Steam（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-22744303_291126?reply=291164' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.3</td><td>Наконец-то адекватная телеметрия без необходимости ставить сторонний софт поверх игры. Надеюсь разработчики начнут быстрее патчить просадки, когда их наглядно покажут в карточке игры. На своем железе от Machenike игра...</td><td>最终,在无需将第三方软件放入游戏之上的情况下,可以进行充分的遥测. 我希望开发者在游戏卡中清晰显示时会更快地开始补丁缩减. 在自己的硬件 从Machenike游戏。 。 。 。 。</td></tr></tbody></table><h3>社区: r6club（1）</h3><table><thead><tr><th>链接</th><th>问题类型</th><th>置信度</th><th>原文摘要</th><th>中文翻译</th></tr></thead><tbody><tr><td><a href='https://vk.com/wall-111837455_1342564?reply=1342569' target='_blank'>link</a></td><td>server_connection_failure</td><td>0.42</td><td>А че от таркова античит не прикрутят? Меньше мозгожуйни с тем, что и так не работает</td><td>为什么他们不把塔尔科夫的安特加热弄坏? 少用不起作用的东西洗脑。</td></tr></tbody></table>
+    </div>
+
+    <div class="panel">
+      <h2>运行日志摘要</h2>
+      <pre># VK 全局游戏网络故障监控日报
+
+- 执行时间: 2026-11-12 02:37:48 GMT
+- 报告输出时间: 2026-11-12 02:52:32 GMT
+- 查询词数量: 185
+- 必查社群数量(配置): 21
+- 必查社群抓取帖子: 53
+- 必查社群抓取评论: 867
+- 全局查询词数量: 185
+- 全局抓取帖子数: 0
+- 合并帖子数: 53
+- 故障命中帖子: 0
+- 全局下钻评论数: 0
+- 合并评论数: 865
+- 故障命中评论: 25
+- 评论采集告警数(显示&gt;0但抓取=0): 0
+
+## 故障命中帖子
+
+## 故障命中评论
+- [https://vk.com/wall-1171627_8400294?reply=8401444](https://vk.com/wall-1171627_8400294?reply=8401444) | type=server_connection_failure | conf=0.99
+  - 摘要: Вышло обновление и вместе с ним бесконечная загрузка обновлений на PS5. Нашёл ли кто-то уже решение, какой DNS или Прокси указать в доп. настройках подключения?
+  - 中文: 更新出炉,并随即无休止地下载了PS5上的更新. 是否有人找到在附加连接设置中指定 DNS 或代理服务器的解决方案 ?
+- [https://vk.com/wall-234512887_93309?reply=93402](https://vk.com/wall-234512887_93309?reply=93402) | type=server_connection_failure | conf=0.99
+  - 摘要: Михаил, для особо одаренных-ошибка 100199 связана с глобальными провайдерами рф (транстелеком, ростелеком и другие), блокировками роскомнадзора (всякие прокси, впн и иже с ними), или сбоями в днс серверах, в т.ч. наст...
+  - 中文: Mikhail,对于特别有天赋的人来说,错误100199与俄罗斯的全球供应商(transtelecom,rostelecom等)有关,屏蔽了Roskomnadzor(各种代理,VPN等),或DNS服务器出故障,包括鼻. 。 。 。 。
+- [https://vk.com/wall-89771130_1719251?reply=1719340](https://vk.com/wall-89771130_1719251?reply=1719340) | type=server_connection_failure,matchmaking_failure | conf=0.98
+  - 摘要: Оон?
+  - 中文: 欧文?
+- [https://vk.com/wall-1171627_8401334?reply=8401412](https://vk.com/wall-1171627_8401334?reply=8401412) | type=server_connection_failure | conf=0.84
+  - 摘要: Да все! Вопрос закрыт, кому интересно. Дело было в том, что я использовал бустер Lagofast, а у него встроенная штука чтоб SBMM обманывать, так вот после обновы рикошет его блочить стал. Попробовал gearUP с ним все чет...
+  - 中文: 就这样! 问题已经解决了,谁感兴趣。 事实是,我用了一个Lagofast助推器,它有一个内置的东西给SBMM作弊,所以在更新后,我开始屏蔽它. 我和他一起试过齿轮装置 。 。 。 。
+- [https://vk.com/wall-194535641_199806?reply=199849](https://vk.com/wall-194535641_199806?reply=199849) | type=server_connection_failure | conf=0.74
+  - 摘要: Либо ждать, либо я уже не знаю, или серваки легли, хотя на сайте пишут, что всё ок везде на всех платформах, либо ркн что-то замутил опять
+  - 中文: 或等待, 或我不知道, 或服务器倒下, 虽然网站说,
+- [https://vk.com/wall-194535641_199557?reply=199829](https://vk.com/wall-194535641_199557?reply=199829) | type=server_connection_failure | conf=0.64
+  - 摘要: Скачал спустя 3 года новую калду. 4к 5080 7800х3д 120 фпс на киберспортивных настройках с длсс качество модель трансформер, в нвидиа аппе не пробовал прессет К, поставил мфг х3 стало 240 фпс как 4к 240гц моник, инпута...
+  - 中文: 三年后我下载了一个新的卡达 4k 5080 7800x3d 120 fps 在有 dlss 质量模型变压器的 eSports 设置上,nvidia appe 没有尝试压电K, put mfg x3 成为240 fps 作为 4k 240hz monics, introductiona. 。 。 。 。
+- [https://vk.com/wall-194535641_199806?reply=199846](https://vk.com/wall-194535641_199806?reply=199846) | type=server_connection_failure | conf=0.6
+  - 摘要: David, такая же история. Что только не перепробовал. Бесконечная загрузка обновлений, PS 5
+  - 中文: 大卫,同样的故事。 我什么都没试过 更新的无限下载, PS 5
+- [https://vk.com/wall-234512887_93309?reply=93382](https://vk.com/wall-234512887_93309?reply=93382) | type=server_connection_failure | conf=0.54
+  - 摘要: Чат обычно перестаёт отображаться после дисконекта .
+  - 中文: 聊天通常在打折后停止显示.
+- [https://vk.com/wall-1171627_8401373?reply=8401390](https://vk.com/wall-1171627_8401373?reply=8401390) | type=server_connection_failure | conf=0.5
+  - 摘要: Илья, попробуй без запрета(в том числе ребутнуть ПК, и после ребута запрет не запускать) и без него запустить игру. Если дело в запрете, то на гит репо запрета есть файлы, что его скрывают от игры и дают с ним запусти...
+  - 中文: Ilya,在没有被禁的情况下尝试(包括重放PC,再启动被禁后不跑),没有被禁开始游戏. 如果是被禁的话,那么在Repo出道时会有将它从游戏中隐藏起来并让它随同出道的文件. . . ..
+- [https://vk.com/wall-1171627_8401441?reply=8401485](https://vk.com/wall-1171627_8401441?reply=8401485) | type=server_connection_failure | conf=0.5
+  - 摘要: Юрий, проще гирап купить и вообще никогда не париться
+  - 中文: 尤里,买起GearUP就容易了 从不麻烦
+- [https://vk.com/wall-89771130_1719385?reply=1719399](https://vk.com/wall-89771130_1719385?reply=1719399) | type=login_failure | conf=0.44
+  - 摘要: Опа
+  - 中文: 奥帕
+- [https://vk.com/wall-111837455_1342564?reply=1342569](https://vk.com/wall-111837455_1342564?reply=1342569) | type=server_connection_failure | conf=0.42
+  - 摘要: А че от таркова античит не прикрутят? Меньше мозгожуйни с тем, что и так не работает
+  - 中文: 为什么他们不把塔尔科夫的安特加热弄坏? 少用不起作用的东西洗脑。
+- [https://vk.com/wall-1171627_8401441?reply=8401443](https://vk.com/wall-1171627_8401441?reply=8401443) | type=server_connection_failure | conf=0.42
+  - 摘要: На ps 5 подскажите хороший днс пожалуйста,у меня старый не работает
+  - 中文: 在ps 5,请告诉我 我的旧的不工作。
+- [https://vk.com/wall-1171627_8400294?reply=8401447](https://vk.com/wall-1171627_8400294?reply=8401447) | type=server_connection_failure | conf=0.38
+  - 摘要: Данила, да, прокси 176.111.37.216 порт 39811
+  - 中文: 达尼拉,是的,代理176.111.37.216 港口 39811
+- [https://vk.com/wall-1171627_8400294?reply=8401452](https://vk.com/wall-1171627_8400294?reply=8401452) | type=server_connection_failure | conf=0.38
+  - 摘要: Дмитрий, а где ты берешь прокси ?
+  - 中文: 迪米特里,你从哪里得到代理?
+- [https://vk.com/wall-1171627_8400294?reply=8401470](https://vk.com/wall-1171627_8400294?reply=8401470) | type=server_connection_failure | conf=0.38
+  - 摘要: Андрей, в этой группе :) конкретно этот прокси и порт повезло найти в более ранних постах и ях к ним.
+  - 中文: Andrey, 在这个团体中:)这个特定的代理和港口幸运地在以前的岗位上找到,
+- [https://vk.com/wall-194535641_199557?reply=199837](https://vk.com/wall-194535641_199557?reply=199837) | type=server_connection_failure | conf=0.38
+  - 摘要: Нет. Кучу прокси перебрал
+  - 中文: 没有 很多代理产品。
+- [https://vk.com/wall-194535641_199806?reply=199844](https://vk.com/wall-194535641_199806?reply=199844) | type=server_connection_failure,login_failure | conf=0.38
+  - 摘要: David, на Пс 5 тоже не могу зайти, уже дохуя прокси перетыкал
+  - 中文: 大卫,我不能去Ps 5,我有他妈的代理。
+- [https://vk.com/wall-1171627_8401373?reply=8401399](https://vk.com/wall-1171627_8401373?reply=8401399) | type=server_connection_failure | conf=0.34
+  - 摘要: Арслан, ексит лаг где покупал ?
+  - 中文: 阿斯兰,你在哪里买的退后?
+- [https://vk.com/wall-22744303_291126?reply=291164](https://vk.com/wall-22744303_291126?reply=291164) | type=server_connection_failure | conf=0.3
+  - 摘要: Наконец-то адекватная телеметрия без необходимости ставить сторонний софт поверх игры. Надеюсь разработчики начнут быстрее патчить просадки, когда их наглядно покажут в карточке игры. На своем железе от Machenike игра...
+  - 中文: 最终,在无需将第三方软件放入游戏之上的情况下,可以进行充分的遥测. 我希望开发者在游戏卡中清晰显示时会更快地开始补丁缩减. 在自己的硬件 从Machenike游戏。 。 。 。 。
+- [https://vk.com/wall-31685665_1037134?reply=1037455](https://vk.com/wall-31685665_1037134?reply=1037455) | type=server_connection_failure | conf=0.3
+  - 摘要: Антон, кто тебе сказал, что если в реальности поставить латераля на цз, то он будет все выполнять как цз? Никто, не когда, не ставит крайков в центр защиты в реальности. Если уже нет цз, то ставят цоп, цп. Да, есть ис...
+  - 中文: 安东,谁告诉你,如果你真的给TZ做一个平面, 他会做所有像TZ一样的事情? 没有人,没有时间,在现实中把边缘放在防御的中心. 如果你还没有Tsz, 那就把tsp。 是的,还有。 。 。 。 。
+- [https://vk.com/wall-89771130_1719385?reply=1719453](https://vk.com/wall-89771130_1719385?reply=1719453) | type=server_connection_failure | conf=0.3
+  - 摘要: когда там будет примерно новый патч.....подготовиться бы надо к вылетам
+  - 中文: 当有一个新的补丁。 应备出行.
+- [https://vk.com/wall-15413538_2941302?reply=2941863](https://vk.com/wall-15413538_2941302?reply=2941863) | type=server_connection_failure | conf=0.26
+  - 摘要: НЕТ
+  - 中文: 没有
+- [https://vk.com/wall-194535641_199806?reply=199840](https://vk.com/wall-194535641_199806?reply=199840) | type=server_connection_failure | conf=0.26
+  - 摘要: почему не заходит в варзон?
+  - 中文: 为什么他不进来?
+- [https://vk.com/wall-2677092_1152104?reply=1152182](https://vk.com/wall-2677092_1152104?reply=1152182) | type=server_connection_failure | conf=0.26
+  - 摘要: а что промокодиков не будет?(( можно не заходить(
+  - 中文: 那不用进去怎么办?
+
+## 抓取样本（原文+中文）
+- [Post](https://vk.com/wall-111837455_1342530)
+  - 原文: ■ ОБНОВЛЕНИЕ МАГАЗИНА SIEGE ОТ 11 НОЯБРЯ ■ ⚙ НАБОРЫ, ДОСТУПНЫЕ ДО 17 НОЯБРЯ 17:00 МСК: Скин Aki No Tsuru (Y1S4): 2400 кредитов R6 без BP / 2160 кредитов R6 с BP Скин Strike Force (Y4S2): 1200 кредитов R6 без BP / 1080...
+  - 中文: ^ SIEGE MAGAZIN UpDate 从11月11日 ^ SKIPS 可用至17:00格林尼治平时: SKIN Aki No Tsuru (Y1S4):没有BP/2160 R6信用的2400 R6信用与BP SKIN Strike Force (Y4S2):没有BP/1 080.
+- [Post](https://vk.com/wall-111837455_1342531)
+  - 原文: ■ UBISOFT УДАЛИЛИ СКИДКУ 10% ДЛЯ ВЛАДЕЛЬЦЕВ BP ■ Скорее всего, это случайность и скидку должны вернуть 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: UBISOFT 取消了对英国石油公司所有者的10%的折扣 这很可能是意外,
+- [Post](https://vk.com/wall-111837455_1342535)
+  - 原文: Он просто начитался про атаку мертвецов 💥 #Memes@r6club
+  - 中文: #Memes@r6club # 他只读到死亡攻击
+- [Post](https://vk.com/wall-111837455_1342541)
+  - 原文: Поздно, слишком поздно… 💥 #Memes@r6club
+  - 中文: #Memes@r6club #为时已晚,
+- [Post](https://vk.com/wall-111837455_1342551)
+  - 原文: Причем играть он будет лучше всей остальной тимы 💥 #Memes@r6club
+  - 中文: #Memes@r6club #将比其他游戏更好
+- [Post](https://vk.com/wall-111837455_1342553)
+  - 原文: ■ ИТОГИ ГРУППОВОГО ЭТАПА MAJOR OSAKA ■ Турнир покинули EDward Gaming, ENTERPRISE Esports, Fluxo W7M, Sharper Esports, Cloud9, 100 Thieves, Weibo Gaming и LOS Плей-офф стартует 13 ноября. Накануне, 12 числа, у игроков ...
+  - 中文: * 大阪集团 阶段成果 联赛将于11月13日离开EDward Gaming,ENTERPRISE Esports,Fluxo W7M,Sharper Esports,Cloud9,100 Thieves,微博 Gaming和LOS的季后赛. 12日,球员们...
+- [Post](https://vk.com/wall-111837455_1342554)
+  - 原文: ■ РАЗРАБОТЧИКИ ТИЗЕРЯТ СОЛО-ОЧЕРЕДЬ ДЛЯ РЕЙТИНГА ■ Ранее Ubisoft намекали на это во время Siege Community Checkpoint 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: # SiegeNews@r6club ####News@r6club #########===============================================================================================================================================================================================================================
+- [Post](https://vk.com/wall-111837455_1342555)
+  - 原文: ■ UBISOFT ИЩУТ ПРОПАВШИЕ ПП-19 НА КЛУБЕ ■ Ubisoft написали: «Четыре всадника хотят вернуть их себе, по всему Клубу уже развешивают плакаты» Ранее было известно, что MBZ-19 получат Jäger, Thunderbird и Warden, поэтому ...
+  - 中文: Ubisoft写道:「四个骑手想要他们回来, 更早时人们知道MBZ-19会接收Jäger,雷鸟和典狱长.
+- [Post](https://vk.com/wall-111837455_1342559)
+  - 原文: ■ КОМАНДЫ, КОТОРЫЕ УЖЕ ПРОШЛИ НА SI27 ■ Помимо VP на Six Invitational 2027 прошли Geekay Esports, где тренером команды является ShepparD 📰 #SiegeNews@r6club | 📰 #News@r6club | 🏆 #Esports@r6club
+  - 中文: * * * * * * * * 已经通过SI27的球队 ^ 除了在2027年6月邀请赛上参加VP外,球队主教练为谢泼德的吉凯·埃斯波特斯(Geekay Esports). #SiegeNews@r6club###新闻@r6club###Esports@r6club##.
+- [Post](https://vk.com/wall-111837455_1342564)
+  - 原文: ■ В СЛЕДУЮЩЕМ СЕЗОНЕ В ИГРЕ ПОЯВИТСЯ EASY ANTI-CHEAT ■ 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: #SiegeNews@r6club #####News@r6club #下个赛季EASY ANTI-CHEAT将出现在比赛中.
+- [Post](https://vk.com/wall-111837455_1342570)
+  - 原文: Ое, это же Nomad Time 🏜️ 🎩 #Cosplay@r6club
+  - 中文: 哦,这是游牧时间 ##Cosplay@r6club
+- [Post](https://vk.com/wall-111837455_1342571)
+  - 原文: ■ В Y11S4 РЕЙТИНГ ВЕРНЁТСЯ В БЕТУ ■ Прогресс в двух рейтинговых режимах будет отслеживаться отдельно. У вас будет 2 разных ранга, если вы будете участвовать и в играх для Solo/Duo, и в режиме Flex. У каждого списка ре...
+  - 中文: ^ 在Y11S4中,对Beta的分级回归将分别跟踪两种分级模式的进展. 如果你同时出演"独行侠"/"杜"和"Flex",你将拥有两个不同的排名. 每复入会. 。 。 。 。
+- [Post](https://vk.com/wall-111837455_1342572)
+  - 原文: ■ ВСЕ МАТЧИ ЧЕТВЕРТЬФИНАЛОВ НА MAJOR OSAKA ■ 📰 #SiegeNews@r6club | 📰 #News@r6club | 🏆 #Esports@r6club
+  - 中文: 所有四大财经在OSAKA主机上的内容 #SiegeNews@r6club ##News@r6club ##Esports@r6club
+- [Post](https://vk.com/wall-111837455_1342574)
+  - 原文: ■ ОТКРЫТЫ ПРОГНОЗЫ НА ПЛЕЙ-ОФФ MAJOR OSAKA ■ Выбирайте победителей каждого матча плей-офф. Прогнозы на четвертьфиналы, полуфиналы и гранд-финал принимаются отдельно до начала первого матча соответствующего игрового дн...
+  - 中文: ^ 主要 OSAKA 播放预测打开 ^ 选择每次季后赛的获胜者 。 四分之一决赛,半决赛和大决赛的预想在相应比赛日的首场比赛开始前分别进行. 。 。 。 。
+- [Post](https://vk.com/wall-111837455_1342579)
+  - 原文: Не забывай — он японец ⛩️ 🎨 #Arts@r6club
+  - 中文: 别忘了他是日本人,
+- [Post](https://vk.com/wall-111837455_1342580)
+  - 原文: ■ В Y11S4 УРОН ACS12 СНИЗЯТ С 69 ДО 49 ЕДИНИЦ ■ 📰 #SiegeNews@r6club | 📰 #News@r6club
+  - 中文: 在Y11S4中,ACS12 REDKS从69到49UNITS #SiegeNews@r6club ##News@r6club
+- [Post](https://vk.com/wall-1171627_8401388)
+  - 原文: #COD #Warzone #MWII #MWIII #MW4 #ModernWarfareII #ModernWarfareIII #ModernWarfare4 #ValeriaGarza - by kothyaci
+  - 中文: {\fn方正粗倩简体\fs12\an8\1cHFFFF00\b0}宇宙网 (原始内容存档于2017-10-21). Warzone.
+- [Post](https://vk.com/wall-1171627_8401411)
+  - 原文: Побег
+  - 中文: 逃开
+- [Post](https://vk.com/wall-1171627_8401454)
+  - 原文: 17 лет назад мы потеряли все нервные клетки проходя игру на Ветеране — вышла World at War Самая мрачная часть серии, чему способствует немалое количество расчлененки, гнетущая атмосфера, мрачная цветовая гамма и эмоци...
+  - 中文: 17年前,我们失去了所有的神经细胞 通过游戏的Veteran。 该系列最黑暗的部分,导致大量肢解,压迫气氛,阴沉的色彩和情感.
+- [Post](https://vk.com/wall-1171627_8401473)
+  - 原文: Разрабы подтвердили, что ранговые игры для MW4 и WZ появятся во втором сезоне
+  - 中文: 开发者确认,MW4和WZ的排名游戏将出现在第二季
+- [Post](https://vk.com/wall-148211806_903092)
+  - 原文: 💘🎁 На сайте коллаборации PUBG × IVE спрятаны два специальных ивента. Уже нашли? Участвуйте и получите шанс выиграть эксклюзивный мерч PUBG × IVE, включая подписанный постер и специальный кейкап коллаборации. Плюс, ‘DI...
+  - 中文: 在PUBG × IVE合作的站点上,隐藏了两个特别活动. 你找到了吗? 参与并获得赢得独家PUBG × IVE商品的机会,包括签有名的海报和特别合作者帽子. 再说,"DI"。
+- [Post](https://vk.com/wall-15413538_2941797)
+  - 原文: 🙄 Никита Балаганин прокомментировал завершение сотрудничества с Team Spirit На личном каналеон рассказал о ближайших планах после этого анонса. Публикуется с сохранением орфографии и пунктуации источника 👇 — Давно нич...
+  - 中文: 尼基塔·巴拉干宁评论说,与Team Spirit的合作已经完成 在个人频道上,讲述了这一宣布之后最近的计划. 发布时保留了拼音和出处-长取. 。 。 。 。
+- [Post](https://vk.com/wall-15413538_2941811)
+  - 原文: Самый топовый набор для 100го уровня 🤣🤣🤣 Везение - моё всё 😁😁😁 __________________________ Подумаешь сотый, надо трехсотый брать, говорят так норм дроп падает 😏 Ваша любимая рубрика: пост от подписчиков
+  - 中文: 第100关的顶部 运气是我的一切 _________________ 一百分之一,你需要取出三百分之一, 所以标准下降 \\ 你最喜欢的标题:来自订阅者的文章
+- [Post](https://vk.com/wall-15413538_2941829)
+  - 原文: 💔 Мы будем ждать те самые крутые времена Но Valve над нами не сжалятся 😥
+  - 中文: 我们会等待那些艰难的时期 但Valve不会同情我们
+- [Post](https://vk.com/wall-15413538_2941845)
+  - 原文: 😏 «Тренер нужен?» Resolut1on метит в тренеры микса Do Konca. Роман Фоминок заявил о готовности возглавить микс Do Konca из игроков BB TEAM, переведенных в запас, и Глеба «Kiyotaka» Зырянова 🙈
+  - 中文: "你需要教练吗?" Resolut1on指向教练多·孔卡混音. 罗曼·福米诺克(Roman Fominok)宣布,他准备带领来自BB TEAM球员的多·孔卡(Do Konca)和格莱布(Gleb “Kiyotaka” Zyryanov)的组合转移到预备队.
+- [Post](https://vk.com/wall-15413538_2941853)
+  - 原文: ⚡️ Valve закинули ещё 8 версий на Staging Server За прошедшую ночь разработчики выпустили сразу 8 обновлений тестового сервера. За последние два дня их количество достигло 14 До нового рекорда по продолжительности ожи...
+  - 中文: Valve 在 Staging 服务器上再推出8个版本 在过去的夜晚,开发者向测试服务器发布了8个更新. 在过去两天里,他们的数量达到了14人,创下了火灾持续期间的新纪录. 。 。 。 。
+- [Post](https://vk.com/wall-15413538_2941862)
+  - 原文: 🤖 Таким мог бы выглядеть механический Lifestealer На ArtStation появились необычные концепты Гули в виде автомата. Однако долго работы не провисели — сейчас они уже удалены.
+  - 中文: 这看起来可能像机械活化器ArtStation以机器的形式出现出不寻常的概念Guli. 然而,这项工作没有被长期搁置,现在被撤走。
+- [Post](https://vk.com/wall-15413538_2941877)
+  - 原文: 💡 Небольшой совет для всех керри
+  - 中文: 给所有Kerry一点建议
+- [Post](https://vk.com/wall-15413538_2941878)
+  - 原文: ⚔️ Вовчик и его команда попали в группу к Team Spirit Соперниками Старого Бога на турнире станут одни из сильнейших — Team Spirit. Разбираться с ними придётся уже с завтрашнего дня
+  - 中文: Vovchik和他的球队在联赛中加入到"老神之队"(Team Spirit Rivals)的队伍中,将是最强的一队——"Team Spirit". 你从明天开始就要对付他们
+- [Post](https://vk.com/wall-169653940_644470)
+  - 原文: У ФОРТНАЙТА НОВОЕ ОФОРМЛЕНИЕ
+  - 中文: 两周有新形式
+- [Comment](https://vk.com/wall-111837455_1342431?reply=1342540)
+  - 原文: Рандомы погибают на роуме ничего не усилив или от спаункемпов в атаке. Вы остаетесть два против пяти.
+  - 中文: 随机死亡在漫游 没有放大任何东西 或从产卵营 在攻击。 你两个对五。
+- [Comment](https://vk.com/wall-111837455_1342492?reply=1342533)
+  - 原文: Че за реинбоу сикс сейдж?
+  - 中文: 莱因鲍六贤是谁?
+- [Comment](https://vk.com/wall-111837455_1342492?reply=1342534)
+  - 原文: Владислав, игра типо
+  - 中文: 弗拉迪斯拉夫 这是个游戏
+- [Comment](https://vk.com/wall-111837455_1342522?reply=1342532)
+  - 原文: 😆😆😆🤦🏻‍♂️
+  - 中文: ️️
+- [Comment](https://vk.com/wall-111837455_1342522?reply=1342542)
+  - 原文: Пиздец конченые, ну давайте вообще запретите все умения персонажей и разнообразные трики, будет просто КС с троссами.
+  - 中文: 他妈的,好吧,让我们禁止所有的技巧 角色和各种花招, 它只是CS与电缆。
+- [Comment](https://vk.com/wall-111837455_1342522?reply=1342561)
+  - 原文: Трик бандит+туборг это другое? Или о нем юбисофт до сих пор не в курсе?
+  - 中文: 特里克·强盗+ 土堡不一样? 还是你还不知道?
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342536)
+  - 原文: Наслушался
+  - 中文: 听说了
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342538)
+  - 原文: Да, меня это тоже смущало, а ещё то, что те у кого есть серьезные шлема все равно шотаются в голову из пистолета
+  - 中文: 是的,我也为那感到尴尬 并且那些戴着重头盔的人 仍然在头上开枪
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342539)
+  - 原文: Ну, вообще есть объяснение, хоть и притянутое. Типа газ смока особо опасен и фильтруется особым прибором у него на спине, у других такого нет. А в скине школьника у него вроде прибор в сумке лежит
+  - 中文: 嗯,有一个解释, 虽然一个吸引人。 吸烟气体特别危险,并且被他背上的一个特殊装置过滤出,其他人则没有. 而在学生的皮肤中,他包里有设备.
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342543)
+  - 原文: Противогаз &lt; замкнутая система дыхания 🙃
+  - 中文: 防毒面具 &lt; 封闭呼吸系统
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342544)
+  - 原文: Денис, так это просто визуал, для баланса, тачанку вообще не должно шотать в голову с любого оружия)
+  - 中文: Denise,所以这只是视觉的, 为了平衡, 推车不应该被用任何武器打中头部。
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342546)
+  - 原文: Олег, Ну не прям с любого, потому что шея Санька вряд ли выдержит выстрел из АВП Кали, но как минимум пистолеты его Маска-1Щ должна держать и дробь тоже
+  - 中文: 奥列格,嗯,不是直接从任何人,因为桑卡的颈部不太可能能承受从AVP卡利发出一发子弹,但至少他的Mask-1Sh也应该持一发子弹.
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342547)
+  - 原文: Владислав, это да, но баланс есть баланс, хочется все таки выстрелить в голову и убить противника, или кинуть дым за смока, и не гадать, там перс в противогазе или нет.
+  - 中文: 弗拉迪斯拉夫,这是对的,但平衡是平衡的,你仍然想射中头部并杀死敌人,或者向烟雾放出烟雾来,不要猜测是否有一个波斯人戴有防毒面具.
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342548)
+  - 原文: Олег, Ну я и не говорю ничего про баланс) Понятное дело, что ради баланса сделано, просто уточняю про реальные ттх)
+  - 中文: Oleg 我不是在说平衡 当然,为了平衡而做的一切,只是澄清真实的tts.
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342549)
+  - 原文: нет оперативника же которому пофиг этот газ Смока или нет???
+  - 中文: 没有特工不在乎斯莫克的毒气吗?
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342550)
+  - 原文: Да это просто визуал не более))))
+  - 中文: 它只是视觉不再。 )
+- [Comment](https://vk.com/wall-111837455_1342535?reply=1342573)
+  - 原文: Рауль, skopos
+  - 中文: 劳尔,斯克波斯
+- [Comment](https://vk.com/wall-111837455_1342541?reply=1342552)
+  - 原文: Тогда бл в киберспорт этого бедолагу
+  - 中文: 然后打进这个可怜的家伙的体育圈
+- [Comment](https://vk.com/wall-111837455_1342553?reply=1342558)
+  - 原文: G2 Vs Geekay в паузе на Логове
+  - 中文: G2 Vs Geekay在莱尔暂停
+- [Comment](https://vk.com/wall-111837455_1342554?reply=1342557)
+  - 原文: Неужели реализуют матчи соло игроков vs соло игроков? А не команда из пяти против одной команды из двух и трёх соло) И всё ради того, чтобы матчи искались за десять секунд, при этом качели баланса.
+  - 中文: 你对独奏者玩独奏游戏吗? 不是五人小组对一队二三独奏. 全部是为了在10秒内找到火柴,同时摆动平衡.
+- [Comment](https://vk.com/wall-111837455_1342555?reply=1342556)
+  - 原文: Кавейра 😁
+  - 中文: 卡韦拉
+- [Comment](https://vk.com/wall-111837455_1342560?reply=1342567)
+  - 原文: Я так понимаю доставка только по РФ?
+  - 中文: 我听得懂只在俄罗斯送货吗?
+- [Comment](https://vk.com/wall-111837455_1342564?reply=1342566)
+  - 原文: не смогли все таки свой реализовать?
+  - 中文: 你无法执行你的计划吗?
+- [Comment](https://vk.com/wall-111837455_1342564?reply=1342568)
+  - 原文: Прикольно Теперь к проблеме читеров добавится проблема этого убогого античита
+  - 中文: 现在,在作弊者的问题 加上这个可怜的安热问题
+- [Comment](https://vk.com/wall-111837455_1342564?reply=1342569)
+  - 原文: А че от таркова античит не прикрутят? Меньше мозгожуйни с тем, что и так не работает
+  - 中文: 为什么他们不把塔尔科夫的安特加热弄坏? 少用不起作用的东西洗脑。
+- [Comment](https://vk.com/wall-111837455_1342571?reply=1342575)
+  - 原文: А в чём смысл запрета подбора вчетвером? Соло игрокам неприятно играть с командой? Так для них есть соло режим
+  - 中文: 禁取四相又何为. 独奏的球员和球队玩起来很不舒服吗? 所以他们有一个独奏模式。
+- [Comment](https://vk.com/wall-111837455_1342571?reply=1342576)
+  - 原文: Андрей, в том и смысл, если четверо зайдут во флекс, то пятый окажется соло, хотя по сути у него в этом режиме должен быть свой хотя бы один напарник. Как я понял, они эту систему разработали для борьбы с буллингом, к...
+  - 中文: 安德烈,这就是重点,如果四个进入弹性,第五个将是独奏,虽然事实上他在这个模式中至少应该有一个搭档. 据我所知,他们开发了这个系统 来打击欺凌行为
+- [Comment](https://vk.com/wall-111837455_1342571?reply=1342577)
+  - 原文: Всеволод, в этом был бы смысл, если бы они соло режим не добавили. Если не хочешь попадаться к токсичным отрядам и хочется хотя бы одного рандома, то иди в соло дуо режим, зачем и флекс под одиночных игроков подстраив...
+  - 中文: Vsevolod,如果他们不加入独奏模式,那就有意义了. 如果你不想掉入有毒的分队,并且想要至少一个随机,那么就去独行双人模式,为什么和灵活地调整单人球员. . . ..
+- [Comment](https://vk.com/wall-111837455_1342571?reply=1342578)
+  - 原文: Андрей, суть в том, что если ты одиночка, то ты можешь только с другими одиночками играть. А если это так, то тебе надо найти другой сквад для игры во флекс, а именно либо 3 либо 2 игрока. У них самая главная задача в...
+  - 中文: 安德烈,重点是,如果你是单身,你只能和其他单身者一起玩. 如果是这样的话,你需要另找一个小队来发挥弹性,要么3或2名球员。 他们最重要的任务是...
+- [Comment](https://vk.com/wall-1171627_8400294?reply=8401400)
+  - 原文: Крайне слабый сезон, тем более вспомнить какие сезоны были в бо7 это шаг назад.
+  - 中文: 极弱的一季,尤其是记起在Bo7的赛季是怎样的倒行逆施.</pre>
+    </div>
+  </div>
+</body>
+</html>
