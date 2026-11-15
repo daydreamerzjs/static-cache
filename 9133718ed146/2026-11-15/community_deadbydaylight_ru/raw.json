@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-11-15T02:52:16.913843+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-15/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407772",
+      "url": "https://vk.com/wall-122458500_1407772",
+      "text": "#cosplay@deadbydaylight_ru \n \nКосплей от подписчика! ❤\n \n#DeadbyDaylight #DBD #TheLegion",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-14 15:30:06+00:00",
+      "collected_at": "2026-11-15 02:37:04.460086+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-15/community_deadbydaylight_ru/community_test.html"
+}
