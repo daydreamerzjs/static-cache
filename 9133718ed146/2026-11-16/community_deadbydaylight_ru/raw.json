@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-11-16T02:52:27.767584+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-16/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407773",
+      "url": "https://vk.com/wall-122458500_1407773",
+      "text": "18+\nЛут из Майами за 15 минут 🌴\nАшкуди Energy — покупай в Самокате: https://vk.cc/d3Qos6",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-15 15:08:58+00:00",
+      "collected_at": "2026-11-16 02:37:30.934755+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-16/community_deadbydaylight_ru/community_test.html"
+}
