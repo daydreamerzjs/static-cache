@@ -1,0 +1,63 @@
+{
+  "run_at": "2026-11-18T02:53:17.761109+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-18/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407833",
+      "url": "https://vk.com/wall-122458500_1407833",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru\n \nНовая эра Тумана начинает обретать очертания.\nПрисоединяйтесь к нам, чтобы узнать подробности о будущем Dead by Daylight.\nВ видео есть русские субтитры.\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-17 17:03:23+00:00",
+      "collected_at": "2026-11-18 02:37:45.422004+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407830",
+      "url": "https://vk.com/wall-122458500_1407830",
+      "text": "Не подключает к матчам?\n \nЕсли у вас возникают проблемы с подключением, высоким пингом или медленным интернетом в играх — есть удобное решение! \n \n⚡️ GearUP — инструмент для оптимизации соединения в играх: \n \n✔ Снижает задержку и потери пакетов \n✔ Повышает стабильность подключения \n✔ Помогает комфортно играть и общаться в голосовых чатах \n✔ Автоматически фармит Twitch Drops \n✔ Подходит для Dead by Daylight и других онлайн-игр \n \n💡 Программа использует современные методы маршрутизации трафика и оптимизации сети, чтобы улучшить качество соединения без сложных настроек. \n \n🎁 Для новых пользователей доступен пробный период 3 дня, чтобы вы могли оценить работу сервиса. \n👉 Попробуйте сейчас:\nhttps://aff.gearupglobal.com/product/download/rRWgIHPZ5pTq",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-17 16:00:00+00:00",
+      "collected_at": "2026-11-18 02:37:45.422004+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407827",
+      "url": "https://vk.com/wall-122458500_1407827",
+      "text": "#shrine@deadbydaylight_ru \n \nХрам Тайн от 17.11.2026 \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-17 15:08:41+00:00",
+      "collected_at": "2026-11-18 02:37:45.422004+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [
+    {
+      "post_id": "wall-122458500_1407830",
+      "url": "https://vk.com/wall-122458500_1407830",
+      "text": "Не подключает к матчам?\n \nЕсли у вас возникают проблемы с подключением, высоким пингом или медленным интернетом в играх — есть удобное решение! \n \n⚡️ GearUP — инструмент для оптимизации соединения в играх: \n \n✔ Снижает задержку и потери пакетов \n✔ Повышает стабильность подключения \n✔ Помогает комфортно играть и общаться в голосовых чатах \n✔ Автоматически фармит Twitch Drops \n✔ Подходит для Dead by Daylight и других онлайн-игр \n \n💡 Программа использует современные методы маршрутизации трафика и оптимизации сети, чтобы улучшить качество соединения без сложных настроек. \n \n🎁 Для новых пользователей доступен пробный период 3 дня, чтобы вы могли оценить работу сервиса. \n👉 Попробуйте сейчас:\nhttps://aff.gearupglobal.com/product/download/rRWgIHPZ5pTq",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-17 16:00:00+00:00",
+      "collected_at": "2026-11-18 02:37:45.422004+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "issue_types": [
+        "server_connection_failure"
+      ],
+      "confidence": 0.5,
+      "author_uid": "-122458500",
+      "evidence": [
+        "kw:gearup",
+        "semantic:невозможно подключиться к матчу:70.58823529411764",
+        "abstract:gearup",
+        "brand:GearUP"
+      ],
+      "summary": "Не подключает к матчам? Если у вас возникают проблемы с подключением, высоким пингом или медленным интернетом в играх — есть удобное решение! ⚡️ GearUP — инструмент для оптимиза..."
+    }
+  ],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-18/community_deadbydaylight_ru/community_test.html"
+}
