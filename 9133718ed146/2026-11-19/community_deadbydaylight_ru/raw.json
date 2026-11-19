@@ -1,0 +1,41 @@
+{
+  "run_at": "2026-11-19T02:53:50.507679+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-19/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407886",
+      "url": "https://vk.com/wall-122458500_1407886",
+      "text": "#news@deadbydaylight_ru \n \nНовая вселенная красоты прибудет в Туман уже завтра.\n \n#DeadbyDaylight #DBD #Godmode",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-18 17:46:04+00:00",
+      "collected_at": "2026-11-19 02:37:13.506568+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407883",
+      "url": "https://vk.com/wall-122458500_1407883",
+      "text": "GTA 6 вышла!\n\nИ IGM уже отправились в Vice City, чтобы в прямом эфире пройти всю сюжетку GTA VI целиком и без остановок!\n\n👉 Вас ждёт 80-100 часов геймплея, розыгрыши PS5, GTA6, конкурсы и много неподдельных эмоций. Смотрите стрим в ВК прямо сейчас: https://vk.cc/d3PkZ5",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-18 13:47:22+00:00",
+      "collected_at": "2026-11-19 02:37:13.506568+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407867",
+      "url": "https://vk.com/wall-122458500_1407867",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nКакой же солнечный день на пляже без капельки тумана? \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-18 06:00:37+00:00",
+      "collected_at": "2026-11-19 02:37:13.506568+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-19/community_deadbydaylight_ru/community_test.html"
+}
