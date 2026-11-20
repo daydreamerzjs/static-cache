@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-11-20T02:53:58.926061+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-20/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1407951",
+      "url": "https://vk.com/wall-122458500_1407951",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nКрасота в Тумане. \n \nDead by Daylight и GODMODE привносят в Туман яркие краски и возможности для самовыражения в рамках уникальной коллаборации. Очень редкие наряды получили Юнчин Ли, воплощающая образ \"Миссия Glowgetter\", и Элоди Ракото, получившая облик \"Поиски Небулы\".\n \n#DeadbyDaylight #DBD #GODMODE",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-19 17:55:33+00:00",
+      "collected_at": "2026-11-20 02:37:20.590021+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1407913",
+      "url": "https://vk.com/wall-122458500_1407913",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nСтранная опасность. \n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-19 06:00:07+00:00",
+      "collected_at": "2026-11-20 02:37:20.590021+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-20/community_deadbydaylight_ru/community_test.html"
+}
