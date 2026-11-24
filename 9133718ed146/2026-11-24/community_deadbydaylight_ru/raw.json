@@ -1,0 +1,21 @@
+{
+  "run_at": "2026-11-24T02:53:04.832925+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-24/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1408022",
+      "url": "https://vk.com/wall-122458500_1408022",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nВ минувшие выходные на выставке WePlay в Шанхае мы представили обновленную модель Фенг Мин, которая сейчас находится в разработке вместе с другими визуальными обновлениями!\n \n#DeadbyDaylight #DBD #FengMin",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-23 15:07:04+00:00",
+      "collected_at": "2026-11-24 02:37:01.834653+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-24/community_deadbydaylight_ru/community_test.html"
+}
