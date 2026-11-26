@@ -1,0 +1,31 @@
+{
+  "run_at": "2026-11-26T02:54:39.622609+00:00",
+  "community_url": "https://vk.com/deadbydaylight_ru",
+  "derived_from": "/home/runner/work/vk/vk/data/runs/2026-11-26/global/global_run.json",
+  "posts": [
+    {
+      "post_id": "wall-122458500_1408230",
+      "url": "https://vk.com/wall-122458500_1408230",
+      "text": "#news@deadbydaylight_ru \n#video@deadbydaylight_ru \n \nНа прошлых выходных на выставке WePlay мы с радостью представили новый голос Фенг Мин! \n \nЗагляните в студию звукозаписи к Элизе Чжан и послушайте, как будут звучать будущие реплики Фенг Мин. 🎙\n \n#DeadbyDaylight #DBD #FengMin",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-25 18:00:20+00:00",
+      "collected_at": "2026-11-26 02:37:23.039719+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    },
+    {
+      "post_id": "wall-122458500_1408223",
+      "url": "https://vk.com/wall-122458500_1408223",
+      "text": "#news@deadbydaylight_ru \n \n⚠ Выключатель снова в действии! \n \nМы временно отключили Грязь из-за ошибки, которая позволяла ему становиться невидимым. Грязь будет снова включен, как только эта проблема будет устранена. \n \nСпасибо всем, кто поделился этой информацией на BetaHub!\n \n#DeadbyDaylight #DBD",
+      "author": "Dead by Daylight",
+      "published_at": "2026-11-25 17:30:15+00:00",
+      "collected_at": "2026-11-26 02:37:23.039719+00:00",
+      "source_query": "https://vk.com/deadbydaylight_ru",
+      "author_uid": "-122458500"
+    }
+  ],
+  "comments": [],
+  "matched_posts": [],
+  "matched_comments": [],
+  "report_html": "/home/runner/work/vk/vk/reports/2026-11-26/community_deadbydaylight_ru/community_test.html"
+}
